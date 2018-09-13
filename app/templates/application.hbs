@@ -1,5 +1,38 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav>
+  <SideNavTop />
 
-{{outlet}}
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo" style="padding-left: 2rem">Motor Management System</a>
+  </div>
+</nav>
+
+<SideNavLeft>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <a class="collapsible-header waves-effect">Motor Storage</a>
+        <div class="collapsible-body">
+          <ul>
+            <li>{{#link-to 'storage.index' class="waves-effect"}}Storage List{{/link-to}}</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <a class="collapsible-header waves-effect">Motor Repair</a>
+        <div class="collapsible-body">
+          <ul>
+            <li>{{!#link-to 'upload-jobs.index' class="waves-effect"}}{{!/link-to}}</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+</SideNavLeft>
+
+<main>
+  {{outlet}}
+</main>

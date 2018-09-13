@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module'
@@ -15,6 +16,7 @@ module.exports = {
     browser: true
   },
   rules: {
+    'no-console': 'off'
   },
   overrides: [
     // node files
@@ -27,10 +29,6 @@ module.exports = {
         'config/**/*.js',
         'lib/*/index.js'
       ],
-      parserOptions: {
-        sourceType: 'script',
-        ecmaVersion: 2015
-      },
       env: {
         browser: false,
         node: true
