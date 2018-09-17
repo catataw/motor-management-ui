@@ -1,0 +1,37 @@
+<div>
+  {{#if isLoading}}
+    <ContentPlaceholders as |P|>
+      <P.text @lines={{5}} />
+    </ContentPlaceholders>
+  {{else}}
+    <table class="highlight centered responsive-table">
+      <thead>
+      <tr>
+        <th>Location</th>
+        <th>Power</th>
+        <th>Plot</th>
+        <th>Frame</th>
+        <th>Current</th>
+        <th>Voltage</th>
+        <th>Series Number</th>
+        <th>Remark</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each storageList as |m|}}
+        <tr>
+          <td>{{#link-to 'storage.detail' m.id}}{{m.location}}{{/link-to}}</td>
+          <td>{{m.detail.power}}</td>
+          <td>{{m.detail.plot}}</td>
+          <td>{{m.detail.frame}}</td>
+          <td>{{m.detail.current}}</td>
+          <td>{{m.detail.voltage}}</td>
+          <td>{{m.seriesNumber}}</td>
+          <td>{{m.remark}}</td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+</div>

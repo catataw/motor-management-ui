@@ -1,5 +1,7 @@
 @import "node_modules/materialize-css/sass/components/color-variables";
 @import "node_modules/materialize-css/sass/materialize";
-@import "node_modules/materialize-css/sass/components/color-variables";
 @import "ember-content-placeholders";
 @import "side-nav";
+
+$primary-color: #80ca37;
+$primary-background-color: #68726d;

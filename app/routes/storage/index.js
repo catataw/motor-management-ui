@@ -1,4 +1,6 @@
-import Route from '@ember/routing/route';
+import {route} from 'ember-redux';
+import {fetchAllStorageList} from '../../redux/actions/storage';
 
-export default Route.extend({
-});
+const model = (dispatch) => dispatch(fetchAllStorageList());
+
+export default route({model})();

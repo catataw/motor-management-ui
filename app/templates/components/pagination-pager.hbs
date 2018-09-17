@@ -1,0 +1,31 @@
+<ul class="pagination">
+  {{#if (eq pageIndex 1)}}
+    <li class="disabled">
+      <a href="javascript:void(0);">
+        <i class="material-icons">chevron_left</i>
+      </a>
+    </li>
+  {{else}}
+    <li class="waves-effect">
+      <a href="javascript:void(0);" {{action "gotoPageAction" (dec pageIndex)}}>
+        <i class="material-icons">chevron_left</i>
+      </a>
+    </li>
+  {{/if}}
+  {{#each (range 1 pageCount true) as |index|}}
+    <li class="{{if (eq pageIndex index) 'active'}}"><a href="javascript:void(0);" {{action "gotoPageAction" index}}>{{index}}</a></li>
+  {{/each}}
+  {{#if (eq pageIndex pageCount)}}
+    <li class="disabled">
+      <a href="javascript:void(0);">
+        <i class="material-icons">chevron_right</i>
+      </a>
+    </li>
+  {{else}}
+    <li class="waves-effect">
+      <a href="javascript:void(0);" {{action "gotoPageAction" (inc pageIndex)}}>
+        <i class="material-icons">chevron_right</i>
+      </a>
+    </li>
+  {{/if}}
+</ul>
