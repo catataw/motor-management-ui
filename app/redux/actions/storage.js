@@ -9,5 +9,10 @@ export const gotoStoragePageSUCCESS = createAction("GO_TO_STORAGE_PAGE_SUCCESS")
 
 export const fetchStorageDetail = createAction('FETCH_STORAGE_DETAIL');
 export const fetchStorageDetailSuccess = createAction('FETCH_STORAGE_DETAIL_SUCCESS');
-export const fetchStorageDetailFAILED = createAction('FETCH_STORAGE_DETAIL_FAILED');
+export const fetchStorageDetailFailed = createAction('FETCH_STORAGE_DETAIL_FAILED');
+
+
+export const deleteMotorById = createAction("DELETE_MOTOR_BY_ID");
+export const deleteMotorByIdSuccess = createAction("DELETE_MOTOR_BY_ID_SUCCESS");
+export const deleteMotorByIdFailed = createAction("DELETE_MOTOR_BY_ID_FAILED");
 

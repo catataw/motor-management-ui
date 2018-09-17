@@ -3,8 +3,13 @@ import {map, switchMap, catchError} from 'rxjs/operators';
 import {ajax} from 'rxjs/ajax';
 import {of} from 'rxjs/observable/of';
 import {
-  fetchAllStorageList,fetchAllStorageListFailed,fetchAllStorageListSuccess,
-  fetchStorageDetail,fetchStorageDetailFAILED, fetchStorageDetailSuccess
+  deleteMotorById, deleteMotorByIdFailed, deleteMotorByIdSuccess,
+  fetchAllStorageList,
+  fetchAllStorageListFailed,
+  fetchAllStorageListSuccess,
+  fetchStorageDetail,
+  fetchStorageDetailFailed,
+  fetchStorageDetailSuccess
 } from '../../redux/actions/storage';
 import {normalize, schema} from 'normalizr';
 import config from '../../config/environment'
@@ -26,15 +31,28 @@ export const fetchAllStorageEpic = action$ => action$.pipe(
 );
 
 export const fetchStorageDetailEpic = action$ => action$.pipe(
-  ofType(fetchStorageDetail),
+  ofType(fetchStorageDetail.toString()),
   switchMap(action => {
     return ajax.getJSON(`${config.apiHost}/storage/${action.payload}`).pipe(
       map(response => {
-        const normalized = normalize(response, [motorsSchema]);
+        const normalized = normalize(response, motorsSchema);
         const { motors }  = normalized.entities;
         return fetchStorageDetailSuccess(motors);
       }),
-      catchError(err => of(fetchStorageDetail(err)))
+      catchError(err => {
+        console.log(err);
+        return of(fetchStorageDetailFailed(err))
+      })
+    )
+  })
+);
+
+export const deleteMotorByIdEpic = action$ => action$.pipe(
+  ofType(deleteMotorById.toString()),
+  switchMap(action => {
+    return ajax.delete(`${config.apiHost}/storage/${action.payload}`).pipe(
+      map(_ => deleteMotorByIdSuccess(action.payload)),
+      catchError(err => of(deleteMotorByIdFailed(err)))
     )
   })
 )

@@ -5,7 +5,10 @@ import {fetchAllStorageList,
   gotoStoragePage,
   fetchStorageDetail,
   fetchStorageDetailSuccess,
-  fetchStorageDetailFAILED
+  fetchStorageDetailFailed,
+  deleteMotorById,
+  deleteMotorByIdFailed,
+  deleteMotorByIdSuccess
 } from "../actions/storage";
 
 
@@ -16,7 +19,8 @@ const initStatus = {
   filters: [],
   pageIndex: 1,
   pageSize: 20,
-  loading: false
+  loading: false,
+  isDeleted: false
 };
 
 export default handleActions({
@@ -31,7 +35,8 @@ export default handleActions({
       ...state,
       all: payload,
       loading: false,
-      error: null
+      error: null,
+      isDeleted: false
     }
   },
   [fetchAllStorageListFailed] (state, {payload: {message}}) {
@@ -55,7 +60,6 @@ export default handleActions({
     }
   },
   [fetchStorageDetailSuccess](state, {payload}) {
-    console.log('in reducr  ', payload);
     return {
       ...state,
       all: {
@@ -66,7 +70,31 @@ export default handleActions({
       loading: false
     }
   },
-  [fetchStorageDetailFAILED](state, {payload: {message}}) {
+  [fetchStorageDetailFailed](state, {payload: {message}}) {
+    return {
+      ...state,
+      error: message,
+      loading: false
+    }
+  },
+  [deleteMotorById](state) {
+    return {
+      ...state,
+      loading: true
+    }
+  },
+  [deleteMotorByIdSuccess](state) {
+    return {
+      ...state,
+      loading: false,
+      isDeleted: true,
+      selectedId: null,
+      all: {
+        ...state.all
+      },
+    }
+  },
+  [deleteMotorByIdFailed](state, {payload: {message}}) {
     return {
       ...state,
       error: message,

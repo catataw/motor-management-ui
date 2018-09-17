@@ -7,6 +7,7 @@ const getLoadingSelector = state => state.storage.loading;
 const getPageIndexSelector = state => state.storage.pageIndex;
 const getPageSizeSelector = state => state.storage.pageSize;
 const getSelectedMotorId = state => state.storage.selectedId;
+const isDeletedMotor = state => state.storage.isDeleted;
 
 // export const getStorageList = createSelector(
 //   [getStorageSelector],
@@ -44,7 +45,14 @@ export const getLoading = createSelector(
 );
 
 export const getStorageDetail = createSelector(
-  [getStorageSelector, getSelectedMotorId],
-  (storage, selectedId) => storage[selectedId]
+  [getStorageSelector, getSelectedMotorId, isDeletedMotor],
+  (storage, selectedId, isDelete) => {
+    console.log('in selector', selectedId);
+    console.log(isDelete);
+    if(isDelete) {
+      return null;
+    }
+    return storage[selectedId]
+  }
 
 );

@@ -24,7 +24,6 @@ const stateToComputed = (state) => {
 const dispatchToActions = (dispatch) => {
   return {
     gotoPage: (pageIndex) => dispatch(gotoStoragePage(pageIndex)),
-
   };
 };
 
