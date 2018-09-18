@@ -47,8 +47,6 @@ export const getLoading = createSelector(
 export const getStorageDetail = createSelector(
   [getStorageSelector, getSelectedMotorId, isDeletedMotor],
   (storage, selectedId, isDelete) => {
-    console.log('in selector', selectedId);
-    console.log(isDelete);
     if(isDelete) {
       return null;
     }

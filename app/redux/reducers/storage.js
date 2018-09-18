@@ -8,7 +8,10 @@ import {fetchAllStorageList,
   fetchStorageDetailFailed,
   deleteMotorById,
   deleteMotorByIdFailed,
-  deleteMotorByIdSuccess
+  deleteMotorByIdSuccess,
+  updateMotor,
+  updateMotorFailed,
+  updateMotorSuccess
 } from "../actions/storage";
 
 
@@ -95,6 +98,30 @@ export default handleActions({
     }
   },
   [deleteMotorByIdFailed](state, {payload: {message}}) {
+    return {
+      ...state,
+      error: message,
+      loading: false
+    }
+  },
+  [updateMotor](state) {
+    return{
+      ...state,
+      loading: true
+    }
+  },
+  [updateMotorSuccess](state, {payload}) {
+    return {
+      ...state,
+      error: null,
+      loading: false,
+      all: {
+        ...state.all,
+        ...payload
+      }
+    }
+  },
+  [updateMotorFailed](state, {payload: {message}}) {
     return {
       ...state,
       error: message,

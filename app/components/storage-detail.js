@@ -8,4 +8,12 @@ export default class StorageDetailComponent extends Component {
       this.deleteMotor(motorId);
     }
   }
+
+  @action
+  updateMotorDetailAction(motor) {
+    if(this.updateMotor) {
+      console.log('in detail ', this.get('motor'));
+      this.updateMotor(motor);
+    }
+  }
 }

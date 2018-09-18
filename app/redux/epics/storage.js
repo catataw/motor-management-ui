@@ -9,7 +9,10 @@ import {
   fetchAllStorageListSuccess,
   fetchStorageDetail,
   fetchStorageDetailFailed,
-  fetchStorageDetailSuccess
+  fetchStorageDetailSuccess,
+  updateMotorSuccess,
+  updateMotorFailed,
+  updateMotor
 } from '../../redux/actions/storage';
 import {normalize, schema} from 'normalizr';
 import config from '../../config/environment'
@@ -51,8 +54,19 @@ export const deleteMotorByIdEpic = action$ => action$.pipe(
   ofType(deleteMotorById.toString()),
   switchMap(action => {
     return ajax.delete(`${config.apiHost}/storage/${action.payload}`).pipe(
-      map(_ => deleteMotorByIdSuccess(action.payload)),
+      map(() => deleteMotorByIdSuccess(action.payload)),
       catchError(err => of(deleteMotorByIdFailed(err)))
+    )
+  })
+);
+
+export const updateMotorEpic = action$ => action$.pipe(
+  ofType(updateMotor.toString()),
+  switchMap(action => {
+    let motor = action.payload;
+    return ajax.put(`${config.apiHost}/storage/${motor.id}`,JSON.stringify(motor) , {'Content-Type': 'application/json'}).pipe(
+      map(() => updateMotorSuccess(motor)),
+      catchError(err => of(updateMotorFailed(err)))
     )
   })
 )

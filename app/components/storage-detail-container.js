@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 import {connect} from 'ember-redux';
 import {getStorageDetail, getLoading} from '../redux/selectors/storage'
-import {deleteMotorById} from '../redux/actions/storage'
+import {deleteMotorById, updateMotor} from '../redux/actions/storage'
 
 class StorageDetailContainer extends Component {}
 
@@ -14,7 +14,9 @@ const stateToComputed = state => {
 
 const dispatchToActions = dispatch => {
   return {
-    deleteMotor: motorId => dispatch(deleteMotorById(motorId))
+    deleteMotor: motorId => dispatch(deleteMotorById(motorId)),
+    updateMotor: motor => dispatch(updateMotor(motor))
+
   }
 };
 

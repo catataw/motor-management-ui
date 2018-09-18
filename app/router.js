@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('storage', function() {
     this.route('detail',{path: '/:id'});
   });
+  this.route('motor-replace', function() {});
 });
 
 export default Router;
