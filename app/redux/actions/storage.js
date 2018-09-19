@@ -20,3 +20,8 @@ export const deleteMotorByIdFailed = createAction("DELETE_MOTOR_BY_ID_FAILED");
 export const updateMotor = createAction('UPDATE_MOTOR');
 export const updateMotorSuccess = createAction('UPDATE_MOTOR_SUCCESS');
 export const updateMotorFailed = createAction('UPDATE_MOTOR_FAILED');
+
+
+export const createMotor = createAction("CREATE_MOTOR");
+export const createMotorSuccess = createAction("CREATE_MOTOR_SUCCESS");
+export const createMotorFailed = createAction("CREATE_MOTOR_FAILED");

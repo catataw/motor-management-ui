@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('storage', function() {
     this.route('detail',{path: '/:id'});
+    this.route('new');
   });
   this.route('motor-replace', function() {});
 });

@@ -1,5 +1,3 @@
-<div class="container">
-  <StorageDetailContainer as |motor isLoading options|>
-    <StorageDetail @motor={{motor}} @isLoading={{isLoading}} @deleteMotor={{options.deleteMotor}} @updateMotor={{options.updateMotor}}/>
-  </StorageDetailContainer>
-</div>
+<StorageDetailContainer as |motor isLoading options|>
+  <StorageDetail @motor={{motor}} @isLoading={{isLoading}} @deleteMotor={{options.deleteMotor}} @updateMotor={{options.updateMotor}}/>
+</StorageDetailContainer>

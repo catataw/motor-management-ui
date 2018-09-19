@@ -8,6 +8,7 @@ const getPageIndexSelector = state => state.storage.pageIndex;
 const getPageSizeSelector = state => state.storage.pageSize;
 const getSelectedMotorId = state => state.storage.selectedId;
 const isDeletedMotor = state => state.storage.isDeleted;
+const getNewMotorSelector = state => state.storage.newMotor;
 
 // export const getStorageList = createSelector(
 //   [getStorageSelector],
@@ -52,5 +53,9 @@ export const getStorageDetail = createSelector(
     }
     return storage[selectedId]
   }
+);
 
+export const getNewMotor = createSelector(
+  [getNewMotorSelector],
+  motor => motor
 );

@@ -11,7 +11,10 @@ import {fetchAllStorageList,
   deleteMotorByIdSuccess,
   updateMotor,
   updateMotorFailed,
-  updateMotorSuccess
+  updateMotorSuccess,
+  createMotor,
+  createMotorFailed,
+  createMotorSuccess
 } from "../actions/storage";
 
 
@@ -21,7 +24,7 @@ const initStatus = {
   selectedId: null,
   filters: [],
   pageIndex: 1,
-  pageSize: 20,
+  pageSize: 15,
   loading: false,
   isDeleted: false
 };
@@ -126,6 +129,14 @@ export default handleActions({
       ...state,
       error: message,
       loading: false
+    }
+  },
+  [createMotor](state) {
+    return {
+      ...state,
+      newMotor: {
+        detail:{}
+      }
     }
   }
 }, initStatus)

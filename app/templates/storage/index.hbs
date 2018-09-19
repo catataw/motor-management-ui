@@ -1,6 +1,4 @@
-<div class="container">
-  <StorageContainer as |isLoading storageList pageIndex pageCount options|>
-    <StorageList @isLoading={{isLoading}} @storageList={{storageList}} />
-    <PaginationPager @pageIndex={{pageIndex}} @pageCount={{pageCount}} @gotoPage={{options.gotoPage}} />
-  </StorageContainer>
-</div>
+<StorageContainer as |isLoading storageList pageIndex pageCount options|>
+  <StorageList @isLoading={{isLoading}} @storageList={{storageList}} />
+  <PaginationPager @pageIndex={{pageIndex}} @pageCount={{pageCount}} @gotoPage={{options.gotoPage}} />
+</StorageContainer>
