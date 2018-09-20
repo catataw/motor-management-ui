@@ -4,41 +4,41 @@
       <div class="card-content">
         <span class="card-title center">Motor Detail</span>
         <div class="row">
-          <div class="input-field col s4">
-            {{input type="text" value=motor.location id="location"}}
-            <label class="active" for="location">Location</label>
+          <div class="col s4">
+            <label>Location</label>
+            {{input type="text" value=motor.location}}
           </div>
-          <div class="input-field col s4">
-            {{input type="text" value=motor.detail.power id="power"}}
-            <label class="active" for="power">Power</label>
+          <div class="col s4">
+            <label>Power</label>
+            {{input type="text" value=motor.detail.power}}
           </div>
-          <div class="input-field col s4">
-            {{input type="text" value=motor.detail.plot id="plot"}}
-            <label class="active" for="plot">Plot</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s4">
-            {{input type="text" value=motor.detail.current id="current"}}
-            <label class="active" for="current">Current</label>
-          </div>
-          <div class="input-field col s4">
-            {{input type="text" value=motor.detail.voltage id="voltage"}}
-            <label class="active" for="voltage">Voltage</label>
-          </div>
-          <div class="input-field col s4">
-            {{input type="text" value=motor.detail.frame id="frame"}}
-            <label class="active" for="frame">Frame</label>
+          <div class="col s4">
+            <label>Plot</label>
+            {{input type="text" value=motor.detail.plot}}
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s4">
-            {{input type="text" value=motor.seriesNumber id="seriesNumber"}}
-            <label class="active" for="seriesNumber">Series number</label>
+          <div class="col s4">
+            <label>Current</label>
+            {{input type="text" value=motor.detail.current}}
           </div>
-          <div class="input-field col s6">
-            {{input type="text" value=motor.remark id="remark"}}
-            <label class="active" for="remark">Remark</label>
+          <div class="col s4">
+            <label>Voltage</label>
+            {{input type="text" value=motor.detail.voltage}}
+          </div>
+          <div class="col s4">
+            <label>Frame</label>
+            {{input type="text" value=motor.detail.frame}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <label>Series number</label>
+            {{input type="text" value=motor.seriesNumber }}
+          </div>
+          <div class="col s6">
+            <label>Remark</label>
+            {{input type="text" value=motor.remark}}
           </div>
         </div>
       </div>
