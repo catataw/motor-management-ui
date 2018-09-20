@@ -23,5 +23,8 @@ export const updateMotorFailed = createAction('UPDATE_MOTOR_FAILED');
 
 
 export const createMotor = createAction("CREATE_MOTOR");
+export const sendCreateMotor = createAction("SEND_CREATE_MOTOR");
 export const createMotorSuccess = createAction("CREATE_MOTOR_SUCCESS");
 export const createMotorFailed = createAction("CREATE_MOTOR_FAILED");
+
+export const cancelMotor = createAction("CANCEL_MOTOR");

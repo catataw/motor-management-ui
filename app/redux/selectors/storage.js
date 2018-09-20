@@ -9,6 +9,7 @@ const getPageSizeSelector = state => state.storage.pageSize;
 const getSelectedMotorId = state => state.storage.selectedId;
 const isDeletedMotor = state => state.storage.isDeleted;
 const getNewMotorSelector = state => state.storage.newMotor;
+const responseStatus = state => state.storage.responseStatus;
 
 // export const getStorageList = createSelector(
 //   [getStorageSelector],
@@ -59,3 +60,8 @@ export const getNewMotor = createSelector(
   [getNewMotorSelector],
   motor => motor
 );
+
+export const getResponseStatus = createSelector(
+  [responseStatus],
+  status => status
+)

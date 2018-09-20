@@ -7,7 +7,8 @@ import {
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
   deleteMotorByIdEpic,
-  updateMotorEpic
+  updateMotorEpic,
+  saveMotorEpic
 } from './storage'
 
 export default combineEpics(
@@ -16,5 +17,6 @@ export default combineEpics(
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
   deleteMotorByIdEpic,
-  updateMotorEpic
+  updateMotorEpic,
+  saveMotorEpic
 );

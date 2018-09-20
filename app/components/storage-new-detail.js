@@ -7,4 +7,10 @@ export default class StorageNewDetailComponent extends Component {
    if (this.createNewMotor)
      this.createNewMotor(motor);
  }
+
+ @action
+ cancelNewMotorAction() {
+   if(this.cancelNewMotor)
+     this.cancelNewMotor();
+ }
 }

@@ -14,7 +14,9 @@ import {fetchAllStorageList,
   updateMotorSuccess,
   createMotor,
   createMotorFailed,
-  createMotorSuccess
+  createMotorSuccess,
+  sendCreateMotor,
+  cancelMotor
 } from "../actions/storage";
 
 
@@ -26,7 +28,8 @@ const initStatus = {
   pageIndex: 1,
   pageSize: 15,
   loading: false,
-  isDeleted: false
+  isDeleted: false,
+  responseStatus: 0
 };
 
 export default handleActions({
@@ -132,6 +135,35 @@ export default handleActions({
     }
   },
   [createMotor](state) {
+    return {
+      ...state,
+      newMotor: {
+        detail:{}
+      }
+    }
+  },
+  [sendCreateMotor](state) {
+    return {
+      ...state,
+      loading: true,
+    }
+  },
+  [createMotorSuccess] (state, {payload}) {
+    return {
+      ...state,
+      error: null,
+      loading: false,
+      responseStatus: payload
+    }
+  },
+  [createMotorFailed] (state, {payload: {message}}) {
+    return {
+      ...state,
+      error: message,
+      loading: false
+    }
+  },
+  [cancelMotor](state) {
     return {
       ...state,
       newMotor: {

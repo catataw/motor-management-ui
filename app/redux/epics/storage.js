@@ -12,7 +12,10 @@ import {
   fetchStorageDetailSuccess,
   updateMotorSuccess,
   updateMotorFailed,
-  updateMotor
+  updateMotor,
+  sendCreateMotor,
+  createMotorSuccess,
+  createMotorFailed
 } from '../../redux/actions/storage';
 import {normalize, schema} from 'normalizr';
 import config from '../../config/environment'
@@ -67,6 +70,19 @@ export const updateMotorEpic = action$ => action$.pipe(
     return ajax.put(`${config.apiHost}/storage/${motor.id}`,JSON.stringify(motor) , {'Content-Type': 'application/json'}).pipe(
       map(() => updateMotorSuccess(motor)),
       catchError(err => of(updateMotorFailed(err)))
+    )
+  })
+);
+
+export const saveMotorEpic = action$ => action$.pipe(
+  ofType(sendCreateMotor.toString()),
+  switchMap(action => {
+    let motor =action.payload;
+    console.log('epic', motor)
+    return ajax.post(`${config.API.host}/storage`, JSON.stringify(motor), {'Content-Type': 'application/json'}).pipe(
+      map(response => createMotorSuccess(response.status)
+      ),
+      catchError(err => of(createMotorFailed(err)))
     )
   })
 )

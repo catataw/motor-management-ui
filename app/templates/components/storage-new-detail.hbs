@@ -43,9 +43,12 @@
         </div>
       </div>
       <div class="card-action">
-        <!--todo create reducer for cancel create new motor -->
-        <a href="/storage/new" class="waves-effect waves-light btn-small"><i class="material-icons left">cancel</i>cancel</a>
-        <a class="waves-effect waves-light btn-small" {{action 'createNewMotorAction' motor}}><i class="material-icons left">send</i>save</a>
+        {{#if (eq statusCode 201)}}
+          {{#link-to "storage" class="waves-effect waves-light btn-small"}}<i class="material-icons left">arrow_back</i>back{{/link-to}}
+        {{else}}
+          <a class="waves-effect waves-light btn-small" {{action "cancelNewMotorAction"}}><i class="material-icons left">cancel</i>cancel</a>
+          <a class="waves-effect waves-light btn-small" {{action "createNewMotorAction" motor}}><i class="material-icons left">send</i>save</a>
+        {{/if}}
       </div>
     </div>
   </div>

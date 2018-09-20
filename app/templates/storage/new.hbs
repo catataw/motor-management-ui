@@ -1,3 +1,5 @@
-<StorageNewContainer as |motor options|>
-  <StorageNewDetail @motor={{motor}} @createNewMotor={{options.createNewMotor}}/>
+<StorageNewContainer as |motor statusCode options|>
+  <StorageNewDetail @motor={{motor}} @statusCode={{statusCode}}
+                    @createNewMotor={{options.createNewMotor}}
+                    @cancelNewMotor={{options.cancelNewMotor}} />
 </StorageNewContainer>
