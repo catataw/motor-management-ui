@@ -1,7 +1,13 @@
 @import "node_modules/materialize-css/sass/components/color-variables";
+@import "node_modules/materialize-css/sass/components/color-classes";
+@import "materialized-variables";
 @import "node_modules/materialize-css/sass/materialize";
 @import "ember-content-placeholders";
 @import "side-nav";
+@import "navbar";
 
-$primary-color: #80ca37;
-$primary-background-color: #68726d;
+
+.font-size-position {
+  font-size: 18px;
+  padding-left: 20px;
+}

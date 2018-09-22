@@ -8,14 +8,21 @@ header, nav, main, footer {
     padding-left: 0;
   }
 }
-$primary-color: #80ca37;
 
 // set active link color
 .sidenav {
   width: 250px;
   li {
-    a.active {
-      background-color: $primary-color;
+    //a.active {
+    //  background-color: $primary-background-color;
+    //}
+    a {
+      //background-color: #bdbdbd ;
+      background-color: #ffab40;
+      color: black;
+      &.active, &:hover {
+        background-color: #76ff03;
+      }
     }
   }
 }

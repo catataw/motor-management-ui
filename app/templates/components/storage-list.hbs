@@ -21,7 +21,7 @@
       <tbody>
       {{#each storageList as |m|}}
         <tr>
-          <td>{{#link-to 'storage.detail' m.id}}{{m.location}}{{/link-to}}</td>
+          <td>{{#link-to "storage.detail" m.id}}{{m.location}}{{/link-to}}</td>
           <td>{{m.detail.power}}</td>
           <td>{{m.detail.plot}}</td>
           <td>{{m.detail.frame}}</td>

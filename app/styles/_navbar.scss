@@ -1,0 +1,24 @@
+nav {
+  .nav-wrapper {
+    background-color: #fff;
+
+    a, .brand-logo, ul a {
+      color: #454aa3;
+    }
+
+    .brand-logo {
+      margin-left: 1rem;
+      font-weight: bolder;
+    }
+
+    .material-icons {
+      color: $secondary-color;
+    }
+  }
+}
+
+//@media only screen and (max-width: 600px) {
+//  nav {
+//    .n
+//  }
+//}

@@ -14,7 +14,7 @@
       </li>
     {{/if}}
     {{#each (range 1 pageCount true) as |index|}}
-      <li class="{{if (eq pageIndex index) 'active'}}"><a href="javascript:void(0);" {{action "gotoPageAction" index}}>{{index}}</a></li>
+      <li class={{if (eq pageIndex index) "active"}}><a href="javascript:void(0);" {{action "gotoPageAction" index}}>{{index}}</a></li>
     {{/each}}
     {{#if (eq pageIndex pageCount)}}
       <li class="disabled">
