@@ -11,7 +11,9 @@ Router.map(function() {
     this.route('detail',{path: '/:id'});
     this.route('new');
   });
-  this.route('motor-replace', function() {});
+  this.route('motor-replace', function() {
+    this.route('replace-form');
+  });
 });
 
 export default Router;

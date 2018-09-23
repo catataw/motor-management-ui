@@ -13,15 +13,11 @@ header, nav, main, footer {
 .sidenav {
   width: 250px;
   li {
-    //a.active {
-    //  background-color: $primary-background-color;
-    //}
     a {
-      //background-color: #bdbdbd ;
-      background-color: #ffab40;
-      color: black;
+      background-color: #bdbdbd;
+      color: white;
       &.active, &:hover {
-        background-color: #76ff03;
+        background-color: #00796b;
       }
     }
   }
