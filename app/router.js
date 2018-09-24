@@ -13,6 +13,7 @@ Router.map(function() {
   });
   this.route('motor-replace', function() {
     this.route('replace-form');
+    this.route('detail',{path: '/:id'});
   });
 });
 

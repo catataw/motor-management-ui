@@ -11,3 +11,13 @@
   font-size: 18px;
   padding-left: 20px;
 }
+
+.select-td {
+  width: 15%;
+  @media only screen and (max-width : 1100px) {
+    width: 25%;
+  }
+  @media only screen and (max-width : 992px) {
+    width: 100%;
+  }
+}
