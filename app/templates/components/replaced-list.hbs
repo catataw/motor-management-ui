@@ -1,0 +1,33 @@
+<div>
+  {{#if isLoading}}
+    <ContentPlaceholders as |P|>
+      <P.text @lines={{5}} />
+    </ContentPlaceholders>
+  {{else}}
+    <table class="highlight centered responsive-table">
+      <thead>
+      <tr>
+        <th>Form Number</th>
+        <th>Replace date</th>
+        <th>Reason</th>
+        <th>Paper machine</th>
+        <th>worker</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each replacedList as |r|}}
+        <tr>
+          <!--<td>{{!#link-to "storage.detail" m.id}}{{!m.location}}{{!/link-to}}</td>-->
+          <td>{{r.id}}</td>
+          <td>{{r.replaceDate}}</td>
+          <td>{{r.replaceReason}}</td>
+          <td>{{r.pm.name}}</td>
+          <td>{{r.worker.name}}</td>
+          <!--todo  add a component that contain two select: to repair and drop it-->
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+</div>

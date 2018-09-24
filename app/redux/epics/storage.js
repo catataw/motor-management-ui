@@ -45,10 +45,8 @@ export const fetchStorageDetailEpic = action$ => action$.pipe(
         const { motors }  = normalized.entities;
         return fetchStorageDetailSuccess(motors);
       }),
-      catchError(err => {
-        console.log(err);
-        return of(fetchStorageDetailFailed(err))
-      })
+      catchError(err => of(fetchStorageDetailFailed(err))
+      )
     )
   })
 );

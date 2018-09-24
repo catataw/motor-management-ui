@@ -1,1 +1,6 @@
-{{outlet}}
+<ReplacedContainer as |replacedList isLoading pageIndex pageCount options|>
+  <ReplacedList @replacedList={{replacedList}} @isLoading={{isLoading}} />
+  <PaginationPager @pageIndex={{pageIndex}} @pageCount={{pageCount}}
+                   @gotoPage={{options.gotoPage}} @gotoPage={{options.gotoPage}}/>
+
+</ReplacedContainer>

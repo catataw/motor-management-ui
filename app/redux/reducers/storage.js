@@ -20,7 +20,7 @@ import {fetchAllStorageList,
 } from "../actions/storage";
 
 
-const initStatus = {
+const initStates = {
   all: {},
   error: null,
   selectedId: null,
@@ -171,4 +171,4 @@ export default handleActions({
       }
     }
   }
-}, initStatus)
+}, initStates)
