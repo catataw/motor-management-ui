@@ -1,0 +1,1670 @@
+{
+  "storage": [
+    {
+      "id": 2,
+      "location": "AA02",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00002",
+      "detail": {
+        "id": 2,
+        "power": 10,
+        "plot": 4,
+        "frame": "200S",
+        "current": 30,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 6,
+      "location": "AA06",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00006",
+      "detail": {
+        "id": 6,
+        "power": 15,
+        "plot": 4,
+        "frame": "200S",
+        "current": 37,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 9,
+      "location": "AA09",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00009",
+      "detail": {
+        "id": 9,
+        "power": 20,
+        "plot": 4,
+        "frame": "200S",
+        "current": 44,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 10,
+      "location": "AA10",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00010",
+      "detail": {
+        "id": 10,
+        "power": 20,
+        "plot": 4,
+        "frame": "200S",
+        "current": 44,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 11,
+      "location": "AA11",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00011",
+      "detail": {
+        "id": 11,
+        "power": 20,
+        "plot": 4,
+        "frame": "200S",
+        "current": 44,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 12,
+      "location": "AA12",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00012",
+      "detail": {
+        "id": 12,
+        "power": 25,
+        "plot": 4,
+        "frame": "200S",
+        "current": 51,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 14,
+      "location": "AA14",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00014",
+      "detail": {
+        "id": 14,
+        "power": 25,
+        "plot": 4,
+        "frame": "200S",
+        "current": 51,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 15,
+      "location": "AA15",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00015",
+      "detail": {
+        "id": 15,
+        "power": 25,
+        "plot": 4,
+        "frame": "200S",
+        "current": 51,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 16,
+      "location": "AA16",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00016",
+      "detail": {
+        "id": 16,
+        "power": 30,
+        "plot": 4,
+        "frame": "200S",
+        "current": 58,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 18,
+      "location": "AA18",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00018",
+      "detail": {
+        "id": 18,
+        "power": 30,
+        "plot": 4,
+        "frame": "200S",
+        "current": 58,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 19,
+      "location": "AA19",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00019",
+      "detail": {
+        "id": 19,
+        "power": 30,
+        "plot": 4,
+        "frame": "200S",
+        "current": 58,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 20,
+      "location": "AA20",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00020",
+      "detail": {
+        "id": 20,
+        "power": 35,
+        "plot": 4,
+        "frame": "200S",
+        "current": 65,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 22,
+      "location": "AA22",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00022",
+      "detail": {
+        "id": 22,
+        "power": 35,
+        "plot": 4,
+        "frame": "200S",
+        "current": 65,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 24,
+      "location": "AA24",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00024",
+      "detail": {
+        "id": 24,
+        "power": 40,
+        "plot": 4,
+        "frame": "200S",
+        "current": 72,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 25,
+      "location": "AA25",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00025",
+      "detail": {
+        "id": 25,
+        "power": 40,
+        "plot": 4,
+        "frame": "200S",
+        "current": 72,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 26,
+      "location": "AA26",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00026",
+      "detail": {
+        "id": 26,
+        "power": 40,
+        "plot": 4,
+        "frame": "200S",
+        "current": 72,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 27,
+      "location": "AA27",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00027",
+      "detail": {
+        "id": 27,
+        "power": 40,
+        "plot": 4,
+        "frame": "200S",
+        "current": 72,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 29,
+      "location": "AA29",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00029",
+      "detail": {
+        "id": 29,
+        "power": 45,
+        "plot": 4,
+        "frame": "200S",
+        "current": 79,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 30,
+      "location": "AA30",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00030",
+      "detail": {
+        "id": 30,
+        "power": 45,
+        "plot": 4,
+        "frame": "200S",
+        "current": 79,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 31,
+      "location": "AA31",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00031",
+      "detail": {
+        "id": 31,
+        "power": 45,
+        "plot": 4,
+        "frame": "200S",
+        "current": 79,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 32,
+      "location": "AA32",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00032",
+      "detail": {
+        "id": 32,
+        "power": 50,
+        "plot": 4,
+        "frame": "200S",
+        "current": 86,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 33,
+      "location": "AA33",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00033",
+      "detail": {
+        "id": 33,
+        "power": 50,
+        "plot": 4,
+        "frame": "200S",
+        "current": 86,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 34,
+      "location": "AA34",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00034",
+      "detail": {
+        "id": 34,
+        "power": 50,
+        "plot": 4,
+        "frame": "200S",
+        "current": 86,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 35,
+      "location": "AA35",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00035",
+      "detail": {
+        "id": 35,
+        "power": 50,
+        "plot": 4,
+        "frame": "200S",
+        "current": 86,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 36,
+      "location": "AA36",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00036",
+      "detail": {
+        "id": 36,
+        "power": 55,
+        "plot": 4,
+        "frame": "200S",
+        "current": 93,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 37,
+      "location": "AA37",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00037",
+      "detail": {
+        "id": 37,
+        "power": 55,
+        "plot": 4,
+        "frame": "200S",
+        "current": 93,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 38,
+      "location": "AA38",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00038",
+      "detail": {
+        "id": 38,
+        "power": 55,
+        "plot": 4,
+        "frame": "200S",
+        "current": 93,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 39,
+      "location": "AA39",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00039",
+      "detail": {
+        "id": 39,
+        "power": 55,
+        "plot": 4,
+        "frame": "200S",
+        "current": 93,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 40,
+      "location": "AA40",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00040",
+      "detail": {
+        "id": 40,
+        "power": 60,
+        "plot": 4,
+        "frame": "200S",
+        "current": 100,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 41,
+      "location": "AA41",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00041",
+      "detail": {
+        "id": 41,
+        "power": 60,
+        "plot": 4,
+        "frame": "200S",
+        "current": 100,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 42,
+      "location": "AA42",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00042",
+      "detail": {
+        "id": 42,
+        "power": 60,
+        "plot": 4,
+        "frame": "200S",
+        "current": 100,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 43,
+      "location": "AA43",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00043",
+      "detail": {
+        "id": 43,
+        "power": 60,
+        "plot": 4,
+        "frame": "200S",
+        "current": 100,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 44,
+      "location": "AA44",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00044",
+      "detail": {
+        "id": 44,
+        "power": 65,
+        "plot": 4,
+        "frame": "200S",
+        "current": 107,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 45,
+      "location": "AA45",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00045",
+      "detail": {
+        "id": 45,
+        "power": 65,
+        "plot": 4,
+        "frame": "200S",
+        "current": 107,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 46,
+      "location": "AA46",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00046",
+      "detail": {
+        "id": 46,
+        "power": 65,
+        "plot": 4,
+        "frame": "200S",
+        "current": 107,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 47,
+      "location": "AA47",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00047",
+      "detail": {
+        "id": 47,
+        "power": 65,
+        "plot": 4,
+        "frame": "200S",
+        "current": 107,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 48,
+      "location": "AA48",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00048",
+      "detail": {
+        "id": 48,
+        "power": 70,
+        "plot": 4,
+        "frame": "200S",
+        "current": 114,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 49,
+      "location": "AA49",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00049",
+      "detail": {
+        "id": 49,
+        "power": 70,
+        "plot": 4,
+        "frame": "200S",
+        "current": 114,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 50,
+      "location": "AA50",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00050",
+      "detail": {
+        "id": 50,
+        "power": 70,
+        "plot": 4,
+        "frame": "200S",
+        "current": 114,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 51,
+      "location": "AA51",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00051",
+      "detail": {
+        "id": 51,
+        "power": 70,
+        "plot": 4,
+        "frame": "200S",
+        "current": 114,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 52,
+      "location": "AA52",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00052",
+      "detail": {
+        "id": 52,
+        "power": 75,
+        "plot": 4,
+        "frame": "200S",
+        "current": 121,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 53,
+      "location": "AA53",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00053",
+      "detail": {
+        "id": 53,
+        "power": 75,
+        "plot": 4,
+        "frame": "200S",
+        "current": 121,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 54,
+      "location": "AA54",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00054",
+      "detail": {
+        "id": 54,
+        "power": 75,
+        "plot": 4,
+        "frame": "200S",
+        "current": 121,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 55,
+      "location": "AA55",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00055",
+      "detail": {
+        "id": 55,
+        "power": 75,
+        "plot": 4,
+        "frame": "200S",
+        "current": 121,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 56,
+      "location": "AA56",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00056",
+      "detail": {
+        "id": 56,
+        "power": 80,
+        "plot": 4,
+        "frame": "200S",
+        "current": 128,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 57,
+      "location": "AA57",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00057",
+      "detail": {
+        "id": 57,
+        "power": 80,
+        "plot": 4,
+        "frame": "200S",
+        "current": 128,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 58,
+      "location": "AA58",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00058",
+      "detail": {
+        "id": 58,
+        "power": 80,
+        "plot": 4,
+        "frame": "200S",
+        "current": 128,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 59,
+      "location": "AA59",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00059",
+      "detail": {
+        "id": 59,
+        "power": 80,
+        "plot": 4,
+        "frame": "200S",
+        "current": 128,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 60,
+      "location": "AA60",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00060",
+      "detail": {
+        "id": 60,
+        "power": 85,
+        "plot": 4,
+        "frame": "200S",
+        "current": 135,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 61,
+      "location": "AA61",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00061",
+      "detail": {
+        "id": 61,
+        "power": 85,
+        "plot": 4,
+        "frame": "200S",
+        "current": 135,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 62,
+      "location": "AA62",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00062",
+      "detail": {
+        "id": 62,
+        "power": 85,
+        "plot": 4,
+        "frame": "200S",
+        "current": 135,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 63,
+      "location": "AA63",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00063",
+      "detail": {
+        "id": 63,
+        "power": 85,
+        "plot": 4,
+        "frame": "200S",
+        "current": 135,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 64,
+      "location": "AA64",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00064",
+      "detail": {
+        "id": 64,
+        "power": 90,
+        "plot": 4,
+        "frame": "200S",
+        "current": 142,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 65,
+      "location": "AA65",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00065",
+      "detail": {
+        "id": 65,
+        "power": 90,
+        "plot": 4,
+        "frame": "200S",
+        "current": 142,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 66,
+      "location": "AA66",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00066",
+      "detail": {
+        "id": 66,
+        "power": 90,
+        "plot": 4,
+        "frame": "200S",
+        "current": 142,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 67,
+      "location": "AA67",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00067",
+      "detail": {
+        "id": 67,
+        "power": 90,
+        "plot": 4,
+        "frame": "200S",
+        "current": 142,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 68,
+      "location": "AA68",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00068",
+      "detail": {
+        "id": 68,
+        "power": 95,
+        "plot": 4,
+        "frame": "200S",
+        "current": 149,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 69,
+      "location": "AA69",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00069",
+      "detail": {
+        "id": 69,
+        "power": 95,
+        "plot": 4,
+        "frame": "200S",
+        "current": 149,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 70,
+      "location": "AA70",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00070",
+      "detail": {
+        "id": 70,
+        "power": 95,
+        "plot": 4,
+        "frame": "200S",
+        "current": 149,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 71,
+      "location": "AA71",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00071",
+      "detail": {
+        "id": 71,
+        "power": 95,
+        "plot": 4,
+        "frame": "200S",
+        "current": 149,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 72,
+      "location": "AA72",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00072",
+      "detail": {
+        "id": 72,
+        "power": 100,
+        "plot": 4,
+        "frame": "200S",
+        "current": 156,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 73,
+      "location": "AA73",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00073",
+      "detail": {
+        "id": 73,
+        "power": 100,
+        "plot": 4,
+        "frame": "200S",
+        "current": 156,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 74,
+      "location": "AA74",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00074",
+      "detail": {
+        "id": 74,
+        "power": 100,
+        "plot": 4,
+        "frame": "200S",
+        "current": 156,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 75,
+      "location": "AA75",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00075",
+      "detail": {
+        "id": 75,
+        "power": 100,
+        "plot": 4,
+        "frame": "200S",
+        "current": 156,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 76,
+      "location": "AA76",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00076",
+      "detail": {
+        "id": 76,
+        "power": 105,
+        "plot": 4,
+        "frame": "200S",
+        "current": 163,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 77,
+      "location": "AA77",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00077",
+      "detail": {
+        "id": 77,
+        "power": 105,
+        "plot": 4,
+        "frame": "200S",
+        "current": 163,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 78,
+      "location": "AA78",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00078",
+      "detail": {
+        "id": 78,
+        "power": 105,
+        "plot": 4,
+        "frame": "200S",
+        "current": 163,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 79,
+      "location": "AA79",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00079",
+      "detail": {
+        "id": 79,
+        "power": 105,
+        "plot": 4,
+        "frame": "200S",
+        "current": 163,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 80,
+      "location": "AA80",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00080",
+      "detail": {
+        "id": 80,
+        "power": 110,
+        "plot": 4,
+        "frame": "200S",
+        "current": 170,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 81,
+      "location": "AA81",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00081",
+      "detail": {
+        "id": 81,
+        "power": 110,
+        "plot": 4,
+        "frame": "200S",
+        "current": 170,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 82,
+      "location": "AA82",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00082",
+      "detail": {
+        "id": 82,
+        "power": 110,
+        "plot": 4,
+        "frame": "200S",
+        "current": 170,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 83,
+      "location": "AA83",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00083",
+      "detail": {
+        "id": 83,
+        "power": 110,
+        "plot": 4,
+        "frame": "200S",
+        "current": 170,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 84,
+      "location": "AA84",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00084",
+      "detail": {
+        "id": 84,
+        "power": 115,
+        "plot": 4,
+        "frame": "200S",
+        "current": 177,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 85,
+      "location": "AA85",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00085",
+      "detail": {
+        "id": 85,
+        "power": 115,
+        "plot": 4,
+        "frame": "200S",
+        "current": 177,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 86,
+      "location": "AA86",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00086",
+      "detail": {
+        "id": 86,
+        "power": 115,
+        "plot": 4,
+        "frame": "200S",
+        "current": 177,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 87,
+      "location": "AA87",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00087",
+      "detail": {
+        "id": 87,
+        "power": 115,
+        "plot": 4,
+        "frame": "200S",
+        "current": 177,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 88,
+      "location": "AA88",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00088",
+      "detail": {
+        "id": 88,
+        "power": 120,
+        "plot": 4,
+        "frame": "200S",
+        "current": 184,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 89,
+      "location": "AA89",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00089",
+      "detail": {
+        "id": 89,
+        "power": 120,
+        "plot": 4,
+        "frame": "200S",
+        "current": 184,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 90,
+      "location": "AA90",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00090",
+      "detail": {
+        "id": 90,
+        "power": 120,
+        "plot": 4,
+        "frame": "200S",
+        "current": 184,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 91,
+      "location": "AA91",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00091",
+      "detail": {
+        "id": 91,
+        "power": 120,
+        "plot": 4,
+        "frame": "200S",
+        "current": 184,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 92,
+      "location": "AA92",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00092",
+      "detail": {
+        "id": 92,
+        "power": 125,
+        "plot": 4,
+        "frame": "200S",
+        "current": 191,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 93,
+      "location": "AA93",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00093",
+      "detail": {
+        "id": 93,
+        "power": 125,
+        "plot": 4,
+        "frame": "200S",
+        "current": 191,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 94,
+      "location": "AA94",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00094",
+      "detail": {
+        "id": 94,
+        "power": 125,
+        "plot": 4,
+        "frame": "200S",
+        "current": 191,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 95,
+      "location": "AA95",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00095",
+      "detail": {
+        "id": 95,
+        "power": 125,
+        "plot": 4,
+        "frame": "200S",
+        "current": 191,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 96,
+      "location": "AA96",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00096",
+      "detail": {
+        "id": 96,
+        "power": 130,
+        "plot": 4,
+        "frame": "200S",
+        "current": 198,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 97,
+      "location": "AA97",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00097",
+      "detail": {
+        "id": 97,
+        "power": 130,
+        "plot": 4,
+        "frame": "200S",
+        "current": 198,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 98,
+      "location": "AA98",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00098",
+      "detail": {
+        "id": 98,
+        "power": 130,
+        "plot": 4,
+        "frame": "200S",
+        "current": 198,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 99,
+      "location": "AA99",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL00099",
+      "detail": {
+        "id": 99,
+        "power": 130,
+        "plot": 4,
+        "frame": "200S",
+        "current": 198,
+        "voltage": "220/380"
+      }
+    },
+    {
+      "id": 100,
+      "location": "AA100",
+      "remark": "",
+      "status": "STORAGE",
+      "seriesNumber": "EL000100",
+      "detail": {
+        "id": 100,
+        "power": 135,
+        "plot": 4,
+        "frame": "200S",
+        "current": 205,
+        "voltage": "220/380"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "20355",
+      "name": "bill",
+      "role": "admin"
+    },
+    {
+      "id": "20339",
+      "name": "hhong",
+      "role": "worker"
+    },
+    {
+      "id": "20387",
+      "name": "wang",
+      "role": "worker"
+    },
+    {
+      "id": "20357",
+      "name": "tom",
+      "role": "worker"
+    },
+    {
+      "id": "20319",
+      "name": "andy",
+      "role": "worker"
+    },
+    {
+      "id": "20335",
+      "name": "liu",
+      "role": "admin"
+    },
+    {
+      "id": "20374",
+      "name": "tony",
+      "role": "worker"
+    },
+    {
+      "id": "20360",
+      "name": "yamato",
+      "role": "admin"
+    }
+  ],
+  "pmList": [
+    {
+      "id": 0,
+      "name": "PM0",
+      "description": "paper machine"
+    },
+    {
+      "id": 1,
+      "name": "PM1",
+      "description": "paper machine"
+    },
+    {
+      "id": 2,
+      "name": "PM2",
+      "description": "paper machine"
+    },
+    {
+      "id": 3,
+      "name": "PM3",
+      "description": "paper machine"
+    },
+    {
+      "id": 4,
+      "name": "PM4",
+      "description": "paper machine"
+    }
+  ],
+  "replacedList": [
+    {
+      "id": 0,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 0,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 0,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 0,
+        "series": "EL00000",
+        "detail": {
+          "id": 0,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 1,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 1,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 1,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 1,
+        "series": "EL00001",
+        "detail": {
+          "id": 1,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 2,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 2,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 2,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 2,
+        "series": "EL00002",
+        "detail": {
+          "id": 2,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 3,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 3,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 3,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 3,
+        "series": "EL00003",
+        "detail": {
+          "id": 3,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 4,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 4,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 4,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 4,
+        "series": "EL00004",
+        "detail": {
+          "id": 4,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 5,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 5,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 5,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 5,
+        "series": "EL00005",
+        "detail": {
+          "id": 5,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 6,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 6,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 6,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 6,
+        "series": "EL00006",
+        "detail": {
+          "id": 6,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 7,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 7,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 7,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 7,
+        "series": "EL00007",
+        "detail": {
+          "id": 7,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 8,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 8,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 8,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 8,
+        "series": "EL00008",
+        "detail": {
+          "id": 8,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    },
+    {
+      "id": 9,
+      "replaceDate": "2018-08-09",
+      "worker": {
+        "id": 9,
+        "name": "worker B"
+      },
+      "pm": {
+        "id": 9,
+        "name": "pm1"
+      },
+      "replaceReason": "test",
+      "motor": {
+        "id": 9,
+        "series": "EL00009",
+        "detail": {
+          "id": 9,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 40,
+          "voltage": "220/380"
+        }
+      },
+      "status": "WAITING"
+    }
+  ]
+}
