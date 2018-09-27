@@ -36,4 +36,14 @@ export const getReplacedListByPage = createSelector(
 export const getLoading = createSelector(
   [loading],
   loading => loading
-)
+);
+
+export const getReplacedDetail = createSelector(
+  [replacedList, getSelectedMotorId],
+  (replaced, selectedId) => {
+    // if(isDelete) {
+    //   return null;
+    // }
+    return replaced[selectedId]
+  }
+);

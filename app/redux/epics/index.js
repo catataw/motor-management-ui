@@ -12,7 +12,8 @@ import {
 } from './storage';
 
 import {
-  fetchReplacedListEpic
+  fetchReplacedListEpic,
+  fetchReplacedDetailEpic
 } from './replace'
 
 export default combineEpics(
@@ -23,5 +24,6 @@ export default combineEpics(
   deleteMotorByIdEpic,
   updateMotorEpic,
   saveMotorEpic,
-  fetchReplacedListEpic
+  fetchReplacedListEpic,
+  fetchReplacedDetailEpic
 );

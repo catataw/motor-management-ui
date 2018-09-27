@@ -8,8 +8,12 @@ export const fetchPMList = createAction("FETCH_PM_LIST");
 export const fetchPMListSuccess = createAction("FETCH_PM_LIST_SUCCESS");
 export const fetchPMListFailed = createAction("FETCH_PM_LIST_FAILED");
 
-export const fetchReaplcedList = createAction("FETCH_REPLACED_LIST");
-export const fetchReaplcedListSuccess = createAction("FETCH_REPLACED_LIST_SUCCESS");
-export const fetchReaplcedListFailed = createAction("FETCH_REPLACED_LIST_FAILED");
+export const fetchReplacedList = createAction("FETCH_REPLACED_LIST");
+export const fetchReplacedListSuccess = createAction("FETCH_REPLACED_LIST_SUCCESS");
+export const fetchReplacedListFailed = createAction("FETCH_REPLACED_LIST_FAILED");
 
 export const gotoReplacedListPage = createAction("GO_TO_STORAGE_PAGE");
+
+export const fetchReplacedDetail = createAction("FETCH_REPLACED_DETAIL");
+export const fetchReplacedDetailSuccess = createAction("FETCH_REPLACED_DETAIL_SUCCESS");
+export const fetchReplacedDetailFailed = createAction("FETCH_REPLACED_DETAIL_FAILED");

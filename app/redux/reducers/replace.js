@@ -1,8 +1,11 @@
 import {handleActions} from 'redux-actions';
 import {
-  fetchReaplcedList,
-  fetchReaplcedListFailed,
-  fetchReaplcedListSuccess
+  fetchReplacedList,
+  fetchReplacedListFailed,
+  fetchReplacedListSuccess,
+  fetchReplacedDetail,
+  fetchReplacedDetailSuccess,
+  fetchReplacedDetailFailed
 } from '../actions/replace'
 import {gotoStoragePage} from "../actions/storage";
 
@@ -19,13 +22,13 @@ const initStates = {
 };
 
 export default handleActions({
-  [fetchReaplcedList] (state) {
+  [fetchReplacedList] (state) {
     return {
       ...state,
       loading: true
     }
   },
-  [fetchReaplcedListSuccess] (state, {payload}) {
+  [fetchReplacedListSuccess] (state, {payload}) {
     return {
       ...state,
       all: payload,
@@ -33,7 +36,7 @@ export default handleActions({
       loading: false
     }
   },
-  [fetchReaplcedListFailed] (state, {payload: {message}}) {
+  [fetchReplacedListFailed] (state, {payload: {message}}) {
     return {
       ...state,
       error: message,
@@ -46,5 +49,29 @@ export default handleActions({
       pageIndex: payload,
     }
   },
+  [fetchReplacedDetail](state) {
+    return {
+      ...state,
+      loading: true
+    }
+  },
+  [fetchReplacedDetailSuccess](state, {payload}){
+    return {
+      ...state,
+      all: {
+        ...state.all,
+        ...payload
+      },
+      error: null,
+      loading: false
+    }
+  },
+  [fetchReplacedDetailFailed](state, {payload: {message}}) {
+    return {
+      ...state,
+      error: message,
+      loading: false
+    }
+  }
 }, initStates);
 

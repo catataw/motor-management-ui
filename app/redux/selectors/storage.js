@@ -7,6 +7,7 @@ const getLoadingSelector = state => state.storage.loading;
 const getPageIndexSelector = state => state.storage.pageIndex;
 const getPageSizeSelector = state => state.storage.pageSize;
 const getSelectedMotorId = state => state.storage.selectedId;
+
 const isDeletedMotor = state => state.storage.isDeleted;
 const getNewMotorSelector = state => state.storage.newMotor;
 const responseStatus = state => state.storage.responseStatus;
@@ -64,4 +65,4 @@ export const getNewMotor = createSelector(
 export const getResponseStatus = createSelector(
   [responseStatus],
   status => status
-)
+);
