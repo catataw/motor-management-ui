@@ -1,8 +1,14 @@
 <div>
   {{#if isLoading}}
-    <ContentPlaceholders as |P|>
-      <P.text @lines={{5}} />
-    </ContentPlaceholders>
+    <div class="row"></div>
+    <div class="row">
+      <div class="col s12">
+        <ContentPlaceholders as |P|>
+          <P.heading/>
+          <P.text @lines={{2}} />
+        </ContentPlaceholders>
+      </div>
+    </div>
   {{else}}
     <table class="highlight centered responsive-table">
       <thead>

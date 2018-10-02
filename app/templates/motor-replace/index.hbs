@@ -1,6 +1,6 @@
-<ReplacedContainer as |replacedList isLoading pageIndex pageCount options|>
-  <ReplacedList @replacedList={{replacedList}} @isLoading={{isLoading}} />
+<ReplacedContainer as |replacedList isLoading pageIndex pageCount workerList options|>
+  <ReplacedList @replacedList={{replacedList}} @isLoading={{isLoading}} @workerList={{workerList}}/>
   <PaginationPager @pageIndex={{pageIndex}} @pageCount={{pageCount}}
-                   @gotoPage={{options.gotoPage}} @gotoPage={{options.gotoPage}}/>
+                   @gotoPage={{options.gotoPage}} />
 
 </ReplacedContainer>

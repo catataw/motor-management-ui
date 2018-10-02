@@ -7,6 +7,7 @@ import {
   getReplacedListPageSize,
   getReplacedListPageIndex,
 } from '../redux/selectors/replace'
+import {getUsersList} from '../redux/selectors/users'
 import {gotoReplacedListPage} from '../redux/actions/replace'
 
 class ReplacedContainer extends Component {}
@@ -15,6 +16,7 @@ const stateToComputed = state => {
   return {
     replacedList: getReplacedListByPage(state),
     isLoading: getLoading(state),
+    workerList: getUsersList(state),
     pageCount: getReplacedListPageCount(state),
     pageIndex: getReplacedListPageIndex(state),
     pageSize: getReplacedListPageSize(state)

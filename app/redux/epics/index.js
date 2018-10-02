@@ -1,7 +1,7 @@
 import {combineEpics} from 'redux-observable';
 import {
   fetchUsersEpic,
-  fetchUserDetailsEpic
+  // fetchUserDetailsEpic
 } from './users';
 import {
   fetchAllStorageEpic,
@@ -18,7 +18,7 @@ import {
 
 export default combineEpics(
   fetchUsersEpic,
-  fetchUserDetailsEpic,
+  // fetchUserDetailsEpic,
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
   deleteMotorByIdEpic,

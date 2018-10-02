@@ -4,6 +4,8 @@ import {
   fetchUserDetails, fetchUserDetailsFailed, fetchUserDetailsSuccess,
   gotoUsersPage, gotoUsersPageSuccess
 } from '../actions/users';
+import _ from 'lodash';
+
 
 const initialState = { // state.users
   all: {}, // state.users.all
@@ -23,6 +25,7 @@ export default handleActions({
     }
   },
   [fetchUsersSuccess](state, { payload }) {
+    console.log('payload=', payload);
     return {
       ...state,
       error: null, // reset state.users.error

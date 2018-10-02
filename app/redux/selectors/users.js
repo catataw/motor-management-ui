@@ -1,5 +1,6 @@
 import {createSelector} from 'reselect/es';
 import _ from 'lodash';
+import {isArray} from '@ember/array'
 
 const getUsers = (state) => state.users.all;
 const getLoading = (state) => state.users.loading;
@@ -43,3 +44,8 @@ export const getUserDetails = createSelector(
   (users, selectedId) => users[selectedId]
 );
 
+
+export const getUsersList = createSelector(
+  [getUsers],
+  (users) => _.values(users)
+);

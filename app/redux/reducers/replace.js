@@ -5,7 +5,8 @@ import {
   fetchReplacedListSuccess,
   fetchReplacedDetail,
   fetchReplacedDetailSuccess,
-  fetchReplacedDetailFailed
+  fetchReplacedDetailFailed,
+  gotoReplacedListPage
 } from '../actions/replace'
 import {gotoStoragePage} from "../actions/storage";
 
@@ -43,7 +44,7 @@ export default handleActions({
       loading: false
     }
   },
-  [gotoStoragePage](state, { payload }) {
+  [gotoReplacedListPage](state, { payload }) {
     return {
       ...state,
       pageIndex: payload,

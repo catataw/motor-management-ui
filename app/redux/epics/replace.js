@@ -10,11 +10,24 @@ import {
   fetchReplacedDetailSuccess,
   fetchReplacedDetail
 } from '../../redux/actions/replace';
+import {fetchUsersSuccess} from "../actions/users";
 import {normalize, schema} from 'normalizr';
 import config from '../../config/environment';
-import {fetchStorageDetailFailed, fetchStorageDetailSuccess} from "../actions/storage";
+import {merge} from 'rxjs';
 
-const replaceSchema = new schema.Entity('motor');
+const pmSchema = new schema.Entity('pm');
+const detailSchema = new schema.Entity('detail');
+const workerSchema = new schema.Entity('workers');
+
+const motorSchema = new schema.Entity('motor', {
+  detail: detailSchema
+});
+
+const replaceSchema = new schema.Entity('replaceMotor', {
+  motor:motorSchema,
+  worker: workerSchema,
+  pm: pmSchema,
+});
 
 export const fetchReplacedListEpic = action$ => action$.pipe(
   ofType(fetchReplacedList.toString()),
@@ -22,9 +35,14 @@ export const fetchReplacedListEpic = action$ => action$.pipe(
     return ajax.getJSON(`${config.API.host}/replacedList`).pipe(
       map(response => {
         const normalized = normalize(response, [replaceSchema]);
-        const { motor } = normalized.entities;
-        return fetchReplacedListSuccess(motor);
+        const {replaceMotor, workers} = normalized.entities;
+        console.log(replaceMotor)
+        return merge(
+          of(fetchReplacedListSuccess(replaceMotor)),
+          of(fetchUsersSuccess(workers))
+        )
       }),
+      switchMap(action => action),
       catchError(err => of(fetchReplacedListFailed(err)))
     )
   })
