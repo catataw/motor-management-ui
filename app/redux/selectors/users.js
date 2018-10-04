@@ -47,5 +47,9 @@ export const getUserDetails = createSelector(
 
 export const getUsersList = createSelector(
   [getUsers],
-  (users) => _.values(users)
+  // (users) => _.values(users)
+  // users => _.values(users).filter(user => {
+  //   return user.role.toLocaleLowerCase().includes('worker');
+  // })
+  users => users
 );

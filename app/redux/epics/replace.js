@@ -10,6 +10,7 @@ import {
   fetchReplacedDetailSuccess,
   fetchReplacedDetail
 } from '../../redux/actions/replace';
+import { fetchPMListSuccess } from "../../redux/actions/pm";
 import {fetchUsersSuccess} from "../actions/users";
 import {normalize, schema} from 'normalizr';
 import config from '../../config/environment';
@@ -35,11 +36,11 @@ export const fetchReplacedListEpic = action$ => action$.pipe(
     return ajax.getJSON(`${config.API.host}/replacedList`).pipe(
       map(response => {
         const normalized = normalize(response, [replaceSchema]);
-        const {replaceMotor, workers} = normalized.entities;
-        console.log(replaceMotor)
+        const {replaceMotor, workers, pm} = normalized.entities;
         return merge(
           of(fetchReplacedListSuccess(replaceMotor)),
-          of(fetchUsersSuccess(workers))
+          of(fetchUsersSuccess(workers)),
+          of(fetchPMListSuccess(pm)),
         )
       }),
       switchMap(action => action),

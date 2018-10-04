@@ -25,12 +25,10 @@ export default handleActions({
     }
   },
   [fetchUsersSuccess](state, { payload }) {
-    console.log('payload=', payload);
     return {
       ...state,
       error: null, // reset state.users.error
       all: payload, // state.users.all,
-      // pageIndex: state.pageIndex, // state.users.pageIndex
       loading: false // state.users.loading
     }
   },

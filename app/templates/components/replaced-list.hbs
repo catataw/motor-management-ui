@@ -25,27 +25,9 @@
         <tr>
           <td>{{#link-to "motor-replace.detail" r.id}}{{r.id}}{{/link-to}}</td>
           <td>{{r.replaceDate}}</td>
-          <td>{{r.replaceReason}}
-          </td>
-          <td>{{r.pm}}</td>
-          <!--<td>{{!get (get workerList r.worker) 'name'}} {{!r.worker}}</td>-->
-          <td>
-            {{#each workerList as |w|}}
-              {{#if (eq w.id r.worker)}}
-                {{w.name}}
-              {{/if}}
-            {{/each}}
-          </td>
-          <!--todo  add a component that contain two select: to repair and drop it-->
-          <!--<td class="select-td">-->
-            <!--<div class="input-field col s12">-->
-              <!--<select>-->
-                <!--<option value="" disabled selected>Choose your option</option>-->
-                <!--<option value="1">To Repair</option>-->
-                <!--<option value="2">To Drop</option>-->
-              <!--</select>-->
-            <!--</div>-->
-          <!--</td>-->
+          <td>{{r.replaceReason}}</td>
+          <td>{{get (get pmList r.pm) 'name'}}</td>
+          <td>{{get (get workerList r.worker) 'name'}} {{!r.worker}}</td>
         </tr>
       {{/each}}
       </tbody>
