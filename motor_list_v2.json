@@ -1436,6 +1436,18 @@
         "id": 0,
         "name": "equip-A",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 78,
+        "series": "EL00043",
+        "detail": {
+          "id": 20,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1468,6 +1480,18 @@
         "id": 1,
         "name": "equip-B",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 77,
+        "series": "EL00042",
+        "detail": {
+          "id": 19,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1500,6 +1524,18 @@
         "id": 2,
         "name": "equip-C",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 76,
+        "series": "EL00041",
+        "detail": {
+          "id": 18,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1532,6 +1568,18 @@
         "id": 3,
         "name": "equip-D",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 75,
+        "series": "EL00040",
+        "detail": {
+          "id": 17,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1564,6 +1612,18 @@
         "id": 4,
         "name": "equip-E",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 74,
+        "series": "EL00039",
+        "detail": {
+          "id": 16,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1596,6 +1656,18 @@
         "id": 5,
         "name": "equip-F",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 73,
+        "series": "EL00038",
+        "detail": {
+          "id": 15,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1628,6 +1700,18 @@
         "id": 6,
         "name": "equip-G",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 72,
+        "series": "EL00037",
+        "detail": {
+          "id": 14,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1660,6 +1744,18 @@
         "id": 7,
         "name": "equip-H",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 71,
+        "series": "EL00036",
+        "detail": {
+          "id": 13,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1692,6 +1788,18 @@
         "id": 8,
         "name": "equip-I",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 70,
+        "series": "EL00035",
+        "detail": {
+          "id": 12,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     },
     {
@@ -1724,6 +1832,18 @@
         "id": 9,
         "name": "equip-J",
         "description": ""
+      },
+      "offLineMotor": {
+        "id": 69,
+        "series": "EL00034",
+        "detail": {
+          "id": 11,
+          "power": 20,
+          "plot": 4,
+          "frame": "220S",
+          "current": 41,
+          "voltage": "220/380"
+        }
       }
     }
   ],
