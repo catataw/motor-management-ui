@@ -1412,7 +1412,7 @@
       "worker": {
         "id": 20387,
         "name": "wang",
-        "role": "worker"
+        "role": "admin"
       },
       "pm": {
         "id": 1,
@@ -1431,7 +1431,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 0,
+        "name": "equip-A",
+        "description": ""
+      }
     },
     {
       "id": 1,
@@ -1458,7 +1463,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 1,
+        "name": "equip-B",
+        "description": ""
+      }
     },
     {
       "id": 2,
@@ -1485,7 +1495,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 2,
+        "name": "equip-C",
+        "description": ""
+      }
     },
     {
       "id": 3,
@@ -1493,7 +1508,7 @@
       "worker": {
         "id": 20387,
         "name": "wang",
-        "role": "worker"
+        "role": "admin"
       },
       "pm": {
         "id": 1,
@@ -1512,7 +1527,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 3,
+        "name": "equip-D",
+        "description": ""
+      }
     },
     {
       "id": 4,
@@ -1539,7 +1559,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 4,
+        "name": "equip-E",
+        "description": ""
+      }
     },
     {
       "id": 5,
@@ -1566,7 +1591,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 5,
+        "name": "equip-F",
+        "description": ""
+      }
     },
     {
       "id": 6,
@@ -1574,7 +1604,7 @@
       "worker": {
         "id": 20387,
         "name": "wang",
-        "role": "worker"
+        "role": "admin"
       },
       "pm": {
         "id": 1,
@@ -1593,7 +1623,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 6,
+        "name": "equip-G",
+        "description": ""
+      }
     },
     {
       "id": 7,
@@ -1620,7 +1655,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 7,
+        "name": "equip-H",
+        "description": ""
+      }
     },
     {
       "id": 8,
@@ -1647,7 +1687,12 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 8,
+        "name": "equip-I",
+        "description": ""
+      }
     },
     {
       "id": 9,
@@ -1655,7 +1700,7 @@
       "worker": {
         "id": 20387,
         "name": "wang",
-        "role": "worker"
+        "role": "admin"
       },
       "pm": {
         "id": 1,
@@ -1674,7 +1719,64 @@
           "voltage": "220/380"
         }
       },
-      "status": "WAITING"
+      "status": "WAITING",
+      "equipment": {
+        "id": 9,
+        "name": "equip-J",
+        "description": ""
+      }
+    }
+  ],
+  "equipmentList": [
+    {
+      "id": 0,
+      "name": "equip-A",
+      "description": ""
+    },
+    {
+      "id": 1,
+      "name": "equip-B",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "name": "equip-C",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "name": "equip-D",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "name": "equip-E",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "name": "equip-F",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "name": "equip-G",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "name": "equip-H",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "name": "equip-I",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "name": "equip-J",
+      "description": ""
     }
   ]
 }
