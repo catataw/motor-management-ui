@@ -1,7 +1,8 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  didRender() {
+  didInsertElement() {
     this.$('select').formSelect({classes: 'select'});
   }
+
 });

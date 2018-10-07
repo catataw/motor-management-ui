@@ -1,4 +1,7 @@
 import Component from '@ember/component';
+import { action, observes} from '@ember-decorators/object';
 
-export default Component.extend({
-});
+
+export default class ReplacedDetailComponent extends Component {
+
+}

@@ -1,6 +1,7 @@
-<ReplacedContainer as |replacedList isLoading pageIndex pageCount workerList pmList options|>
+<ReplacedContainer as |replacedList isLoading pageIndex pageCount workerList pmList equipmentList options|>
   <ReplacedList @replacedList={{replacedList}} @isLoading={{isLoading}}
-                @workerList={{workerList}} @pmList={{pmList}}/>
+                @workerList={{workerList}} @pmList={{pmList}}
+                @equipmentList={{equipmentList}}/>
 
   <PaginationPager @pageIndex={{pageIndex}} @pageCount={{pageCount}}
                    @gotoPage={{options.gotoPage}}/>

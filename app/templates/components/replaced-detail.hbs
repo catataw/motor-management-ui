@@ -4,27 +4,107 @@
     <div class="col s12">
       <ContentPlaceholders as |P|>
         <P.heading/>
-        <P.text @lines={{2}} />
+        <P.text @lines={{5}} />
       </ContentPlaceholders>
     </div>
   </div>
 {{else}}
   <div class="row">
     <div class="col s12">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
+      <div class="card">
+        <div class="card-content">
           <span class="card-title center">Replaced Form</span>
+
           <div class="row">
-            <div class="col s4">
-              <label>Location</label>
-              {{input type="text" value=replacedMotor.location }}
+            <div class="col xl2">
+              <span class="label-title">Paper Machine: </span> {{get (get pmList replacedMotor.pm) 'name'}}
+            </div>
+            <div class="col xl2">
+              <span class="label-title"> Equipment: </span> {{get (get equipmentList replacedMotor.equipment) 'name'}}
+            </div>
+            <div class="col xl3">
+              <span class="label-title">Replaced Date: </span> {{replacedMotor.replaceDate}}
+            </div>
+            <div class="col xl2">
+              <span class="label-title">Mechanic: </span> {{get (get workerList replacedMotor.worker) 'name'}}
+            </div>
+            <div>
+              <span class="label-title">Reason: </span> {{replacedMotor.replaceReason}}
             </div>
           </div>
+
+          <div class="line-gap">
+            <div class="divider"></div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 xl1">
+              <span class="label-title-column">On line</span>
+            </div>
+            <div class="col xl2">
+              <span class="label-title">Power: </span>
+              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'power'}}
+            </div>
+            <div class="col xl2">
+              <span class="label-title">Plot: </span>
+              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'plot'}}
+            </div>
+            <div class="col xl2">
+              <span class="label-title">Current: </span>
+              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'current'}}
+            </div>
+            <div class="col xl2">
+              <span class="label-title">Voltage: </span>
+              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'voltage'}}
+            </div>
+            <div class="col xl3">
+              <span class="label-title">Series Number: </span>
+              {{get (get motor replacedMotor.motor) 'series'}}
+            </div>
+          </div>
+
+          <div class="line-gap">
+            <div class="divider"></div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 xl1">
+              <span class="label-title-column">Off line</span>
+            </div>
+          </div>
+
+          <div class="line-gap">
+            <div class="divider"></div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              How do you want treat this one?
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col xl3">
+              <label>
+                <input name="group1" type="radio" class="with-gap"/>
+                <span>This motor will be <span style="color: green">repair</span></span>
+
+              </label>
+            </div>
+
+            <div class="col xl3">
+              <label>
+                <input name="group1" type="radio" class="with-gap"/>
+                <span>This motor will be <span style="color: red;">abandon</span></span>
+              </label>
+            </div>
+          </div>
+
         </div>
         <div class="card-action">
+          {{#link-to "motor-replace" class="waves-effect waves-light btn-small"}}<i class="material-icons left">arrow_back</i>back{{/link-to}}
+          <a class="waves-effect waves-light btn-small"><i class="material-icons left">send</i>Submit</a>
         </div>
       </div>
     </div>
   </div>
-
 {{/if}}

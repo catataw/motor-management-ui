@@ -6,9 +6,10 @@ import {
   fetchReplacedDetail,
   fetchReplacedDetailSuccess,
   fetchReplacedDetailFailed,
-  gotoReplacedListPage
+  gotoReplacedListPage,
+  setMotorDetail,
+  setMotor
 } from '../actions/replace'
-import {gotoStoragePage} from "../actions/storage";
 
 const initStates = {
   all: {},
@@ -19,7 +20,9 @@ const initStates = {
   pageSize: 5,
   loading: false,
   isDeleted: false,
-  responseStatus: 0
+  responseStatus: 0,
+  motorDetail:null,
+  motor:null
 };
 
 export default handleActions({
@@ -50,9 +53,10 @@ export default handleActions({
       pageIndex: payload,
     }
   },
-  [fetchReplacedDetail](state) {
+  [fetchReplacedDetail](state, {payload}) {
     return {
       ...state,
+      selectedId:payload,
       loading: true
     }
   },
@@ -72,6 +76,18 @@ export default handleActions({
       ...state,
       error: message,
       loading: false
+    }
+  },
+  [setMotorDetail](state, {payload}) {
+    return {
+      ...state,
+      motorDetail:payload
+    }
+  },
+  [setMotor](state, {payload}) {
+    return {
+      ...state,
+      motor: payload
     }
   }
 }, initStates);

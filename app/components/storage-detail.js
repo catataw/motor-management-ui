@@ -12,7 +12,6 @@ export default class StorageDetailComponent extends Component {
   @action
   updateMotorDetailAction(motor) {
     if(this.updateMotor) {
-      console.log('in detail ', this.get('motor'));
       this.updateMotor(motor);
     }
   }

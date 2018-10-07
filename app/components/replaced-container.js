@@ -6,15 +6,15 @@ import {
   getReplacedListPageCount,
   getReplacedListPageSize,
   getReplacedListPageIndex,
-} from '../redux/selectors/replace'
-import {getUsersList} from '../redux/selectors/users'
-import {gotoReplacedListPage} from '../redux/actions/replace'
-import {getPMList} from '../redux/selectors/pm'
+} from '../redux/selectors/replace';
+import {getUsersList} from '../redux/selectors/users';
+import {gotoReplacedListPage} from '../redux/actions/replace';
+import {getPMList} from '../redux/selectors/pm';
+import {getEquipmentList} from '../redux/selectors/equipment';
 
 class ReplacedContainer extends Component {}
 
 const stateToComputed = state => {
-  console.log('test123', getPMList(state));
   return {
     replacedList: getReplacedListByPage(state),
     isLoading: getLoading(state),
@@ -22,7 +22,8 @@ const stateToComputed = state => {
     pageCount: getReplacedListPageCount(state),
     pageIndex: getReplacedListPageIndex(state),
     pageSize: getReplacedListPageSize(state),
-    pmList: getPMList(state)
+    pmList: getPMList(state),
+    equipmentList: getEquipmentList(state)
   }
 };
 

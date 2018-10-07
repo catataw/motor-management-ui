@@ -6,6 +6,8 @@ const loading = state => state.replace.loading;
 const getPageIndexSelector = state => state.replace.pageIndex;
 const getPageSizeSelector = state => state.replace.pageSize;
 const getSelectedMotorId = state => state.replace.selectedId;
+const motorDetail = state => state.replace.motorDetail;
+const motor = state => state.replace.motor;
 
 export const getReplacedListPageIndex = createSelector(
   [getPageIndexSelector],
@@ -41,9 +43,16 @@ export const getLoading = createSelector(
 export const getReplacedDetail = createSelector(
   [replacedList, getSelectedMotorId],
   (replaced, selectedId) => {
-    // if(isDelete) {
-    //   return null;
-    // }
     return replaced[selectedId]
   }
 );
+
+export const getMotorDetail = createSelector(
+  [motorDetail],
+  md => md
+);
+
+export const getMotor = createSelector(
+  [motor],
+  m => m
+)

@@ -76,7 +76,6 @@ export const saveMotorEpic = action$ => action$.pipe(
   ofType(sendCreateMotor.toString()),
   switchMap(action => {
     let motor =action.payload;
-    console.log('epic', motor)
     return ajax.post(`${config.API.host}/storage`, JSON.stringify(motor), {'Content-Type': 'application/json'}).pipe(
       map(response => createMotorSuccess(response.status)
       ),

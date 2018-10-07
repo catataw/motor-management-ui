@@ -17,3 +17,7 @@ export const gotoReplacedListPage = createAction("GO_TO_STORAGE_PAGE");
 export const fetchReplacedDetail = createAction("FETCH_REPLACED_DETAIL");
 export const fetchReplacedDetailSuccess = createAction("FETCH_REPLACED_DETAIL_SUCCESS");
 export const fetchReplacedDetailFailed = createAction("FETCH_REPLACED_DETAIL_FAILED");
+
+export const setMotorDetail = createAction('SET_MOTOR_DETAIL');
+
+export const setMotor = createAction('SET_MOTOR');

@@ -15,8 +15,9 @@
       <tr>
         <th>Form Number</th>
         <th>Replace date</th>
-        <th>Reason</th>
         <th>Paper machine</th>
+        <th>equipment</th>
+        <th>Reason</th>
         <th>worker</th>
       </tr>
       </thead>
@@ -25,8 +26,9 @@
         <tr>
           <td>{{#link-to "motor-replace.detail" r.id}}{{r.id}}{{/link-to}}</td>
           <td>{{r.replaceDate}}</td>
-          <td>{{r.replaceReason}}</td>
           <td>{{get (get pmList r.pm) 'name'}}</td>
+          <td>{{get (get equipmentList r.equipment) 'name'}}</td>
+          <td>{{r.replaceReason}}</td>
           <td>{{get (get workerList r.worker) 'name'}} {{!r.worker}}</td>
         </tr>
       {{/each}}

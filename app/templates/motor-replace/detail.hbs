@@ -1,5 +1,11 @@
-<ReplacedDetailContainer as |replacedMotor isLoading|>
-  <ReplacedDetail @replacedMotor={{replacedMotor}} @isLoading={{isLoading}}/>
+<ReplacedDetailContainer as |replacedMotor isLoading motorDetail equipmentList pmList motor workerList|>
+
+  <ReplacedDetail @replacedMotor={{replacedMotor}} @isLoading={{isLoading}}
+                  @motorDetail={{motorDetail}} @pmList={{pmList}}
+                  @equipmentList={{equipmentList}} @motor={{motor}}
+                  @workerList={{workerList}}
+                  />
+
 </ReplacedDetailContainer>
 
 {{outlet}}
