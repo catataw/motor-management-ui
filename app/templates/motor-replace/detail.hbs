@@ -1,9 +1,11 @@
-<ReplacedDetailContainer as |replacedMotor isLoading motorDetail equipmentList pmList motor workerList|>
+<ReplacedDetailContainer as |replacedMotor isLoading motorDetail equipmentList pmList motor workerList offLineMotor offLineMotorDetail options|>
 
   <ReplacedDetail @replacedMotor={{replacedMotor}} @isLoading={{isLoading}}
                   @motorDetail={{motorDetail}} @pmList={{pmList}}
                   @equipmentList={{equipmentList}} @motor={{motor}}
-                  @workerList={{workerList}}
+                  @workerList={{workerList}} @offLineMotor={{offLineMotor}}
+                  @offLineMotorDetail={{offLineMotorDetail}}
+                  @saveReplacedMotor={{options.saveReplacedMotor}}
                   />
 
 </ReplacedDetailContainer>

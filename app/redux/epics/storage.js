@@ -82,4 +82,4 @@ export const saveMotorEpic = action$ => action$.pipe(
       catchError(err => of(createMotorFailed(err)))
     )
   })
-)
+);

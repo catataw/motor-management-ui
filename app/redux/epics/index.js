@@ -13,7 +13,8 @@ import {
 
 import {
   fetchReplacedListEpic,
-  fetchReplacedDetailEpic
+  fetchReplacedDetailEpic,
+  saveReplacedMotorActionEpic
 } from './replace'
 
 export default combineEpics(
@@ -25,5 +26,6 @@ export default combineEpics(
   updateMotorEpic,
   saveMotorEpic,
   fetchReplacedListEpic,
-  fetchReplacedDetailEpic
+  fetchReplacedDetailEpic,
+  saveReplacedMotorActionEpic
 );

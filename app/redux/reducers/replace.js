@@ -8,7 +8,12 @@ import {
   fetchReplacedDetailFailed,
   gotoReplacedListPage,
   setMotorDetail,
-  setMotor
+  setMotor,
+  setOffLineMotor,
+  setOffLineMotorDetail,
+  saveReplacedMotorAction,
+  saveReplacedMotorActionSuccess,
+  saveReplacedMotorActionFailed
 } from '../actions/replace'
 
 const initStates = {
@@ -22,7 +27,9 @@ const initStates = {
   isDeleted: false,
   responseStatus: 0,
   motorDetail:null,
-  motor:null
+  motor:null,
+  offLineMotor: null,
+  offLineMotorDetail: null
 };
 
 export default handleActions({
@@ -88,6 +95,49 @@ export default handleActions({
     return {
       ...state,
       motor: payload
+    }
+  },
+  [setOffLineMotor](state, {payload}) {
+    return {
+      ...state,
+      offLineMotor: payload
+    }
+  },
+  [setOffLineMotorDetail](state, {payload}) {
+    return {
+      ...state,
+      offLineMotorDetail: payload
+    }
+  },
+  [setOffLineMotor](state, {payload}) {
+    return {
+      ...state,
+      offLineMotor: payload
+    }
+  },
+  [saveReplacedMotorAction] (state, {payload}) {
+    return {
+      ...state,
+      all: payload,
+      loading: true
+    }
+  },
+  [saveReplacedMotorActionSuccess] (state, {payload}) {
+    return {
+      ...state,
+      all: {
+        ...state.all,
+        ...payload
+      },
+      error: null,
+      loading: false
+    }
+  },
+  [saveReplacedMotorActionFailed] (state, {payload: {message}}){
+    return {
+      ...state,
+      error: message,
+      loading: false
     }
   }
 }, initStates);

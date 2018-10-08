@@ -8,6 +8,8 @@ const getPageSizeSelector = state => state.replace.pageSize;
 const getSelectedMotorId = state => state.replace.selectedId;
 const motorDetail = state => state.replace.motorDetail;
 const motor = state => state.replace.motor;
+const offLineMotorDetail = state => state.replace.offLineMotorDetail;
+const offLineMotor = state => state.replace.offLineMotor;
 
 export const getReplacedListPageIndex = createSelector(
   [getPageIndexSelector],
@@ -55,4 +57,16 @@ export const getMotorDetail = createSelector(
 export const getMotor = createSelector(
   [motor],
   m => m
+);
+
+export const getOffLineMotor = createSelector(
+  [offLineMotor],
+  offLineMotor => offLineMotor
+);
+
+export const getOffLineMotorDetail = createSelector(
+  [offLineMotorDetail],
+  offLineMotorDetail => offLineMotorDetail
 )
+
+//todo need add a selector to filter List and return action equals null

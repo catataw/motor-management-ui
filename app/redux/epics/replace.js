@@ -10,7 +10,12 @@ import {
   fetchReplacedDetailSuccess,
   fetchReplacedDetail,
   setMotorDetail,
-  setMotor
+  setMotor,
+  setOffLineMotorDetail,
+  setOffLineMotor,
+  saveReplacedMotorAction,
+  saveReplacedMotorActionSuccess,
+  saveReplacedMotorActionFailed
 } from '../../redux/actions/replace';
 import { fetchPMListSuccess } from "../../redux/actions/pm";
 import { fetchEquipmentListSuccess} from '../../redux/actions/equipment';
@@ -22,18 +27,25 @@ import {merge} from 'rxjs';
 const pmSchema = new schema.Entity('pm');
 const detailSchema = new schema.Entity('detail');
 const workerSchema = new schema.Entity('workers');
+const equipmentSchema = new schema.Entity('equipment');
+
 const motorSchema = new schema.Entity('motor', {
   detail: detailSchema
 });
-const equipmentSchema = new schema.Entity('equipment');
 
+const offLineMotorDetailSchema = new schema.Entity('offLineMotorDetail');
+const offLineMotorSchema = new schema.Entity('offLineMotor', {
+  detail: offLineMotorDetailSchema
+});
 
 const replaceSchema = new schema.Entity('replaceMotor', {
   motor: motorSchema,
   worker: workerSchema,
   pm: pmSchema,
   equipment: equipmentSchema,
-  detail: [motorSchema]
+  detail: [motorSchema],
+  offLineMotor: offLineMotorSchema,
+  offLineMotorDetail: [offLineMotorSchema]
 });
 
 export const fetchReplacedListEpic = action$ => action$.pipe(
@@ -62,19 +74,36 @@ export const fetchReplacedDetailEpic = action$ => action$.pipe(
     return ajax.getJSON(`${config.API.host}/replacedList/${action.payload}`).pipe(
       map(response => {
         const normalized = normalize(response, replaceSchema);
-        const { replaceMotor, workers, pm, motor, equipment, detail}  = normalized.entities;
+        const { replaceMotor, workers, pm, motor, equipment, detail, offLineMotor, offLineMotorDetail}  = normalized.entities;
+        console.log(offLineMotor)
         return merge(
           of(fetchReplacedDetailSuccess(replaceMotor)),
           of(fetchUsersSuccess(workers)),
           of(fetchPMListSuccess(pm)),
           of(setMotorDetail(detail)),
           of(setMotor(motor)),
-          of(fetchEquipmentListSuccess(equipment))
+          of(fetchEquipmentListSuccess(equipment)),
+          of(setOffLineMotor(offLineMotor)),
+          of(setOffLineMotorDetail(offLineMotorDetail))
         )
       }),
       switchMap(action => action),
       catchError(err => of(fetchReplacedDetailFailed(err))
       )
     )
+  })
+);
+
+export const saveReplacedMotorActionEpic = action$ => action$.pipe(
+  ofType(saveReplacedMotorAction.toString()),
+  switchMap(action => {
+    let replacedMotorId = action.payload.id;
+    let result = action.payload.action;
+    return ajax.patch(`${config.API.host}/replacedList/${replacedMotorId}`,
+      JSON.stringify({action: result}),
+      {'Content-Type': 'application/json'}).pipe(
+      map(() => saveReplacedMotorActionSuccess()),
+      catchError(err => of(saveReplacedMotorActionFailed(err))
+      ))
   })
 );

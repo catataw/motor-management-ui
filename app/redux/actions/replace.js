@@ -21,3 +21,10 @@ export const fetchReplacedDetailFailed = createAction("FETCH_REPLACED_DETAIL_FAI
 export const setMotorDetail = createAction('SET_MOTOR_DETAIL');
 
 export const setMotor = createAction('SET_MOTOR');
+
+export const setOffLineMotor = createAction('SET_OFF_LINE_MOTOR');
+export const setOffLineMotorDetail = createAction("SET_OFF_LINE_MOTOR_DETAIL");
+
+export const saveReplacedMotorAction = createAction("SAVE_REPLACED_MOTOR_ACTION");
+export const saveReplacedMotorActionSuccess = createAction("SAVE_REPLACED_MOTOR_ACTION_SUCCESS");
+export const saveReplacedMotorActionFailed = createAction("SAVE_REPLACED_MOTOR_ACTION_FAILED");
