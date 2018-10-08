@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('replace-form');
     this.route('detail',{path: '/:id'});
   });
+  this.route('motor-repair', function() {});
 });
 
 export default Router;
