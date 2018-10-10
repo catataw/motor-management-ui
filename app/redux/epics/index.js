@@ -15,7 +15,19 @@ import {
   fetchReplacedListEpic,
   fetchReplacedDetailEpic,
   saveReplacedMotorActionEpic
-} from './replace'
+} from './replace';
+
+import {
+  fetchPMListEpic
+} from './pm';
+
+import {
+  fetchEquipmentListEpic
+} from './equipment';
+
+import {
+  fetchMotorEpic
+} from './motor'
 
 export default combineEpics(
   fetchUsersEpic,
@@ -27,5 +39,8 @@ export default combineEpics(
   saveMotorEpic,
   fetchReplacedListEpic,
   fetchReplacedDetailEpic,
-  saveReplacedMotorActionEpic
+  saveReplacedMotorActionEpic,
+  fetchPMListEpic,
+  fetchEquipmentListEpic,
+  fetchMotorEpic
 );

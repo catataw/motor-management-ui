@@ -1,1 +1,4 @@
-{{outlet}}
+<ReplacedFormContainer as |userList pmList newForm equipmentList options|>
+  <ReplacedForm @userList={{userList}} @pmList={{pmList}} @newForm={{newForm}}
+                @equipmentList={{equipmentList}} @searchMotorBySeriesNumber={{options.searchMotorBySeriesNumber}}/>
+</ReplacedFormContainer>

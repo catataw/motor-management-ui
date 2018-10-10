@@ -1,0 +1,7 @@
+<label>{{label}}</label>
+<select onchange={{action selectOptionAction value="target.value"}}>
+  <option value="" disabled selected>{{initMessage}}</option>
+  {{#each uiOptions as |opt| }}
+    <option value="{{opt.id}}">{{opt.name}}</option>
+  {{/each}}
+</select>

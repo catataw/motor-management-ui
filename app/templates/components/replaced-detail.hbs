@@ -17,16 +17,16 @@
 
           <div class="row">
             <div class="col xl2">
-              <span class="label-title">Paper Machine: </span> {{get (get pmList replacedMotor.pm) 'name'}}
+              <span class="label-title">Paper Machine: </span> {{get (get pmList replacedMotor.pm) "name"}}
             </div>
             <div class="col xl2">
-              <span class="label-title"> Equipment: </span> {{get (get equipmentList replacedMotor.equipment) 'name'}}
+              <span class="label-title"> Equipment: </span> {{get (get equipmentList replacedMotor.equipment) "name"}}
             </div>
             <div class="col xl3">
               <span class="label-title">Replaced Date: </span> {{replacedMotor.replaceDate}}
             </div>
             <div class="col xl2">
-              <span class="label-title">Mechanic: </span> {{get (get workerList replacedMotor.worker) 'name'}}
+              <span class="label-title">Mechanic: </span> {{get (get workerList replacedMotor.worker) "name"}}
             </div>
             <div>
               <span class="label-title">Reason: </span> {{replacedMotor.replaceReason}}
@@ -43,27 +43,27 @@
             </div>
             <div class="col xl1">
               <span class="label-title">Power: </span>
-              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'power'}}
+              {{get (get motorDetail (get (get motor replacedMotor.motor) "detail")) "power"}}
             </div>
             <div class="col xl1">
               <span class="label-title">Plot: </span>
-              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'plot'}}
+              {{get (get motorDetail (get (get motor replacedMotor.motor) "detail")) "plot"}}
             </div>
             <div class="col xl1">
               <span class="label-title">Frame: </span>
-              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'frame'}}
+              {{get (get motorDetail (get (get motor replacedMotor.motor) "detail")) "frame"}}
             </div>
             <div class="col xl1">
               <span class="label-title">Current: </span>
-              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'current'}}
+              {{get (get motorDetail (get (get motor replacedMotor.motor) "detail")) "current"}}
             </div>
             <div class="col xl2">
               <span class="label-title">Voltage: </span>
-              {{get (get motorDetail (get (get motor replacedMotor.motor) 'detail')) 'voltage'}}
+              {{get (get motorDetail (get (get motor replacedMotor.motor) "detail")) "voltage"}}
             </div>
             <div class="col xl2">
               <span class="label-title">Series Number: </span>
-              {{get (get motor replacedMotor.motor) 'series'}}
+              {{get (get motor replacedMotor.motor) "series"}}
             </div>
           </div>
 
@@ -77,27 +77,27 @@
             </div>
             <div class="col xl1">
               <span class="label-title">Power: </span>
-              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) 'detail')) 'power'}}
+              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) "detail")) "power"}}
             </div>
             <div class="col xl1">
               <span class="label-title">Plot: </span>
-              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) 'detail')) 'plot'}}
+              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) "detail")) "plot"}}
             </div>
             <div class="col xl1">
               <span class="label-title">Frame: </span>
-              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) 'detail')) 'frame'}}
+              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) "detail")) "frame"}}
             </div>
             <div class="col xl1">
               <span class="label-title">Current: </span>
-              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) 'detail')) 'current'}}
+              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) "detail")) "current"}}
             </div>
             <div class="col xl2">
               <span class="label-title">Voltage: </span>
-              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) 'detail')) 'voltage'}}
+              {{get (get offLineMotorDetail (get (get offLineMotor replacedMotor.offLineMotor) "detail")) "voltage"}}
             </div>
             <div class="col xl2">
               <span class="label-title">Series Number: </span>
-              {{get (get offLineMotor replacedMotor.offLineMotor) 'series'}}
+              {{get (get offLineMotor replacedMotor.offLineMotor) "series"}}
             </div>
           </div>
 
@@ -113,7 +113,7 @@
           <div class="row">
             <div class="col xl3">
               <label>
-                <input name="group1" type="radio" class="with-gap" onclick={{action 'selectedAction' 'toRepair'}}/>
+                <input name="group1" type="radio" class="with-gap" onclick={{action "selectedAction" "toRepair"}}/>
                 <span>This motor will be <span style="color: green">repair</span></span>
 
               </label>
@@ -121,7 +121,7 @@
 
             <div class="col xl3">
               <label>
-                <input name="group1" type="radio" class="with-gap" onclick={{action 'selectedAction' 'toAbandon'}}/>
+                <input name="group1" type="radio" class="with-gap" onclick={{action "selectedAction" "toAbandon"}}/>
                 <span>This motor will be <span style="color: red;">abandon</span></span>
               </label>
             </div>
@@ -130,7 +130,7 @@
         </div>
         <div class="card-action">
           {{#link-to "motor-replace" class="waves-effect waves-light btn-small"}}<i class="material-icons left">arrow_back</i>back{{/link-to}}
-          <a class="waves-effect waves-light btn-small {{unless isActionSelected 'disabled'}}" {{action 'saveReplacedMotorAction'}}><i class="material-icons left">send</i>Submit</a>
+          <a class="waves-effect waves-light btn-small {{unless isActionSelected "disabled"}}" {{action "saveReplacedMotorAction"}}><i class="material-icons left">send</i>Submit</a>
         </div>
       </div>
     </div>

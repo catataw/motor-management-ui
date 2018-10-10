@@ -29,7 +29,8 @@ const initStates = {
   motorDetail:null,
   motor:null,
   offLineMotor: null,
-  offLineMotorDetail: null
+  offLineMotorDetail: null,
+  newReplaceForm: {},
 };
 
 export default handleActions({

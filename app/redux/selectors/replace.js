@@ -10,6 +10,7 @@ const motorDetail = state => state.replace.motorDetail;
 const motor = state => state.replace.motor;
 const offLineMotorDetail = state => state.replace.offLineMotorDetail;
 const offLineMotor = state => state.replace.offLineMotor;
+const newReplaceForm = state => state.replace.newReplaceForm;
 
 export const getReplacedListPageIndex = createSelector(
   [getPageIndexSelector],
@@ -67,6 +68,11 @@ export const getOffLineMotor = createSelector(
 export const getOffLineMotorDetail = createSelector(
   [offLineMotorDetail],
   offLineMotorDetail => offLineMotorDetail
+)
+
+export const getNewReplaceForm = createSelector(
+  [newReplaceForm],
+  newReplaceForm => newReplaceForm
 )
 
 //todo need add a selector to filter List and return action equals null

@@ -15,6 +15,9 @@ module.exports = function(defaults) {
       alias: {
         'webstomp-obs': 'webstomp-obs/dist/webstompobs.web'
       }
+    },
+    'ember-power-select': {
+      theme: 'material'
     }
   });
 
