@@ -30,6 +30,21 @@ export default class ReplacedFormComponent extends Component{
     }
   }
 
+  @observes('newForm.pm')
+  getSelectedPmEquipmentList() {
+    if(!isEmpty(this.newForm.pm)) {
+      if(this.getSelectedPmEquipment) {
+        let pmName = null;
+        _.values(this.pmList).filter(pm => {
+          if(pm.id.toString() === this.newForm.pm) {
+            pmName = pm.name
+          }
+        })
+        this.getSelectedPmEquipment(pmName)
+      }
+    }
+  }
+
   @observes('newForm.pm', 'selectedEquipment')
   isSelectedPmAndEquipment() {
     if(!isEmpty(this.newForm.pm) && !isEmpty(this.selectedEquipment)) {

@@ -5,6 +5,5 @@ import {fetchEquipmentList} from '../../redux/actions/equipment'
 const model = (dispatch) => {
     dispatch(fetchUsers());
     dispatch(fetchPMList());
-    dispatch(fetchEquipmentList());
 };
 export default route({model})();

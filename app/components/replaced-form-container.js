@@ -5,10 +5,12 @@ import {getPMList} from '../redux/selectors/pm';
 import {getNewReplaceForm} from '../redux/selectors/replace';
 import {getEquipmentList} from '../redux/selectors/equipment';
 import {fetchMotor, fetchOnlineMotor} from '../redux/actions/motor'
+import {fetchEquipmentList} from "../redux/actions/equipment";
 
 class ReplacedFormContainer extends Component {}
 
 const stateToComputed = state => {
+  console.log(getEquipmentList(state))
   return {
     userList: getUsersList(state),
     pmList: getPMList(state),
@@ -20,6 +22,7 @@ const stateToComputed = state => {
 const dispatchToActions = dispatch => {
   return {
     searchMotorBySeriesNumber: seriesNumber => dispatch(fetchMotor(seriesNumber)),
+    getSelectedPmEquipment: pm => dispatch(fetchEquipmentList(pm)),
     getOnlineMotor: data => dispatch(fetchOnlineMotor(data)),
   }
 };

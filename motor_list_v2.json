@@ -1849,54 +1849,284 @@
   ],
   "equipmentList": [
     {
-      "id": 0,
-      "name": "equip-A",
-      "description": ""
+      "equipmentList": [
+        {
+          "id": 0,
+          "name": "equip-A",
+          "description": ""
+        },
+        {
+          "id": 1,
+          "name": "equip-B",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "equip-C",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "equip-D",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "equip-E",
+          "description": ""
+        },
+        {
+          "id": 5,
+          "name": "equip-F",
+          "description": ""
+        },
+        {
+          "id": 6,
+          "name": "equip-G",
+          "description": ""
+        },
+        {
+          "id": 7,
+          "name": "equip-H",
+          "description": ""
+        },
+        {
+          "id": 8,
+          "name": "equip-I",
+          "description": ""
+        },
+        {
+          "id": 9,
+          "name": "equip-J",
+          "description": ""
+        }
+      ],
+      "pm": "PM0",
+      "id": 0
     },
     {
-      "id": 1,
-      "name": "equip-B",
-      "description": ""
+      "equipmentList": [
+        {
+          "id": 0,
+          "name": "equip-A",
+          "description": ""
+        },
+        {
+          "id": 1,
+          "name": "equip-B",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "equip-C",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "equip-D",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "equip-E",
+          "description": ""
+        },
+        {
+          "id": 5,
+          "name": "equip-F",
+          "description": ""
+        },
+        {
+          "id": 6,
+          "name": "equip-G",
+          "description": ""
+        },
+        {
+          "id": 7,
+          "name": "equip-H",
+          "description": ""
+        },
+        {
+          "id": 8,
+          "name": "equip-I",
+          "description": ""
+        },
+        {
+          "id": 9,
+          "name": "equip-J",
+          "description": ""
+        }
+      ],
+      "pm": "PM1",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "equip-C",
-      "description": ""
+      "equipmentList": [
+        {
+          "id": 0,
+          "name": "equip-A",
+          "description": ""
+        },
+        {
+          "id": 1,
+          "name": "equip-B",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "equip-C",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "equip-D",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "equip-E",
+          "description": ""
+        },
+        {
+          "id": 5,
+          "name": "equip-F",
+          "description": ""
+        },
+        {
+          "id": 6,
+          "name": "equip-G",
+          "description": ""
+        },
+        {
+          "id": 7,
+          "name": "equip-H",
+          "description": ""
+        },
+        {
+          "id": 8,
+          "name": "equip-I",
+          "description": ""
+        },
+        {
+          "id": 9,
+          "name": "equip-J",
+          "description": ""
+        }
+      ],
+      "pm": "PM2",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "equip-D",
-      "description": ""
+      "equipmentList": [
+        {
+          "id": 0,
+          "name": "equip-A",
+          "description": ""
+        },
+        {
+          "id": 1,
+          "name": "equip-B",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "equip-C",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "equip-D",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "equip-E",
+          "description": ""
+        },
+        {
+          "id": 5,
+          "name": "equip-F",
+          "description": ""
+        },
+        {
+          "id": 6,
+          "name": "equip-G",
+          "description": ""
+        },
+        {
+          "id": 7,
+          "name": "equip-H",
+          "description": ""
+        },
+        {
+          "id": 8,
+          "name": "equip-I",
+          "description": ""
+        },
+        {
+          "id": 9,
+          "name": "equip-J",
+          "description": ""
+        }
+      ],
+      "pm": "PM3",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "equip-E",
-      "description": ""
-    },
-    {
-      "id": 5,
-      "name": "equip-F",
-      "description": ""
-    },
-    {
-      "id": 6,
-      "name": "equip-G",
-      "description": ""
-    },
-    {
-      "id": 7,
-      "name": "equip-H",
-      "description": ""
-    },
-    {
-      "id": 8,
-      "name": "equip-I",
-      "description": ""
-    },
-    {
-      "id": 9,
-      "name": "equip-J",
-      "description": ""
+      "equipmentList": [
+        {
+          "id": 0,
+          "name": "equip-A",
+          "description": ""
+        },
+        {
+          "id": 1,
+          "name": "equip-B",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "equip-C",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "equip-D",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "equip-E",
+          "description": ""
+        },
+        {
+          "id": 5,
+          "name": "equip-F",
+          "description": ""
+        },
+        {
+          "id": 6,
+          "name": "equip-G",
+          "description": ""
+        },
+        {
+          "id": 7,
+          "name": "equip-H",
+          "description": ""
+        },
+        {
+          "id": 8,
+          "name": "equip-I",
+          "description": ""
+        },
+        {
+          "id": 9,
+          "name": "equip-J",
+          "description": ""
+        }
+      ],
+      "pm": "PM4",
+      "id": 4
     }
   ]
 }
