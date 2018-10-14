@@ -18,7 +18,7 @@ const motorSchema = new schema.Entity('motors')
 export const fetchMotorEpic = action$ => action$.pipe(
   ofType(fetchMotor.toString()),
   switchMap(action=> {
-    return ajax.getJSON(`${config.API.host}/search-motor-status?seriesNumber=${action.payload.offlineNumber}&status=${action.payload.status}`).pipe(
+    return ajax.getJSON(`${config.API.host}/searchMotorByStatus?seriesNumber=${action.payload.offlineNumber}&status=${action.payload.status}`).pipe(
       map(response => {
         const normalized = normalize(response, [motorSchema]);
         const { motors } = normalized.entities;
