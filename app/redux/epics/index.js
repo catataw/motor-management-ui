@@ -26,7 +26,8 @@ import {
 } from './equipment';
 
 import {
-  fetchMotorEpic
+  fetchMotorEpic,
+  fetchOnlineMotorEpic
 } from './motor'
 
 export default combineEpics(
@@ -42,5 +43,6 @@ export default combineEpics(
   saveReplacedMotorActionEpic,
   fetchPMListEpic,
   fetchEquipmentListEpic,
-  fetchMotorEpic
+  fetchMotorEpic,
+  fetchOnlineMotorEpic
 );

@@ -27,7 +27,6 @@ export default class MdSelect extends Component{
   setSelection(selected) {
     // console.log('input selected = ', selected);
     this.set('selectedOption', selected);
-    console.log(this.get('selectedOption'))
   }
 
 };

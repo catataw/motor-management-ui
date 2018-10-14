@@ -5,44 +5,60 @@
       <div class="col m4 xl3">
         <MdSelect @options={{pmList}} @label="PM" @selectedOption={{newForm.pm}} @initMessage="Select PM"></MdSelect>
       </div>
+
       <div class="col m4 xl3">
-        <MdSelect @options={{equipmentList}} @label="Equipment"
-                  @selectedOption={{newForm.equipment}} @initMessage="Select Equipment"></MdSelect>
+        <label>Equipment</label>
+        <div style="padding-top: 7px;">
+          {{#power-select
+            options=equipmentListArray
+            searchField="equipment"
+            selected=selectedEquipment
+            searchField="name"
+            searchPlaceholder="Type to filter..."
+            onchange=(action (mut selectedEquipment))
+            placeholder="Series Equipment"
+          as |equipment|
+          }}
+            {{equipment.name}}
+          {{/power-select}}
+        </div>
       </div>
+
       <div class="col m4 xl3">
-        <MdSelect @options={{userList}} @label="Equipment"
-                  @selectedOption={{newForm.worker}} @initMessage="Select Mechanic"></MdSelect>
+        <label>Search series number from storage.</label>
+        <div style="padding-top: 7px;">
+          {{#power-select
+            search=(action "searchSeriesNumber")
+            options=onlineSearchList
+            selected=onlineMotor
+            placeholder="Series Number"
+            onchange=(action (mut onlineMotor))
+          as |onlineMotor|
+          }}
+            {{onlineMotor}}
+          {{/power-select}}
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col xl3">
-        <label>Search series number from online equipment.</label>
-        {{#power-select-multiple
-          search=(action "searchSeriesNumber" 'online')
-          options=offlineSearchList
-          selected=offlineMotor
-          placeholder="Series Number"
-          onchange=(action (mut offlineMotor))
-        as |offlineMotor|
-        }}
-          {{offlineMotor}}
-        {{/power-select-multiple}}
-      </div>
 
+    </div>
+    <div class="row">
       <div class="col xl3">
-        <label>Search series number from storage.</label>
-        {{#power-select-multiple
-          search=(action "searchSeriesNumber" 'stroage')
-          options=onlineSearchList
-          selected=onlineMotor
-          placeholder="Series Number"
-          onchange=(action (mut onlineMotor))
-        as |onlineMotor|
-        }}
-          {{onlineMotor}}
-        {{/power-select-multiple}}
+        <MdSelect @options={{userList}} @label="Mechanic"
+                  @selectedOption={{newForm.worker}} @initMessage="Select Mechanic"></MdSelect>
       </div>
+      <div class="col xl3">
+        <MdSelect @options={{this.replacedReasonArray}} @label="Replaced reason"
+                  @selectedOption={{newForm.replacedReason}} @initMessage="Replaced Reason" />
+      </div>
+      {{#if showReasonTextArea}}
+        <div class="col xl4">
+          <label>Replaced Reason</label>
+          <textarea  class="materialize-textarea" >{{replacedReason}}</textarea>
+        </div>
+      {{/if}}
     </div>
   </div>
   <div class="card-action">
