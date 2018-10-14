@@ -3155,5 +3155,35 @@
         }
       ]
     }
+  ],
+  "statuses": [
+    {
+      "id": "1",
+      "status": "STORAGE"
+    },
+    {
+      "id": "2",
+      "status": "WAITING"
+    },
+    {
+      "id": "3",
+      "status": "ABANDON"
+    },
+    {
+      "id": "4",
+      "status": "REPAIRING"
+    },
+    {
+      "id": "5",
+      "status": "REPAIRED"
+    },
+    {
+      "id": "6",
+      "status": "TEMPORARY"
+    },
+    {
+      "id": "7",
+      "status": "ONLINE"
+    }
   ]
 }

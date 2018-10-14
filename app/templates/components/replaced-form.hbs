@@ -1,6 +1,69 @@
 <div class="card">
   <div class="card-content">
     <span class="card-title">Replace Form</span>
+
+    <div class="row">
+      <div class="col s12 xl1">
+        <span class="label-title-column">On line</span>
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Power: </span>
+        {{onlineMotor.detail.power}}
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Plot: </span>
+        {{onlineMotor.detail.plot}}
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Frame: </span>
+        {{onlineMotor.detail.frame}}
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Current: </span>
+        {{onlineMotor.detail.current}}
+      </div>
+      <div class="col xl2">
+        <span class="label-title">Voltage: </span>
+        {{onlineMotor.detail.voltage}}
+      </div>
+      <div class="col xl2">
+        <span class="label-title">Series Number: </span>
+        {{onlineMotor.seriesNumber}}
+      </div>
+    </div>
+
+    <div class="line-gap">
+      <div class="divider"></div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 xl1">
+        <span class="label-title-column">Off line</span>
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Power: </span>
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Plot: </span>
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Frame: </span>
+      </div>
+      <div class="col xl1">
+        <span class="label-title">Current: </span>
+      </div>
+      <div class="col xl2">
+        <span class="label-title">Voltage: </span>
+      </div>
+      <div class="col xl2">
+        <span class="label-title">Series Number: </span>
+      </div>
+    </div>
+
+    <div class="line-gap">
+      <div class="divider"></div>
+    </div>
+
     <div class="row">
       <div class="col m4 xl3">
         <MdSelect @options={{pmList}} @label="PM" @selectedOption={{newForm.pm}} @initMessage="Select PM"></MdSelect>
@@ -29,8 +92,8 @@
         <div style="padding-top: 7px;">
           {{#power-select
             search=(action "searchSeriesNumber")
-            options=onlineSearchList
-            selected=onlineMotor
+            options=null
+            selected=null
             placeholder="Series Number"
             onchange=(action (mut onlineMotor))
           as |onlineMotor|
@@ -41,9 +104,6 @@
       </div>
     </div>
 
-    <div class="row">
-
-    </div>
     <div class="row">
       <div class="col xl3">
         <MdSelect @options={{userList}} @label="Mechanic"

@@ -6,16 +6,18 @@ import {getNewReplaceForm} from '../redux/selectors/replace';
 import {getEquipmentList} from '../redux/selectors/equipment';
 import {fetchMotor, fetchOnlineMotor} from '../redux/actions/motor'
 import {fetchEquipmentList} from "../redux/actions/equipment";
+import {getOnlineMotor} from '../redux/selectors/motor';
 
 class ReplacedFormContainer extends Component {}
 
 const stateToComputed = state => {
-  console.log(getEquipmentList(state))
+  getOnlineMotor(state);
   return {
     userList: getUsersList(state),
     pmList: getPMList(state),
     newForm: getNewReplaceForm(state),
     equipmentList: getEquipmentList(state),
+    onlineMotor: getOnlineMotor(state)
   }
 };
 
