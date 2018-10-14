@@ -2128,5 +2128,1032 @@
       "pm": "PM4",
       "id": 4
     }
+  ],
+  "onlineEquipments": [
+    {
+      "id": 0,
+      "equipments": [
+        {
+          "equipment": {
+            "id": 0,
+            "name": "equip-A",
+            "description": ""
+          },
+          "motor": {
+            "id": 0,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 0,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 1,
+            "name": "equip-B",
+            "description": ""
+          },
+          "motor": {
+            "id": 1,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 1,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 2,
+            "name": "equip-C",
+            "description": ""
+          },
+          "motor": {
+            "id": 2,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 2,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 3,
+            "name": "equip-D",
+            "description": ""
+          },
+          "motor": {
+            "id": 3,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 3,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 4,
+            "name": "equip-E",
+            "description": ""
+          },
+          "motor": {
+            "id": 4,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 4,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 5,
+            "name": "equip-F",
+            "description": ""
+          },
+          "motor": {
+            "id": 5,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 5,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 6,
+            "name": "equip-G",
+            "description": ""
+          },
+          "motor": {
+            "id": 6,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 6,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 7,
+            "name": "equip-H",
+            "description": ""
+          },
+          "motor": {
+            "id": 7,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 7,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 8,
+            "name": "equip-I",
+            "description": ""
+          },
+          "motor": {
+            "id": 8,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 8,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 9,
+            "name": "equip-J",
+            "description": ""
+          },
+          "motor": {
+            "id": 9,
+            "seriesNumber": "EL00045",
+            "status": "ONLINE",
+            "detail": {
+              "id": 9,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "equipments": [
+        {
+          "equipment": {
+            "id": 0,
+            "name": "equip-A",
+            "description": ""
+          },
+          "motor": {
+            "id": 0,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 0,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 1,
+            "name": "equip-B",
+            "description": ""
+          },
+          "motor": {
+            "id": 1,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 1,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 2,
+            "name": "equip-C",
+            "description": ""
+          },
+          "motor": {
+            "id": 2,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 2,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 3,
+            "name": "equip-D",
+            "description": ""
+          },
+          "motor": {
+            "id": 3,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 3,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 4,
+            "name": "equip-E",
+            "description": ""
+          },
+          "motor": {
+            "id": 4,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 4,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 5,
+            "name": "equip-F",
+            "description": ""
+          },
+          "motor": {
+            "id": 5,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 5,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 6,
+            "name": "equip-G",
+            "description": ""
+          },
+          "motor": {
+            "id": 6,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 6,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 7,
+            "name": "equip-H",
+            "description": ""
+          },
+          "motor": {
+            "id": 7,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 7,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 8,
+            "name": "equip-I",
+            "description": ""
+          },
+          "motor": {
+            "id": 8,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 8,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 9,
+            "name": "equip-J",
+            "description": ""
+          },
+          "motor": {
+            "id": 9,
+            "seriesNumber": "EL00044",
+            "status": "ONLINE",
+            "detail": {
+              "id": 9,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "equipments": [
+        {
+          "equipment": {
+            "id": 0,
+            "name": "equip-A",
+            "description": ""
+          },
+          "motor": {
+            "id": 0,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 0,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 1,
+            "name": "equip-B",
+            "description": ""
+          },
+          "motor": {
+            "id": 1,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 1,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 2,
+            "name": "equip-C",
+            "description": ""
+          },
+          "motor": {
+            "id": 2,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 2,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 3,
+            "name": "equip-D",
+            "description": ""
+          },
+          "motor": {
+            "id": 3,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 3,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 4,
+            "name": "equip-E",
+            "description": ""
+          },
+          "motor": {
+            "id": 4,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 4,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 5,
+            "name": "equip-F",
+            "description": ""
+          },
+          "motor": {
+            "id": 5,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 5,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 6,
+            "name": "equip-G",
+            "description": ""
+          },
+          "motor": {
+            "id": 6,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 6,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 7,
+            "name": "equip-H",
+            "description": ""
+          },
+          "motor": {
+            "id": 7,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 7,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 8,
+            "name": "equip-I",
+            "description": ""
+          },
+          "motor": {
+            "id": 8,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 8,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 9,
+            "name": "equip-J",
+            "description": ""
+          },
+          "motor": {
+            "id": 9,
+            "seriesNumber": "EL00043",
+            "status": "ONLINE",
+            "detail": {
+              "id": 9,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "equipments": [
+        {
+          "equipment": {
+            "id": 0,
+            "name": "equip-A",
+            "description": ""
+          },
+          "motor": {
+            "id": 0,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 0,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 1,
+            "name": "equip-B",
+            "description": ""
+          },
+          "motor": {
+            "id": 1,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 1,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 2,
+            "name": "equip-C",
+            "description": ""
+          },
+          "motor": {
+            "id": 2,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 2,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 3,
+            "name": "equip-D",
+            "description": ""
+          },
+          "motor": {
+            "id": 3,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 3,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 4,
+            "name": "equip-E",
+            "description": ""
+          },
+          "motor": {
+            "id": 4,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 4,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 5,
+            "name": "equip-F",
+            "description": ""
+          },
+          "motor": {
+            "id": 5,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 5,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 6,
+            "name": "equip-G",
+            "description": ""
+          },
+          "motor": {
+            "id": 6,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 6,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 7,
+            "name": "equip-H",
+            "description": ""
+          },
+          "motor": {
+            "id": 7,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 7,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 8,
+            "name": "equip-I",
+            "description": ""
+          },
+          "motor": {
+            "id": 8,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 8,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 9,
+            "name": "equip-J",
+            "description": ""
+          },
+          "motor": {
+            "id": 9,
+            "seriesNumber": "EL00042",
+            "status": "ONLINE",
+            "detail": {
+              "id": 9,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "equipments": [
+        {
+          "equipment": {
+            "id": 0,
+            "name": "equip-A",
+            "description": ""
+          },
+          "motor": {
+            "id": 0,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 0,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 1,
+            "name": "equip-B",
+            "description": ""
+          },
+          "motor": {
+            "id": 1,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 1,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 2,
+            "name": "equip-C",
+            "description": ""
+          },
+          "motor": {
+            "id": 2,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 2,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 3,
+            "name": "equip-D",
+            "description": ""
+          },
+          "motor": {
+            "id": 3,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 3,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 4,
+            "name": "equip-E",
+            "description": ""
+          },
+          "motor": {
+            "id": 4,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 4,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 5,
+            "name": "equip-F",
+            "description": ""
+          },
+          "motor": {
+            "id": 5,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 5,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 6,
+            "name": "equip-G",
+            "description": ""
+          },
+          "motor": {
+            "id": 6,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 6,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 7,
+            "name": "equip-H",
+            "description": ""
+          },
+          "motor": {
+            "id": 7,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 7,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 8,
+            "name": "equip-I",
+            "description": ""
+          },
+          "motor": {
+            "id": 8,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 8,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        },
+        {
+          "equipment": {
+            "id": 9,
+            "name": "equip-J",
+            "description": ""
+          },
+          "motor": {
+            "id": 9,
+            "seriesNumber": "EL00041",
+            "status": "ONLINE",
+            "detail": {
+              "id": 9,
+              "power": "12",
+              "plot": 4,
+              "frame": "200S",
+              "current": 34.5,
+              "voltage": "220/380"
+            }
+          }
+        }
+      ]
+    }
   ]
 }
