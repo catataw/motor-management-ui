@@ -92,13 +92,13 @@
         <div style="padding-top: 7px;">
           {{#power-select
             search=(action "searchSeriesNumber")
-            options=null
-            selected=null
+            options=motorArray
+            selected=motorStorage
             placeholder="Series Number"
-            onchange=(action (mut onlineMotor))
-          as |onlineMotor|
+            onchange=(action (mut motorStorage))
+          as |motorStorage|
           }}
-            {{onlineMotor}}
+            {{motorStorage.name}}
           {{/power-select}}
         </div>
       </div>

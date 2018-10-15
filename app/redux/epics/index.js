@@ -30,6 +30,8 @@ import {
   fetchOnlineMotorEpic
 } from './motor'
 
+import {fetchStatusesEpic} from './statuses'
+
 export default combineEpics(
   fetchUsersEpic,
   // fetchUserDetailsEpic,
@@ -44,5 +46,6 @@ export default combineEpics(
   fetchPMListEpic,
   fetchEquipmentListEpic,
   fetchMotorEpic,
-  fetchOnlineMotorEpic
+  fetchOnlineMotorEpic,
+  fetchStatusesEpic
 );

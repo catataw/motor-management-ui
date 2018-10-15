@@ -11,7 +11,8 @@ import {
 const initStates = {
   all:{},
   error: null,
-  loading: false
+  loading: false,
+  storageMotor: null
 };
 
 export default handleActions({
@@ -24,9 +25,9 @@ export default handleActions({
   [fetchMotorSuccess] (state, {payload}) {
     return {
       ...state,
-      all: payload,
       loading: false,
-      error: null
+      error: null,
+      storageMotor: payload
     }
   },
   [fetchMotorFailed] (state, {payload: {message}}) {

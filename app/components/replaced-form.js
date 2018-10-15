@@ -30,6 +30,19 @@ export default class ReplacedFormComponent extends Component{
     }
   }
 
+  @observes('storageMotors')
+  setMotorArray() {
+    let array = [];
+    _.values(this.storageMotors).filter(motor => {
+      let obj = {}
+      obj.id = motor.id;
+      obj.name = motor.seriesNumber;
+      array.push(obj)
+    })
+    console.log(array)
+    set(this, 'motorArray', array)
+  }
+
   @observes('newForm.pm')
   getSelectedPmEquipmentList() {
     if(!isEmpty(this.newForm.pm)) {
@@ -71,8 +84,15 @@ export default class ReplacedFormComponent extends Component{
   }
 
   _discountInput(offlineNumber) {
-    if(this.searchMotorBySeriesNumber)
-      this.searchMotorBySeriesNumber({offlineNumber: offlineNumber, status: '1'});
+    if (this.searchMotorBySeriesNumber) {
+      let status = null;
+      _.values(this.statuses).filter(s => {
+        if (s.id === '1') {
+          status = s.status
+        }
+      });
+      this.searchMotorBySeriesNumber({offlineNumber: offlineNumber, status: status});
+    }
   }
 
   @action

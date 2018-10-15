@@ -1,8 +1,10 @@
-<ReplacedFormContainer as |userList pmList newForm equipmentList onlineMotor options|>
+<ReplacedFormContainer as |userList pmList newForm equipmentList onlineMotor storageMotors statuses options|>
   <ReplacedForm @userList={{userList}} @pmList={{pmList}} @newForm={{newForm}}
                 @equipmentList={{equipmentList}}
                 @getOnlineMotor={{options.getOnlineMotor}}
                 @onlineMotor={{onlineMotor}}
+                @statuses={{statuses}}
+                @storageMotors={{storageMotors}}
                 @searchMotorBySeriesNumber={{options.searchMotorBySeriesNumber}}
                 @getSelectedPmEquipment={{options.getSelectedPmEquipment}}/>
 </ReplacedFormContainer>
