@@ -46,7 +46,10 @@ export default handleActions({
   [fetchOnlineMotorSuccess] (state, {payload}) {
     return {
       ...state,
-      all: payload,
+      all: {
+        ...state.all,
+        ...payload
+      },
       loading: false,
       error: null
     }

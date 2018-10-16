@@ -13,7 +13,10 @@ import {
   setOffLineMotorDetail,
   saveReplacedMotorAction,
   saveReplacedMotorActionSuccess,
-  saveReplacedMotorActionFailed
+  saveReplacedMotorActionFailed,
+  sendNewReplaceForm,
+  sendNewReplaceFormFailed,
+  sendNewReplaceFormSuccess
 } from '../actions/replace'
 
 const initStates = {
@@ -135,6 +138,30 @@ export default handleActions({
     }
   },
   [saveReplacedMotorActionFailed] (state, {payload: {message}}){
+    return {
+      ...state,
+      error: message,
+      loading: false
+    }
+  },
+  [sendNewReplaceForm](state) {
+    return {
+      ...state,
+      loading: true
+    }
+  },
+  [sendNewReplaceFormSuccess](state, {payload}) {
+    return {
+      ...state,
+      all: {
+        ...state,
+        ...payload
+      },
+      error: null,
+      loading: false
+    }
+  },
+  [sendNewReplaceFormFailed](state, {payload: {message}}) {
     return {
       ...state,
       error: message,

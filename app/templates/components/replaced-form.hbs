@@ -8,27 +8,27 @@
       </div>
       <div class="col xl1">
         <span class="label-title">Power: </span>
-        {{onlineMotor.detail.power}}
+        {{motorOnline.detail.power}}
       </div>
       <div class="col xl1">
         <span class="label-title">Plot: </span>
-        {{onlineMotor.detail.plot}}
+        {{motorOnline.detail.plot}}
       </div>
       <div class="col xl1">
         <span class="label-title">Frame: </span>
-        {{onlineMotor.detail.frame}}
+        {{motorOnline.detail.frame}}
       </div>
       <div class="col xl1">
         <span class="label-title">Current: </span>
-        {{onlineMotor.detail.current}}
+        {{motorOnline.detail.current}}
       </div>
       <div class="col xl2">
         <span class="label-title">Voltage: </span>
-        {{onlineMotor.detail.voltage}}
+        {{motorOnline.detail.voltage}}
       </div>
       <div class="col xl2">
         <span class="label-title">Series Number: </span>
-        {{onlineMotor.seriesNumber}}
+        {{motorOnline.seriesNumber}}
       </div>
     </div>
 
@@ -42,21 +42,27 @@
       </div>
       <div class="col xl1">
         <span class="label-title">Power: </span>
+        {{searchedMotor.detail.power}}
       </div>
       <div class="col xl1">
         <span class="label-title">Plot: </span>
+        {{searchedMotor.detail.plot}}
       </div>
       <div class="col xl1">
         <span class="label-title">Frame: </span>
+        {{searchedMotor.detail.frame}}
       </div>
       <div class="col xl1">
         <span class="label-title">Current: </span>
+        {{searchedMotor.detail.current}}
       </div>
       <div class="col xl2">
         <span class="label-title">Voltage: </span>
+        {{searchedMotor.detail.voltage}}
       </div>
       <div class="col xl2">
         <span class="label-title">Series Number: </span>
+        {{searchedMotor.seriesNumber}}
       </div>
     </div>
 
@@ -123,6 +129,6 @@
   </div>
   <div class="card-action">
     <a class="waves-effect waves-light btn-small" onclick={{action 'cancelForm'}}><i class="material-icons left">cancel</i>Cnacel</a>
-    <a class="waves-effect waves-light btn-small" onclick={{action 'saveForm'}}><i class="material-icons left">send</i>Save</a>
+    <a class="waves-effect waves-light btn-small {{if canSave 'disabled'}}" onclick={{action 'saveForm'}}><i class="material-icons left">send</i>Save</a>
   </div>
 </div>

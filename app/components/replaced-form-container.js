@@ -17,7 +17,7 @@ const stateToComputed = state => {
     pmList: getPMList(state),
     newForm: getNewReplaceForm(state),
     equipmentList: getEquipmentList(state),
-    onlineMotor: getOnlineMotor(state),
+    motorOnline: getOnlineMotor(state),
     storageMotors: getStorageMotor(state),
     statuses: getStatuses(state),
   }
@@ -28,6 +28,7 @@ const dispatchToActions = dispatch => {
     searchMotorBySeriesNumber: seriesNumber => dispatch(fetchMotor(seriesNumber)),
     getSelectedPmEquipment: pm => dispatch(fetchEquipmentList(pm)),
     getOnlineMotor: data => dispatch(fetchOnlineMotor(data)),
+    saveNewReplaceForm: newForm => console.log(newForm)
   }
 };
 

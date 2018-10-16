@@ -22,3 +22,8 @@ export const setOffLineMotorDetail = createAction("SET_OFF_LINE_MOTOR_DETAIL");
 export const saveReplacedMotorAction = createAction("SAVE_REPLACED_MOTOR_ACTION");
 export const saveReplacedMotorActionSuccess = createAction("SAVE_REPLACED_MOTOR_ACTION_SUCCESS");
 export const saveReplacedMotorActionFailed = createAction("SAVE_REPLACED_MOTOR_ACTION_FAILED");
+
+export const sendNewReplaceForm = createAction("SEND_NEW_REPLACE_FORM");
+export const sendNewReplaceFormSuccess = createAction("SEND_NEW_REPLACE_FORM_SUCCESS");
+export const sendNewReplaceFormFailed = createAction("SEND_NEW_REPLACE_FORM_FAILED");
+

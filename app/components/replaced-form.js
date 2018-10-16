@@ -20,9 +20,19 @@ export default class ReplacedFormComponent extends Component{
     ]
   }
 
+  // @observes('newForm.onlineMotor', 'newForm.offlineMotor', 'newForm.pm', 'newForm.replacedReason', 'newForm.worker')
+  @computed('newForm.onlineMotor', 'newForm.offlineMotor', 'newForm.pm', 'newForm.replacedReason', 'newForm.worker')
+  get canSave() {
+    let online = isEmpty(this.newForm.onlineMotor);
+    let offline = isEmpty(this.newForm.offlineMotor);
+    let pm = isEmpty(this.newForm.pm);
+    let reason = isEmpty(this.newForm.replacedReason);
+    let user = isEmpty(this.newForm.worker);
+    return online || offline || pm || reason || user
+  }
+
   @observes('newForm.replacedReason')
   isOtherReason() {
-    console.log('tet123', this.newForm.replacedReason)
     if(this.newForm.replacedReason === '4') {
       set(this, 'showReasonTextArea', true)
     } else {
@@ -39,7 +49,6 @@ export default class ReplacedFormComponent extends Component{
       obj.name = motor.seriesNumber;
       array.push(obj)
     })
-    console.log(array)
     set(this, 'motorArray', array)
   }
 
@@ -52,9 +61,35 @@ export default class ReplacedFormComponent extends Component{
           if(pm.id.toString() === this.newForm.pm) {
             pmName = pm.name
           }
-        })
+        });
         this.getSelectedPmEquipment(pmName)
       }
+    }
+  }
+
+  @observes('motorStorage', 'replacedReason', 'onlineMotor', 'newForm', 'searchedMotor')
+  setFinalForm() {
+    let newForm = this.newForm;
+    set(newForm, 'onlineMotor', this.motorOnline);
+    set(newForm, 'offlineMotor', this.searchedMotor);
+    _.values(this.pmList).forEach(pm => {
+      if(pm.id === parseInt(newForm.pm)) {
+        set(newForm, 'pm', pm)
+      }
+    });
+    _.values(this.userList).forEach(worker => {
+      if(worker.id === newForm.worker) {
+        set(newForm, 'worker', worker)
+      }
+    });
+    if(this.newForm.replacedReason === '4') {
+      set(newForm, 'replacedReason', this.replacedReason)
+    } else {
+      _.values(this.replacedReasonArray).forEach(reason => {
+        if(this.newForm.replacedReason === reason.id) {
+          set(newForm, 'replacedReason', reason.name)
+        }
+      })
     }
   }
 
@@ -65,6 +100,16 @@ export default class ReplacedFormComponent extends Component{
         this.getOnlineMotor({pm: this.newForm.pm, equipment: this.selectedEquipment.id});
       }
     }
+  }
+
+  @observes('motorStorage')
+  searchedStorageMotor() {
+    let motorStorage = this.motorStorage;
+    _.values(this.storageMotors).forEach(motor => {
+      if(motor.id === motorStorage.id) {
+        set(this, 'searchedMotor', motor);
+      }
+    });
   }
 
   @computed('equipmentList')
@@ -97,11 +142,13 @@ export default class ReplacedFormComponent extends Component{
 
   @action
   cancelForm() {
-    console.log('cancel form')
+    this.newForm.pm = null
   }
 
   @action
   saveForm() {
-    console.log('save form')
+    if(this.saveNewReplaceForm){
+      this.saveNewReplaceForm(this.newForm)
+    }
   }
 };
