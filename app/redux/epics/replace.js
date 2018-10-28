@@ -15,7 +15,10 @@ import {
   setOfflineMotor,
   saveReplacedMotorAction,
   saveReplacedMotorActionSuccess,
-  saveReplacedMotorActionFailed
+  saveReplacedMotorActionFailed,
+  sendNewReplaceForm,
+  sendNewReplaceFormFailed,
+  sendNewReplaceFormSuccess
 } from '../../redux/actions/replace';
 import { fetchPMListSuccess } from "../../redux/actions/pm";
 import { fetchEquipmentListSuccess} from '../../redux/actions/equipment';
@@ -106,3 +109,15 @@ export const saveReplacedMotorActionEpic = action$ => action$.pipe(
       ))
   })
 );
+
+export const sendNewReplaceFormEpic = action$ => action$.pipe(
+  ofType(sendNewReplaceForm.toString()),
+  switchMap(action => {
+    return ajax.post(`${config.API.host}/replacedList`,
+      JSON.stringify(action.payload),
+      {'Content-Type': 'application/json'}).pipe(
+        map(response => sendNewReplaceFormSuccess(response)),
+        catchError(err => of(sendNewReplaceFormFailed(err)))
+    )
+  })
+)

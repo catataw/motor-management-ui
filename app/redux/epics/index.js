@@ -14,7 +14,8 @@ import {
 import {
   fetchReplacedListEpic,
   fetchReplacedDetailEpic,
-  saveReplacedMotorActionEpic
+  saveReplacedMotorActionEpic,
+  sendNewReplaceFormEpic
 } from './replace';
 
 import {
@@ -47,5 +48,6 @@ export default combineEpics(
   fetchEquipmentListEpic,
   fetchMotorEpic,
   fetchOnlineMotorEpic,
-  fetchStatusesEpic
+  fetchStatusesEpic,
+  sendNewReplaceFormEpic
 );

@@ -19,6 +19,7 @@ export default class ReplacedFormComponent extends Component{
       {id: '4', name: 'Other'}
     ]
   }
+  replacedReason;
 
   @computed('newForm.{onlineMotor,offlineMotor,pm,replacedReason,worker}')
   get canSave() {
@@ -32,7 +33,7 @@ export default class ReplacedFormComponent extends Component{
 
   @observes('newForm.replacedReason')
   isOtherReason() {
-    if(this.newForm.replacedReason === '4') {
+    if(this.newForm.replacedReason === '4' || this.newForm.replacedReason.length > 1) {
       set(this, 'showReasonTextArea', true)
     } else {
       set(this, 'showReasonTextArea', false)
@@ -66,7 +67,7 @@ export default class ReplacedFormComponent extends Component{
     }
   }
 
-  @observes('motorStorage', 'replacedReason', 'onlineMotor', 'newForm', 'searchedMotor')
+  @observes('motorStorage', 'replacedReason', 'onlineMotor', 'newForm.worker', 'searchedMotor')
   setFinalForm() {
     let newForm = this.newForm;
     set(newForm, 'onlineMotor', this.motorOnline);
@@ -81,15 +82,6 @@ export default class ReplacedFormComponent extends Component{
         set(newForm, 'worker', worker)
       }
     });
-    if(this.newForm.replacedReason === '4') {
-      set(newForm, 'replacedReason', this.replacedReason)
-    } else {
-      _.values(this.replacedReasonArray).forEach(reason => {
-        if(this.newForm.replacedReason === reason.id) {
-          set(newForm, 'replacedReason', reason.name)
-        }
-      })
-    }
   }
 
   @observes('newForm.pm', 'selectedEquipment')
@@ -147,6 +139,15 @@ export default class ReplacedFormComponent extends Component{
   @action
   saveForm() {
     if(this.saveNewReplaceForm){
+      if(this.newForm.replacedReason === '4') {
+        set(this.newForm, 'replacedReason', this.replacedReason)
+      } else {
+        _.values(this.replacedReasonArray).forEach(reason => {
+          if(this.newForm.replacedReason === reason.id) {
+            set(this.newForm, 'replacedReason', reason.name)
+          }
+        })
+      }
       this.saveNewReplaceForm(this.newForm)
     }
   }

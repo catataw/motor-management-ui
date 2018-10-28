@@ -8,6 +8,7 @@ import {fetchMotor, fetchOnlineMotor} from '../redux/actions/motor'
 import {fetchEquipmentList} from "../redux/actions/equipment";
 import {getOnlineMotor, getStorageMotor} from '../redux/selectors/motor';
 import {getStatuses} from '../redux/selectors/statuses';
+import {sendNewReplaceForm} from '../redux/actions/replace'
 
 class ReplacedFormContainer extends Component {}
 
@@ -28,7 +29,7 @@ const dispatchToActions = dispatch => {
     searchMotorBySeriesNumber: seriesNumber => dispatch(fetchMotor(seriesNumber)),
     getSelectedPmEquipment: pm => dispatch(fetchEquipmentList(pm)),
     getOnlineMotor: data => dispatch(fetchOnlineMotor(data)),
-    saveNewReplaceForm: newForm => console.log(newForm)
+    saveNewReplaceForm: newForm => dispatch(sendNewReplaceForm(newForm))
   }
 };
 
