@@ -7,10 +7,10 @@ import {
   fetchReplacedDetailSuccess,
   fetchReplacedDetailFailed,
   gotoReplacedListPage,
-  setMotorDetail,
-  setMotor,
-  setOffLineMotor,
-  setOffLineMotorDetail,
+  setOnlineMotorDetail,
+  setOnlineMotor,
+  setOfflineMotor,
+  setOfflineMotorDetail,
   saveReplacedMotorAction,
   saveReplacedMotorActionSuccess,
   saveReplacedMotorActionFailed,
@@ -29,10 +29,10 @@ const initStates = {
   loading: false,
   isDeleted: false,
   responseStatus: 0,
-  motorDetail:null,
-  motor:null,
-  offLineMotor: null,
-  offLineMotorDetail: null,
+  onlineMotorDetail:null,
+  onlineMotor:null,
+  offlineMotor: null,
+  offlineMotorDetail: null,
   newReplaceForm: {},
 };
 
@@ -89,34 +89,34 @@ export default handleActions({
       loading: false
     }
   },
-  [setMotorDetail](state, {payload}) {
+  [setOnlineMotorDetail](state, {payload}) {
     return {
       ...state,
-      motorDetail:payload
+      onlineMotorDetail:payload
     }
   },
-  [setMotor](state, {payload}) {
+  [setOnlineMotor](state, {payload}) {
     return {
       ...state,
-      motor: payload
+      onlineMotor: payload
     }
   },
-  [setOffLineMotor](state, {payload}) {
+  [setOfflineMotor](state, {payload}) {
     return {
       ...state,
-      offLineMotor: payload
+      offlineMotor: payload
     }
   },
-  [setOffLineMotorDetail](state, {payload}) {
+  [setOfflineMotorDetail](state, {payload}) {
     return {
       ...state,
-      offLineMotorDetail: payload
+      offlineMotorDetail: payload
     }
   },
-  [setOffLineMotor](state, {payload}) {
+  [setOfflineMotor](state, {payload}) {
     return {
       ...state,
-      offLineMotor: payload
+      offlineMotor: payload
     }
   },
   [saveReplacedMotorAction] (state, {payload}) {

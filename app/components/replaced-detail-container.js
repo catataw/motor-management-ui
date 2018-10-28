@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import {connect} from 'ember-redux';
-import {getReplacedDetail, getMotorDetail, getLoading, getMotor, getOffLineMotor, getOffLineMotorDetail,} from '../redux/selectors/replace'
+import {getReplacedDetail, getOnlineMotor, getLoading, getOnlineMotorDetail, getOfflineMotor, getOfflineMotorDetail,} from '../redux/selectors/replace'
 import {getPMList} from "../redux/selectors/pm";
 import {getEquipmentList} from "../redux/selectors/equipment";
 import { isEmpty } from '@ember/utils';
@@ -11,16 +11,17 @@ import {saveReplacedMotorAction} from '../redux/actions/replace'
 class ReplacedDetailContainer extends Component {}
 
 const stateToComputed = state => {
+  console.log('test123', getOfflineMotor(state))
   return {
     replacedMotor: getReplacedDetail(state),
-    motorDetail: getMotorDetail(state),
+    onlineMotorDetail: getOnlineMotorDetail(state),
     isLoading: getLoading(state),
     pmList: getPMList(state),
     equipmentList: getEquipmentList(state),
-    motor: getMotor(state),
+    onlineMotor: getOnlineMotor(state),
     workerList: getUsersList(state),
-    offLineMotor: getOffLineMotor(state),
-    offLineMotorDetail: getOffLineMotorDetail(state)
+    offlineMotor: getOfflineMotor(state),
+    offlineMotorDetail: getOfflineMotorDetail(state)
   }
 };
 

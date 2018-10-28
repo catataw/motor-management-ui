@@ -6,10 +6,10 @@ const loading = state => state.replace.loading;
 const getPageIndexSelector = state => state.replace.pageIndex;
 const getPageSizeSelector = state => state.replace.pageSize;
 const getSelectedMotorId = state => state.replace.selectedId;
-const motorDetail = state => state.replace.motorDetail;
-const motor = state => state.replace.motor;
-const offLineMotorDetail = state => state.replace.offLineMotorDetail;
-const offLineMotor = state => state.replace.offLineMotor;
+const onlineMotorDetail = state => state.replace.onlineMotorDetail;
+const onlineMotor = state => state.replace.onlineMotor;
+const offlineMotorDetail = state => state.replace.offlineMotorDetail;
+const offlineMotor = state => state.replace.offlineMotor;
 const newReplaceForm = state => state.replace.newReplaceForm;
 
 export const getReplacedListPageIndex = createSelector(
@@ -46,33 +46,58 @@ export const getLoading = createSelector(
 export const getReplacedDetail = createSelector(
   [replacedList, getSelectedMotorId],
   (replaced, selectedId) => {
-    return replaced[selectedId]
+    return _.get(replaced, selectedId, null)
+    // return replaced[selectedId]
   }
 );
 
-export const getMotorDetail = createSelector(
-  [motorDetail],
-  md => md
+export const getOnlineMotorDetail = createSelector(
+  [onlineMotorDetail],
+  md => {
+    let result = null;
+    _.values(md).filter(e => {
+      result =  e
+    });
+    return result
+  }
 );
 
-export const getMotor = createSelector(
-  [motor],
-  m => m
+export const getOnlineMotor = createSelector(
+  [onlineMotor],
+  onlineMotor => {
+    let result = null;
+    _.values(onlineMotor).filter(m => {
+      result = m
+    });
+    return result
+  }
 );
 
-export const getOffLineMotor = createSelector(
-  [offLineMotor],
-  offLineMotor => offLineMotor
+export const getOfflineMotor = createSelector(
+  [offlineMotor],
+  offlineMotor => {
+    let result = null;
+    _.values(offlineMotor).filter(m => {
+      result = m;
+    });
+    return result;
+  }
 );
 
-export const getOffLineMotorDetail = createSelector(
-  [offLineMotorDetail],
-  offLineMotorDetail => offLineMotorDetail
-)
+export const getOfflineMotorDetail = createSelector(
+  [offlineMotorDetail],
+  md => {
+    let result = null;
+    _.values(md).filter(e => {
+      result =  e
+    });
+    return result
+  }
+);
 
 export const getNewReplaceForm = createSelector(
   [newReplaceForm],
   newReplaceForm => newReplaceForm
-)
+);
 
 //todo need add a selector to filter List and return action equals null

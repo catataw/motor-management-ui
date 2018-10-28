@@ -9,10 +9,10 @@ import {
   fetchReplacedDetailFailed,
   fetchReplacedDetailSuccess,
   fetchReplacedDetail,
-  setMotorDetail,
-  setMotor,
-  setOffLineMotorDetail,
-  setOffLineMotor,
+  setOnlineMotorDetail,
+  setOnlineMotor,
+  setOfflineMotorDetail,
+  setOfflineMotor,
   saveReplacedMotorAction,
   saveReplacedMotorActionSuccess,
   saveReplacedMotorActionFailed
@@ -25,27 +25,27 @@ import config from '../../config/environment';
 import {merge} from 'rxjs';
 
 const pmSchema = new schema.Entity('pm');
-const detailSchema = new schema.Entity('detail');
+const onlineMotorDetailSchema = new schema.Entity('onlineMotorDetail');
 const workerSchema = new schema.Entity('workers');
 const equipmentSchema = new schema.Entity('equipment');
 
-const motorSchema = new schema.Entity('motor', {
-  detail: detailSchema
+const onlineMotorSchema = new schema.Entity('onlineMotor', {
+  detail: onlineMotorDetailSchema
 });
 
-const offLineMotorDetailSchema = new schema.Entity('offLineMotorDetail');
-const offLineMotorSchema = new schema.Entity('offLineMotor', {
-  detail: offLineMotorDetailSchema
+const offlineMotorDetailSchema = new schema.Entity('offlineMotorDetail');
+const offlineMotorSchema = new schema.Entity('offlineMotor', {
+  detail: offlineMotorDetailSchema
 });
 
 const replaceSchema = new schema.Entity('replaceMotor', {
-  motor: motorSchema,
+  onlineMotor: onlineMotorSchema,
   worker: workerSchema,
   pm: pmSchema,
   equipment: equipmentSchema,
-  detail: [motorSchema],
-  offLineMotor: offLineMotorSchema,
-  offLineMotorDetail: [offLineMotorSchema]
+  onlineMotorDetail: onlineMotorDetailSchema,
+  offlineMotor: offlineMotorSchema,
+  offlineMotorDetail: offlineMotorDetailSchema
 });
 
 export const fetchReplacedListEpic = action$ => action$.pipe(
@@ -74,16 +74,17 @@ export const fetchReplacedDetailEpic = action$ => action$.pipe(
     return ajax.getJSON(`${config.API.host}/replacedList/${action.payload}`).pipe(
       map(response => {
         const normalized = normalize(response, replaceSchema);
-        const { replaceMotor, workers, pm, motor, equipment, detail, offLineMotor, offLineMotorDetail}  = normalized.entities;
+        const { replaceMotor, workers, pm, onlineMotor, equipment, onlineMotorDetail, offlineMotor, offlineMotorDetail}  = normalized.entities;
+        console.log('test', onlineMotor, onlineMotorDetail)
         return merge(
           of(fetchReplacedDetailSuccess(replaceMotor)),
           of(fetchUsersSuccess(workers)),
           of(fetchPMListSuccess(pm)),
-          of(setMotorDetail(detail)),
-          of(setMotor(motor)),
+          of(setOnlineMotorDetail(onlineMotorDetail)),
+          of(setOnlineMotor(onlineMotor)),
           of(fetchEquipmentListSuccess(equipment)),
-          of(setOffLineMotor(offLineMotor)),
-          of(setOffLineMotorDetail(offLineMotorDetail))
+          of(setOfflineMotor(offlineMotor)),
+          of(setOfflineMotorDetail(offlineMotorDetail))
         )
       }),
       switchMap(action => action),
