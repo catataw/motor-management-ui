@@ -75,7 +75,6 @@ export const fetchReplacedDetailEpic = action$ => action$.pipe(
       map(response => {
         const normalized = normalize(response, replaceSchema);
         const { replaceMotor, workers, pm, onlineMotor, equipment, onlineMotorDetail, offlineMotor, offlineMotorDetail}  = normalized.entities;
-        console.log('test', onlineMotor, onlineMotorDetail)
         return merge(
           of(fetchReplacedDetailSuccess(replaceMotor)),
           of(fetchUsersSuccess(workers)),

@@ -11,7 +11,6 @@ import {saveReplacedMotorAction} from '../redux/actions/replace'
 class ReplacedDetailContainer extends Component {}
 
 const stateToComputed = state => {
-  console.log('test123', getOfflineMotor(state))
   return {
     replacedMotor: getReplacedDetail(state),
     onlineMotorDetail: getOnlineMotorDetail(state),

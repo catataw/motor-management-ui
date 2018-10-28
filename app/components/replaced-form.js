@@ -1,9 +1,9 @@
 import Component from '@ember/component';
 import { action, observes, computed} from '@ember-decorators/object';
-import {set, get} from '@ember/object';
+import {set, /*get*/} from '@ember/object';
 import RSVP from 'rsvp';
 import {debounce} from '@ember/runloop';
-import {A} from '@ember/array';
+// import {A} from '@ember/array';
 import { isEmpty } from '@ember/utils';
 import _ from 'lodash';
 
@@ -20,8 +20,7 @@ export default class ReplacedFormComponent extends Component{
     ]
   }
 
-  // @observes('newForm.onlineMotor', 'newForm.offlineMotor', 'newForm.pm', 'newForm.replacedReason', 'newForm.worker')
-  @computed('newForm.onlineMotor', 'newForm.offlineMotor', 'newForm.pm', 'newForm.replacedReason', 'newForm.worker')
+  @computed('newForm.{onlineMotor,offlineMotor,pm,replacedReason,worker}')
   get canSave() {
     let online = isEmpty(this.newForm.onlineMotor);
     let offline = isEmpty(this.newForm.offlineMotor);
@@ -44,11 +43,11 @@ export default class ReplacedFormComponent extends Component{
   setMotorArray() {
     let array = [];
     _.values(this.storageMotors).filter(motor => {
-      let obj = {}
+      let obj = {};
       obj.id = motor.id;
       obj.name = motor.seriesNumber;
       array.push(obj)
-    })
+    });
     set(this, 'motorArray', array)
   }
 
@@ -116,7 +115,7 @@ export default class ReplacedFormComponent extends Component{
   get equipmentListArray() {
     let array = [];
     _.values(this.equipmentList).filter(obj => {
-      array.push(obj)
+      array=obj.equipmentList
     });
     return array;
   }
@@ -151,4 +150,4 @@ export default class ReplacedFormComponent extends Component{
       this.saveNewReplaceForm(this.newForm)
     }
   }
-};
+}

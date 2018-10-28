@@ -3194,7 +3194,8 @@
         "power": 10,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 20
       },
       "seriesNumber": "EL00001",
       "status": "STORAGE",
@@ -3207,7 +3208,8 @@
         "power": 10,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 20
       },
       "seriesNumber": "EL00002",
       "status": "STORAGE",
@@ -3220,7 +3222,8 @@
         "power": 10,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 20
       },
       "seriesNumber": "EL00003",
       "status": "STORAGE",
@@ -3233,7 +3236,8 @@
         "power": 10,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 20
       },
       "seriesNumber": "EL00004",
       "status": "STORAGE",
@@ -3246,7 +3250,8 @@
         "power": 15,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 23
       },
       "seriesNumber": "EL00005",
       "status": "STORAGE",
@@ -3259,7 +3264,8 @@
         "power": 15,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 23
       },
       "seriesNumber": "EL00006",
       "status": "STORAGE",
@@ -3272,7 +3278,8 @@
         "power": 15,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 23
       },
       "seriesNumber": "EL00007",
       "status": "STORAGE",
@@ -3285,7 +3292,8 @@
         "power": 15,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 23
       },
       "seriesNumber": "EL00008",
       "status": "STORAGE",
@@ -3298,7 +3306,8 @@
         "power": 15,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 23
       },
       "seriesNumber": "EL00009",
       "status": "STORAGE",
@@ -3311,7 +3320,8 @@
         "power": 20,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 26
       },
       "seriesNumber": "EL00010",
       "status": "STORAGE",
@@ -3324,7 +3334,8 @@
         "power": 20,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 26
       },
       "seriesNumber": "EL00011",
       "status": "STORAGE",
@@ -3337,7 +3348,8 @@
         "power": 20,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 26
       },
       "seriesNumber": "EL00012",
       "status": "STORAGE",
@@ -3350,7 +3362,8 @@
         "power": 20,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 26
       },
       "seriesNumber": "EL00013",
       "status": "STORAGE",
@@ -3363,7 +3376,8 @@
         "power": 20,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 26
       },
       "seriesNumber": "EL00014",
       "status": "STORAGE",
@@ -3376,7 +3390,8 @@
         "power": 25,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 29
       },
       "seriesNumber": "EL00015",
       "status": "STORAGE",
@@ -3389,7 +3404,8 @@
         "power": 25,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 29
       },
       "seriesNumber": "EL00016",
       "status": "STORAGE",
@@ -3402,7 +3418,8 @@
         "power": 25,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 29
       },
       "seriesNumber": "EL00017",
       "status": "STORAGE",
@@ -3415,7 +3432,8 @@
         "power": 25,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 29
       },
       "seriesNumber": "EL00018",
       "status": "STORAGE",
@@ -3428,7 +3446,8 @@
         "power": 25,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 29
       },
       "seriesNumber": "EL00019",
       "status": "STORAGE",
@@ -3441,7 +3460,8 @@
         "power": 30,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 32
       },
       "seriesNumber": "EL00020",
       "status": "STORAGE",
@@ -3454,7 +3474,8 @@
         "power": 30,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 32
       },
       "seriesNumber": "EL00021",
       "status": "STORAGE",
@@ -3467,7 +3488,8 @@
         "power": 30,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 32
       },
       "seriesNumber": "EL00022",
       "status": "STORAGE",
@@ -3480,7 +3502,8 @@
         "power": 30,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 32
       },
       "seriesNumber": "EL00023",
       "status": "STORAGE",
@@ -3493,7 +3516,8 @@
         "power": 30,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 32
       },
       "seriesNumber": "EL00024",
       "status": "STORAGE",
@@ -3506,7 +3530,8 @@
         "power": 35,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 35
       },
       "seriesNumber": "EL00025",
       "status": "STORAGE",
@@ -3519,7 +3544,8 @@
         "power": 35,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 35
       },
       "seriesNumber": "EL00026",
       "status": "STORAGE",
@@ -3532,7 +3558,8 @@
         "power": 35,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 35
       },
       "seriesNumber": "EL00027",
       "status": "STORAGE",
@@ -3545,7 +3572,8 @@
         "power": 35,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 35
       },
       "seriesNumber": "EL00028",
       "status": "STORAGE",
@@ -3558,7 +3586,8 @@
         "power": 35,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 35
       },
       "seriesNumber": "EL00029",
       "status": "STORAGE",
@@ -3571,7 +3600,8 @@
         "power": 40,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 38
       },
       "seriesNumber": "EL00030",
       "status": "STORAGE",
@@ -3584,7 +3614,8 @@
         "power": 40,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 38
       },
       "seriesNumber": "EL00031",
       "status": "STORAGE",
@@ -3597,7 +3628,8 @@
         "power": 40,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 38
       },
       "seriesNumber": "EL00032",
       "status": "STORAGE",
@@ -3610,7 +3642,8 @@
         "power": 40,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 38
       },
       "seriesNumber": "EL00033",
       "status": "STORAGE",
@@ -3623,7 +3656,8 @@
         "power": 40,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 38
       },
       "seriesNumber": "EL00034",
       "status": "STORAGE",
@@ -3636,7 +3670,8 @@
         "power": 45,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 41
       },
       "seriesNumber": "EL00035",
       "status": "STORAGE",
@@ -3649,7 +3684,8 @@
         "power": 45,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 41
       },
       "seriesNumber": "EL00036",
       "status": "STORAGE",
@@ -3662,7 +3698,8 @@
         "power": 45,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 41
       },
       "seriesNumber": "EL00037",
       "status": "STORAGE",
@@ -3675,7 +3712,8 @@
         "power": 45,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 41
       },
       "seriesNumber": "EL00038",
       "status": "STORAGE",
@@ -3688,7 +3726,8 @@
         "power": 45,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 41
       },
       "seriesNumber": "EL00039",
       "status": "STORAGE",
@@ -3701,7 +3740,8 @@
         "power": 50,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 44
       },
       "seriesNumber": "EL00040",
       "status": "STORAGE",
@@ -3714,7 +3754,8 @@
         "power": 50,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 44
       },
       "seriesNumber": "EL00041",
       "status": "STORAGE",
@@ -3727,7 +3768,8 @@
         "power": 50,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 44
       },
       "seriesNumber": "EL00042",
       "status": "STORAGE",
@@ -3740,7 +3782,8 @@
         "power": 50,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 44
       },
       "seriesNumber": "EL00043",
       "status": "STORAGE",
@@ -3753,7 +3796,8 @@
         "power": 50,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 44
       },
       "seriesNumber": "EL00044",
       "status": "STORAGE",
@@ -3766,7 +3810,8 @@
         "power": 55,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 47
       },
       "seriesNumber": "EL00045",
       "status": "STORAGE",
@@ -3779,7 +3824,8 @@
         "power": 55,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 47
       },
       "seriesNumber": "EL00046",
       "status": "STORAGE",
@@ -3792,7 +3838,8 @@
         "power": 55,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 47
       },
       "seriesNumber": "EL00047",
       "status": "STORAGE",
@@ -3805,7 +3852,8 @@
         "power": 55,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 47
       },
       "seriesNumber": "EL00048",
       "status": "STORAGE",
@@ -3818,7 +3866,8 @@
         "power": 55,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 47
       },
       "seriesNumber": "EL00049",
       "status": "STORAGE",
@@ -3831,7 +3880,8 @@
         "power": 60,
         "plot": 4,
         "frame": "200s",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 50
       },
       "seriesNumber": "EL00050",
       "status": "STORAGE",
@@ -3844,7 +3894,8 @@
         "power": 60,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 50
       },
       "seriesNumber": "EL00051",
       "status": "STORAGE",
@@ -3857,7 +3908,8 @@
         "power": 60,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 50
       },
       "seriesNumber": "EL00052",
       "status": "STORAGE",
@@ -3870,7 +3922,8 @@
         "power": 60,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 50
       },
       "seriesNumber": "EL00053",
       "status": "STORAGE",
@@ -3883,7 +3936,8 @@
         "power": 60,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 50
       },
       "seriesNumber": "EL00054",
       "status": "STORAGE",
@@ -3896,7 +3950,8 @@
         "power": 65,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 53
       },
       "seriesNumber": "EL00055",
       "status": "STORAGE",
@@ -3909,7 +3964,8 @@
         "power": 65,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 53
       },
       "seriesNumber": "EL00056",
       "status": "STORAGE",
@@ -3922,7 +3978,8 @@
         "power": 65,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 53
       },
       "seriesNumber": "EL00057",
       "status": "STORAGE",
@@ -3935,7 +3992,8 @@
         "power": 65,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 53
       },
       "seriesNumber": "EL00058",
       "status": "STORAGE",
@@ -3948,7 +4006,8 @@
         "power": 65,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 53
       },
       "seriesNumber": "EL00059",
       "status": "STORAGE",
@@ -3961,7 +4020,8 @@
         "power": 70,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 56
       },
       "seriesNumber": "EL00060",
       "status": "STORAGE",
@@ -3974,7 +4034,8 @@
         "power": 70,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 56
       },
       "seriesNumber": "EL00061",
       "status": "STORAGE",
@@ -3987,7 +4048,8 @@
         "power": 70,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 56
       },
       "seriesNumber": "EL00062",
       "status": "STORAGE",
@@ -4000,7 +4062,8 @@
         "power": 70,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 56
       },
       "seriesNumber": "EL00063",
       "status": "STORAGE",
@@ -4013,7 +4076,8 @@
         "power": 70,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 56
       },
       "seriesNumber": "EL00064",
       "status": "STORAGE",
@@ -4026,7 +4090,8 @@
         "power": 75,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 59
       },
       "seriesNumber": "EL00065",
       "status": "STORAGE",
@@ -4039,7 +4104,8 @@
         "power": 75,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 59
       },
       "seriesNumber": "EL00066",
       "status": "STORAGE",
@@ -4052,7 +4118,8 @@
         "power": 75,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 59
       },
       "seriesNumber": "EL00067",
       "status": "STORAGE",
@@ -4065,7 +4132,8 @@
         "power": 75,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 59
       },
       "seriesNumber": "EL00068",
       "status": "STORAGE",
@@ -4078,7 +4146,8 @@
         "power": 75,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 59
       },
       "seriesNumber": "EL00069",
       "status": "STORAGE",
@@ -4091,7 +4160,8 @@
         "power": 80,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 62
       },
       "seriesNumber": "EL00070",
       "status": "STORAGE",
@@ -4104,7 +4174,8 @@
         "power": 80,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 62
       },
       "seriesNumber": "EL00071",
       "status": "STORAGE",
@@ -4117,7 +4188,8 @@
         "power": 80,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 62
       },
       "seriesNumber": "EL00072",
       "status": "STORAGE",
@@ -4130,7 +4202,8 @@
         "power": 80,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 62
       },
       "seriesNumber": "EL00073",
       "status": "STORAGE",
@@ -4143,7 +4216,8 @@
         "power": 80,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 62
       },
       "seriesNumber": "EL00074",
       "status": "STORAGE",
@@ -4156,7 +4230,8 @@
         "power": 85,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 65
       },
       "seriesNumber": "EL00075",
       "status": "STORAGE",
@@ -4169,7 +4244,8 @@
         "power": 85,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 65
       },
       "seriesNumber": "EL00076",
       "status": "STORAGE",
@@ -4182,7 +4258,8 @@
         "power": 85,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 65
       },
       "seriesNumber": "EL00077",
       "status": "STORAGE",
@@ -4195,7 +4272,8 @@
         "power": 85,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 65
       },
       "seriesNumber": "EL00078",
       "status": "STORAGE",
@@ -4208,7 +4286,8 @@
         "power": 85,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 65
       },
       "seriesNumber": "EL00079",
       "status": "STORAGE",
@@ -4221,7 +4300,8 @@
         "power": 90,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 68
       },
       "seriesNumber": "EL00080",
       "status": "STORAGE",
@@ -4234,7 +4314,8 @@
         "power": 90,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 68
       },
       "seriesNumber": "EL00081",
       "status": "STORAGE",
@@ -4247,7 +4328,8 @@
         "power": 90,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 68
       },
       "seriesNumber": "EL00082",
       "status": "STORAGE",
@@ -4260,7 +4342,8 @@
         "power": 90,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 68
       },
       "seriesNumber": "EL00083",
       "status": "STORAGE",
@@ -4273,7 +4356,8 @@
         "power": 90,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 68
       },
       "seriesNumber": "EL00084",
       "status": "STORAGE",
@@ -4286,7 +4370,8 @@
         "power": 95,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 71
       },
       "seriesNumber": "EL00085",
       "status": "STORAGE",
@@ -4299,7 +4384,8 @@
         "power": 95,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 71
       },
       "seriesNumber": "EL00086",
       "status": "STORAGE",
@@ -4312,7 +4398,8 @@
         "power": 95,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 71
       },
       "seriesNumber": "EL00087",
       "status": "STORAGE",
@@ -4325,7 +4412,8 @@
         "power": 95,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 71
       },
       "seriesNumber": "EL00088",
       "status": "STORAGE",
@@ -4338,7 +4426,8 @@
         "power": 95,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 71
       },
       "seriesNumber": "EL00089",
       "status": "STORAGE",
@@ -4351,7 +4440,8 @@
         "power": 100,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 74
       },
       "seriesNumber": "EL00090",
       "status": "STORAGE",
@@ -4364,7 +4454,8 @@
         "power": 100,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 74
       },
       "seriesNumber": "EL00091",
       "status": "STORAGE",
@@ -4377,7 +4468,8 @@
         "power": 100,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 74
       },
       "seriesNumber": "EL00092",
       "status": "STORAGE",
@@ -4390,7 +4482,8 @@
         "power": 100,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 74
       },
       "seriesNumber": "EL00093",
       "status": "STORAGE",
@@ -4403,7 +4496,8 @@
         "power": 100,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 74
       },
       "seriesNumber": "EL00094",
       "status": "STORAGE",
@@ -4416,7 +4510,8 @@
         "power": 105,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 77
       },
       "seriesNumber": "EL00095",
       "status": "STORAGE",
@@ -4429,7 +4524,8 @@
         "power": 105,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 77
       },
       "seriesNumber": "EL00096",
       "status": "STORAGE",
@@ -4442,7 +4538,8 @@
         "power": 105,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 77
       },
       "seriesNumber": "EL00097",
       "status": "STORAGE",
@@ -4455,7 +4552,8 @@
         "power": 105,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 77
       },
       "seriesNumber": "EL00098",
       "status": "STORAGE",
@@ -4468,11 +4566,11 @@
         "power": 105,
         "plot": 4,
         "frame": "225L",
-        "voltage": "220/380"
+        "voltage": "220/380",
+        "current": 77
       },
       "seriesNumber": "EL00099",
       "status": "STORAGE",
       "remark": ""
     }
-  ]
-}
+  ]}
