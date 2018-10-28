@@ -7,7 +7,6 @@ import {debounce} from '@ember/runloop';
 import { isEmpty } from '@ember/utils';
 import _ from 'lodash';
 
-
 export default class ReplacedFormComponent extends Component{
   constructor() {
     super(...arguments);
@@ -20,6 +19,7 @@ export default class ReplacedFormComponent extends Component{
     ]
   }
   replacedReason;
+  motorStorage;
 
   @computed('newForm.{onlineMotor,offlineMotor,pm,replacedReason,worker}')
   get canSave() {
@@ -96,20 +96,23 @@ export default class ReplacedFormComponent extends Component{
   @observes('motorStorage')
   searchedStorageMotor() {
     let motorStorage = this.motorStorage;
-    _.values(this.storageMotors).forEach(motor => {
-      if(motor.id === motorStorage.id) {
-        set(this, 'searchedMotor', motor);
-      }
-    });
+    if(!isEmpty(motorStorage)){
+      _.values(this.storageMotors).forEach(motor => {
+        if(motor.id === motorStorage.id) {
+          set(this, 'searchedMotor', motor);
+        }
+      });
+    }
+
   }
 
-  @computed('equipmentList')
-  get equipmentListArray() {
+  @observes('equipmentList')
+  setEquipmentListArray() {
     let array = [];
     _.values(this.equipmentList).filter(obj => {
       array=obj.equipmentList
     });
-    return array;
+    set(this, 'equipmentListArray', array);
   }
 
   @action
@@ -133,7 +136,7 @@ export default class ReplacedFormComponent extends Component{
 
   @action
   cancelForm() {
-    this.newForm.pm = null
+    window.history.back();
   }
 
   @action

@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('detail',{path: '/:id'});
   });
   this.route('motor-repair', function() {});
+  this.route('dashboard', {path: '/'});
 });
 
 export default Router;
