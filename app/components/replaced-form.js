@@ -4,6 +4,8 @@ import {set, /*get*/} from '@ember/object';
 import RSVP from 'rsvp';
 import {debounce} from '@ember/runloop';
 // import {A} from '@ember/array';
+import { notEmpty } from '@ember/object/computed';
+
 import { isEmpty } from '@ember/utils';
 import _ from 'lodash';
 
@@ -20,6 +22,7 @@ export default class ReplacedFormComponent extends Component{
   }
   replacedReason;
   motorStorage;
+  selectedEquipment;
 
   @computed('newForm.{onlineMotor,offlineMotor,pm,replacedReason,worker}')
   get canSave() {
@@ -64,6 +67,12 @@ export default class ReplacedFormComponent extends Component{
         });
         this.getSelectedPmEquipment(pmName)
       }
+    }
+  }
+  @observes('motorOnline')
+  setVisualData() {
+    if(!isEmpty(this.selectedEquipment)) {
+      set(this, 'onlineMotorData', this.motorOnline)
     }
   }
 
@@ -136,7 +145,14 @@ export default class ReplacedFormComponent extends Component{
 
   @action
   cancelForm() {
-    window.history.back();
+    set(this, 'selectedEquipment', null);
+    set(this, 'searchedMotor', null);
+    set(this, 'onlineMotorData', null);
+    set(this, 'motorStorage', null);
+    set(this, 'motorArray', []);
+    set(this, 'clear', Math.floor(Date.now() / 1000));
+    set(this, 'equipmentListArray', []);
+    set(this, 'replacedReason', null)
   }
 
   @action

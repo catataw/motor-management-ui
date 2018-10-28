@@ -8,27 +8,27 @@
       </div>
       <div class="col xl1">
         <span class="label-title">Power: </span>
-        {{motorOnline.detail.power}}
+        {{onlineMotorData.detail.power}}
       </div>
       <div class="col xl1">
         <span class="label-title">Plot: </span>
-        {{motorOnline.detail.plot}}
+        {{onlineMotorData.detail.plot}}
       </div>
       <div class="col xl2">
         <span class="label-title">Frame: </span>
-        {{motorOnline.detail.frame}}
+        {{onlineMotorData.detail.frame}}
       </div>
       <div class="col xl2">
         <span class="label-title">Current: </span>
-        {{motorOnline.detail.current}}
+        {{onlineMotorData.detail.current}}
       </div>
       <div class="col xl2">
         <span class="label-title">Voltage: </span>
-        {{motorOnline.detail.voltage}}
+        {{onlineMotorData.detail.voltage}}
       </div>
       <div class="col xl3">
         <span class="label-title">Series Number: </span>
-        {{motorOnline.seriesNumber}}
+        {{onlineMotorData.seriesNumber}}
       </div>
     </div>
 
@@ -72,7 +72,7 @@
 
     <div class="row">
       <div class="col m4 xl3">
-        <MdSelect @options={{pmList}} @label="PM" @selectedOption={{newForm.pm}} @initMessage="Select PM"></MdSelect>
+        <MdSelect @options={{pmList}} @label="PM" @selectedOption={{newForm.pm}} @initMessage="Select PM" @clear={{clear}}/>
       </div>
 
       <div class="col m4 xl3">
@@ -113,11 +113,13 @@
     <div class="row">
       <div class="col xl3">
         <MdSelect @options={{userList}} @label="Mechanic"
-                  @selectedOption={{newForm.worker}} @initMessage="Select Mechanic"></MdSelect>
+                  @selectedOption={{newForm.worker}} @initMessage="Select Mechanic"
+                  @clear={{clear}}/>
       </div>
       <div class="col xl3">
         <MdSelect @options={{this.replacedReasonArray}} @label="Replaced reason"
-                  @selectedOption={{newForm.replacedReason}} @initMessage="Replaced Reason" />
+                  @selectedOption={{newForm.replacedReason}} @initMessage="Replaced Reason"
+                  @clear={{clear}}/>
       </div>
       {{#if showReasonTextArea}}
         <div class="col xl4">

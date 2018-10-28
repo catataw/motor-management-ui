@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { action, observes, computed} from '@ember-decorators/object';
+import { action, observes} from '@ember-decorators/object';
 import _ from 'lodash';
 import {set} from '@ember/object';
 
@@ -19,6 +19,11 @@ export default class MdSelect extends Component{
     } else {
       set(this, 'uiOptions', this.options)
     }
+  }
+
+  @observes('clear')
+  initSelect() {
+    this.$('select').val(-1)
   }
 
   selectOptionAction = this.setSelection;
