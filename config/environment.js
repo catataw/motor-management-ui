@@ -22,6 +22,10 @@ module.exports = function(environment) {
     },
     API: {
       host: "http://localhost:3000",
+    },
+
+    Stomp: {
+      url: 'http://localhost:8080/stomp'
     }
   };
 

@@ -1,6 +1,6 @@
 import {route} from 'ember-redux';
-import {fetchUsers} from '../redux/actions/users';
+import {openWebSocketConnection} from '../redux/actions/stomp';
 
-// const model = (dispatch) => dispatch(fetchUsers());
+// const model = (dispatch) => dispatch(openWebSocketConnection());
 const model = dispatch => console.log('in application route')
 export default route({model})();

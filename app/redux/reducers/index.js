@@ -5,7 +5,8 @@ import replace from './replace';
 import pm from './pm';
 import equipment from './equipment';
 import motor from './motor';
-import statuses from './statuses'
+import statuses from './statuses';
+import stomp from './stomp';
 
 export default combineReducers({
   users,
@@ -14,6 +15,7 @@ export default combineReducers({
   pm,
   equipment,
   motor,
-  statuses
+  statuses,
+  stomp
 });
 

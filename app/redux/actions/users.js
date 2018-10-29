@@ -12,4 +12,12 @@ export const fetchUserDetailsFailed = createAction('FETCH_USER_DETAILS_FAILED');
 export const gotoUsersPage = createAction('GO_TO_USERS_PAGE');
 export const gotoUsersPageSuccess = createAction('GO_TO_USERS_PAGE_SUCCESS');
 
+//web socket actions
+export const subscribeToUsersSuccess = createAction("SUBSCRIBE_TO_USERS_SUCCESS");
+export const subscribeToUsersFailed = createAction("SUBSCRIBE_TO_USERS_FAILED");
+export const receiveUsersSuccess = createAction("RECEIVE_USERS_SUCCESS");
+export const unsubscribeFromUsers = createAction("UNSUBSCRIBE_FROM_USERs");
+export const unsubscribeFromUsersSuccess = createAction("UNSUBSCRIBE_FROM_USERS_SUCCESS")
+
+
 

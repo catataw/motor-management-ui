@@ -1,8 +1,11 @@
 import {combineEpics} from 'redux-observable';
 import {
-  fetchUsersEpic,
+  // fetchUsersEpic,
   // fetchUserDetailsEpic
 } from './users';
+import {
+  fetchUsersEpic
+} from './websocket/users';
 import {
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
@@ -33,6 +36,8 @@ import {
 
 import {fetchStatusesEpic} from './statuses'
 
+import {openWebSocketConnectionEpic} from './websocket/stomp'
+
 export default combineEpics(
   fetchUsersEpic,
   // fetchUserDetailsEpic,
@@ -49,5 +54,6 @@ export default combineEpics(
   fetchMotorEpic,
   fetchOnlineMotorEpic,
   fetchStatusesEpic,
-  sendNewReplaceFormEpic
+  sendNewReplaceFormEpic,
+  openWebSocketConnectionEpic
 );

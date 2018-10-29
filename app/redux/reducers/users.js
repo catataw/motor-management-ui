@@ -2,7 +2,8 @@ import {handleActions} from 'redux-actions';
 import {
   fetchUsers, fetchUsersSuccess, fetchUsersFailed,
   fetchUserDetails, fetchUserDetailsFailed, fetchUserDetailsSuccess,
-  gotoUsersPage, gotoUsersPageSuccess
+  gotoUsersPage, gotoUsersPageSuccess, subscribeToUsersSuccess,
+  receiveUsersSuccess, unsubscribeFromUsers, unsubscribeFromUsersSuccess
 } from '../actions/users';
 import _ from 'lodash';
 
@@ -71,5 +72,31 @@ export default handleActions({
       // loading: true // state.users.loading
     }
   },
+  [subscribeToUsersSuccess](state, {payload}) {
+    return {
+      ...state,
+    }
+  },
+  [receiveUsersSuccess](state, {payload}) {
+    return {
+      ...state,
+      error: null,
+      all: {
+        ...state.all,
+        ...payload
+      },
+      loading: false
+    }
+  },
+  [unsubscribeFromUsers](state) {
+    return {
+      ...state
+    }
+  },
+  [unsubscribeFromUsersSuccess](state) {
+    return {
+      ...state
+    }
+  }
 }, initialState);
 
