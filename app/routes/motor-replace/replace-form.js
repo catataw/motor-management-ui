@@ -1,10 +1,12 @@
 import {route} from 'ember-redux';
-import {fetchUsers} from '../../redux/actions/users';
+import {fetchUsers, subscribeAndFetchUsers} from '../../redux/actions/users';
 import {fetchPMList} from '../../redux/actions/pm';
 import {fetchStatuses} from '../../redux/actions/statuses'
 const model = (dispatch) => {
-    dispatch(fetchUsers());
+    // dispatch(fetchUsers());
     dispatch(fetchPMList());
-    dispatch(fetchStatuses())
+    dispatch(fetchStatuses());
+    dispatch(subscribeAndFetchUsers());
+
 };
 export default route({model})();

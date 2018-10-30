@@ -1,68 +1,74 @@
 import {ofType} from "redux-observable";
-import {fetchUsers, fetchUsersFailed, fetchUsersSuccess,
+import {
   subscribeToUsersSuccess, subscribeToUsersFailed,
-  receiveUsersSuccess, unsubscribeFromUsers, unsubscribeFromUsersSuccess
+  receiveUsersSuccess, unsubscribeFromUsers, unsubscribeFromUsersSuccess,
+  subscribeAndFetchUsers, fetchUsersWebSocket, fetchUsersWebSocketSuccess,
+  fetchUsersWebSocketFailed
 } from "../../actions/users";
 import {merge} from 'rxjs';
 import { map, switchMap, takeUntil} from "rxjs/operators";
-import {ajax} from "rxjs/ajax";
-import {normalize} from "normalizr";
+import {normalize, schema} from "normalizr";
 import {of} from "rxjs";
-import {subscribeUsersTopic, fetchUsersEndpoints} from '../../topic/users'
+import {subscribeUsersTopic, fetchUsersEndpoints} from '../../topic/users';
 
-export const fetchUsersEpic = (action$, state$) => action$.pipe(
-  ofType(fetchUsers.toString()),
+const userSchema = new schema.Entity('users');
+
+export const subscribeAndFetchUsersEpic = (action$, state$) => action$.pipe(
+  ofType(subscribeAndFetchUsers.toString()),
   switchMap(() => {
     const {value: {stomp: {connectedClient}}} = state$;
-    try{
+    try {
       const source = connectedClient.subscribeBroadcast(subscribeUsersTopic);
       return merge(
         of(subscribeToUsersSuccess()),
         source.pipe(
           map(message => {
-            return receiveUsersSuccess(message)
+            let usersObject = JSON.parse(message.body);
+            const normalized = normalize(usersObject, [userSchema]);
+            const { users } = normalized.entities;
+            return receiveUsersSuccess(users);
           }),
           takeUntil(action$.pipe(
-            ofType(unsubscribeFromUsers().toString()),
-            map(() => unsubscribeFromUsersSuccess())
+            ofType(unsubscribeFromUsers.toString())
           ))
         ),
-        action$.pipe( // emit "UNSUBSCRIBE_SUCCESS" after receiving "UNSUBSCRIBE" action
+        of(fetchUsersWebSocket()),
+        action$.pipe(
+          ofType(fetchUsersWebSocket.toString()),
+            map(() => {
+            const {value: {stomp: {connectedClient}}} = state$;
+            try {
+              connectedClient.send(fetchUsersEndpoints);
+              return fetchUsersWebSocketSuccess();
+            } catch (err) {
+              return fetchUsersWebSocketFailed(err);
+            }
+          })
+          ),
+        action$.pipe(
           ofType(unsubscribeFromUsers.toString()),
-          map(() => unsubscribeFromUsersSuccess())
+          map(() => {
+            console.log('test123 unsubscribe')
+            connectedClient.unsubscribe(subscribeUsersTopic);
+            return unsubscribeFromUsersSuccess()
+          })
         )
-      ),
-
-      // return merge(
-      //   of(subscribeToSalesOrdersSuccess()), // emit "SUBSCRIBE_SUCCESS" action after subscribeBroadCast() call
-      //   source.pipe( // handle subscription stream
-      //     map(message => {
-      //       return receiveSalesOrdersSuccess(message);
-      //     }),
-      //     takeUntil(action$.pipe( // stop subscription stream after receiving "UNSUBSCRIBE" action
-      //       ofType(unsubscribeFromSalesOrders.toString())
-      //     ))
-      //   ),
-      //   action$.pipe( // emit "UNSUBSCRIBE_SUCCESS" after receiving "UNSUBSCRIBE" action
-      //     ofType(unsubscribeFromSalesOrders.toString()),
-      //     map(() => unsubscribeFromSalesOrdersSuccess())
-      //   )
-      // );
-      //
-      // );
-      switchMap(action => action)
-    } catch(err) {
-      console.log('test123', err)
-      return of(subscribeToUsersFailed(err));
+      )
+    } catch (err) {
+      return of(subscribeToUsersFailed(err))
     }
-
-    // return ajax.getJSON(`${config.API.host}/users`).pipe(
-    //   map(response => {
-    //     const normalized = normalize(response, [userSchema]);
-    //     const { users } = normalized.entities;
-    //     return fetchUsersSuccess(users);
-    //   }),
-    //   catchError(err => of(fetchUsersFailed(err)))
-    // );
   })
-)
+);
+
+// export const fetchUsersWebSocketEpic = (action$, state$) => action$.pipe(
+//   ofType(fetchUsersWebSocket.toString()),
+//   map(() => {
+//     const {value: {stomp: {connectedClient}}} = state$;
+//     try {
+//       connectedClient.send(fetchUsersEndpoints);
+//       return fetchUsersWebSocketSuccess();
+//     } catch (err) {
+//       return fetchUsersWebSocketFailed(err);
+//     }
+//   })
+// );
