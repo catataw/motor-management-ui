@@ -10,6 +10,9 @@ import {
   fetchStatusesWebSocketEpic,
 } from './websocket/statuses';
 import {
+  subscribeAndFetchPMListEpic
+} from './websocket/pm';
+import {
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
   deleteMotorByIdEpic,
@@ -62,5 +65,6 @@ export default combineEpics(
 
   //web socket
   subscribeAndFetchUsersEpic,
-  fetchStatusesWebSocketEpic
+  fetchStatusesWebSocketEpic,
+  subscribeAndFetchPMListEpic
 );

@@ -18,6 +18,7 @@ export const fetchPMListEpic = action$ => action$.pipe(
       map(response => {
         const normalized = normalize(response, [pmSchema]);
         const { pm } = normalized.entities;
+        console.log('test123 in ajax', pm)
         return fetchPMListSuccess(pm);
       }),
       catchError(err => {of(fetchPMListFailed(err))})

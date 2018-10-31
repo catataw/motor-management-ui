@@ -2,7 +2,8 @@ import {handleActions} from 'redux-actions';
 import {
   fetchPMList,
   fetchPMListSuccess,
-  fetchPMListFailed
+  fetchPMListFailed,
+  receivePMListSuccess
 } from '../actions/pm';
 import _ from 'lodash';
 
@@ -12,8 +13,7 @@ const initState = {
   selectedId: null,
   filters: [],
   loading: false
-}
-
+};
 
 export default handleActions({
   [fetchPMList](state) {
@@ -25,7 +25,10 @@ export default handleActions({
   [fetchPMListSuccess](state, {payload}) {
     return {
       ...state,
-      all: payload,
+      all: {
+        ...state.all,
+        ...payload
+      },
       loading: false,
       error: null,
     }
@@ -35,6 +38,17 @@ export default handleActions({
       ...state,
       error: message,
       loading: false
+    }
+  },
+  [receivePMListSuccess] (state, {payload}) {
+    return {
+      ...state,
+      all: {
+        ...state.all,
+        ...payload
+      },
+      loading: false,
+      error: null,
     }
   }
 }, initState)
