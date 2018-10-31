@@ -135,7 +135,7 @@ export default class ReplacedFormComponent extends Component{
     if (this.searchMotorBySeriesNumber) {
       let status = null;
       _.values(this.statuses).filter(s => {
-        if (s.id === '1') {
+        if (s.id === 1) {
           status = s.status
         }
       });

@@ -8,7 +8,7 @@ import {fetchMotor, fetchOnlineMotor} from '../redux/actions/motor'
 import {fetchEquipmentList} from "../redux/actions/equipment";
 import {getOnlineMotor, getStorageMotor} from '../redux/selectors/motor';
 import {getStatuses} from '../redux/selectors/statuses';
-import {sendNewReplaceForm} from '../redux/actions/replace'
+import {sendNewReplaceForm} from '../redux/actions/replace';
 
 class ReplacedFormContainer extends Component {}
 

@@ -22,7 +22,7 @@ export const openWebSocketConnectionEpic = (action$) => action$.pipe(
       const conn = client.connect({});
       return conn.pipe(
         map(connectedClient => openWebSocketConnectionSuccess(connectedClient)),
-        delay(3000),
+        // delay(3000),
         takeUntil(action$.ofType(closeWebSocketConnection.toString())),
         catchError(/*err*/() => of(openWebSocketConnectionFailed("Retry connect websocket server when 10 s after."))),
       )
@@ -46,7 +46,6 @@ export const openWebSocketConnectionFailedRetryEpic = (action$, state$) => actio
       }else{
         return {type:"REQUIRE_LOGIN"};
       }
-
     }
   )
 );

@@ -2,7 +2,8 @@ import {handleActions} from 'redux-actions';
 import {
   fetchStatuses,
   fetchStatusesFailed,
-  fetchStatusesSuccess
+  fetchStatusesSuccess,
+  receiveStatusesSuccess
 } from '../../redux/actions/statuses';
 
 const initStates = {
@@ -34,6 +35,17 @@ export default handleActions( {
       ...state,
       error: message,
       loading: false
+    }
+  },
+  [receiveStatusesSuccess](state, {payload}) {
+    return {
+      ...state,
+      all: {
+        ...state.all,
+        ...payload
+      },
+      loading: false,
+      error: null
     }
   }
 }, initStates);

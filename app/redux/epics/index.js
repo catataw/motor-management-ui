@@ -5,8 +5,10 @@ import {
 } from './users';
 import {
   subscribeAndFetchUsersEpic,
-  // fetchUsersWebSocketEpic
 } from './websocket/users';
+import {
+  fetchStatusesWebSocketEpic,
+} from './websocket/statuses';
 import {
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
@@ -57,6 +59,8 @@ export default combineEpics(
   fetchStatusesEpic,
   sendNewReplaceFormEpic,
   openWebSocketConnectionEpic,
-  // fetchUsersWebSocketEpic,
-  subscribeAndFetchUsersEpic
+
+  //web socket
+  subscribeAndFetchUsersEpic,
+  fetchStatusesWebSocketEpic
 );

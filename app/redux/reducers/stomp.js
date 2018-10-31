@@ -8,7 +8,8 @@ import {
 const initialState = { // state.stomp
   connectedClient: null, // state.stomp.connectedClient
   error: null, // state.stomp.error
-  loading: false // state.stomp.loading
+  loading: false, // state.stomp.loading
+  connectedSuccess: false
 };
 
 export default handleActions({
@@ -25,7 +26,8 @@ export default handleActions({
       ...state,
       error: null, // reset state.stomp.error
       connectedClient: payload, // state.stomp.connectedClient
-      loading: false // state.stomp.loading
+      loading: false, // state.stomp.loading
+      connectedSuccess: true
     }
   },
   [openWebSocketConnectionFailed](state, { payload }) {

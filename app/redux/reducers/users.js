@@ -3,7 +3,7 @@ import {
   fetchUsers, fetchUsersSuccess, fetchUsersFailed,
   fetchUserDetails, fetchUserDetailsFailed, fetchUserDetailsSuccess,
   gotoUsersPage, gotoUsersPageSuccess, subscribeToUsersSuccess,
-  receiveUsersSuccess, unsubscribeFromUsers, unsubscribeFromUsersSuccess
+  receiveUsersSuccess
 } from '../actions/users';
 import _ from 'lodash';
 
@@ -72,11 +72,6 @@ export default handleActions({
       // loading: true // state.users.loading
     }
   },
-  [subscribeToUsersSuccess](state, {payload}) {
-    return {
-      ...state,
-    }
-  },
   [receiveUsersSuccess](state, {payload}) {
     return {
       ...state,
@@ -88,15 +83,5 @@ export default handleActions({
       loading: false
     }
   },
-  [unsubscribeFromUsers](state) {
-    return {
-      ...state
-    }
-  },
-  [unsubscribeFromUsersSuccess](state) {
-    return {
-      ...state
-    }
-  }
 }, initialState);
 

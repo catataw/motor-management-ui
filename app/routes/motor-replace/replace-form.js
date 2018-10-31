@@ -1,12 +1,17 @@
-import {route} from 'ember-redux';
-import {fetchUsers, subscribeAndFetchUsers} from '../../redux/actions/users';
+import {subscribeAndFetchUsers} from '../../redux/actions/users';
 import {fetchPMList} from '../../redux/actions/pm';
-import {fetchStatuses} from '../../redux/actions/statuses'
-const model = (dispatch) => {
-    // dispatch(fetchUsers());
-    dispatch(fetchPMList());
-    dispatch(fetchStatuses());
-    dispatch(subscribeAndFetchUsers());
+import {subscribeAndFetchStatuses} from '../../redux/actions/statuses';
+import {service} from '@ember-decorators/service';;
+import {later} from '@ember/runloop';
+import Route from '@ember/routing/route';
 
-};
-export default route({model})();
+export default class ReplaceForm extends Route.extend() {
+  @service redux;
+  setupController() {
+    this.redux.dispatch(fetchPMList());
+    later(() => {
+      this.redux.dispatch(subscribeAndFetchUsers());
+      this.redux.dispatch((subscribeAndFetchStatuses()))
+    }, 800)
+  }
+}
