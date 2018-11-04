@@ -1,2 +1,2 @@
-export const subscribeStorageTopic="/topic/storage";
+export const subscribeStorageTopic="/user/queue/storage";
 export const fetchStorageEndpoints = '/app/storage';
