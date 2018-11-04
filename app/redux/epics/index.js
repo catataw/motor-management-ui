@@ -13,11 +13,14 @@ import {
   subscribeAndFetchPMListEpic
 } from './websocket/pm';
 import {
+  subscribeAndFetchStorageEpic
+} from './websocket/storage';
+import {
   fetchAllStorageEpic,
   fetchStorageDetailEpic,
   deleteMotorByIdEpic,
   updateMotorEpic,
-  saveMotorEpic
+  saveMotorEpic,
 } from './storage';
 
 import {
@@ -66,5 +69,6 @@ export default combineEpics(
   //web socket
   subscribeAndFetchUsersEpic,
   fetchStatusesWebSocketEpic,
-  subscribeAndFetchPMListEpic
+  subscribeAndFetchPMListEpic,
+  subscribeAndFetchStorageEpic
 );

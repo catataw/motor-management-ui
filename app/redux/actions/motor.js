@@ -8,3 +8,4 @@ export const fetchOnlineMotor = createAction("FETCH_ONLINE_MOTOR");
 export const fetchOnlineMotorSuccess = createAction("FETCH_ONLINE_MOTOR_SUCCESS");
 export const fetchOnlineMotorFailed = createAction("FETCH_ONLINE_MOTOR_FAILED");
 
+export const fetchMotorsSuccess = createAction("FETCH_MOTORS_SUCCESS");

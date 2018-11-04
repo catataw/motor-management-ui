@@ -5,7 +5,8 @@ import {
   fetchMotorFailed,
   fetchOnlineMotor,
   fetchOnlineMotorSuccess,
-  fetchOnlineMotorFailed
+  fetchOnlineMotorFailed,
+  fetchMotorsSuccess
 } from '../../redux/actions/motor';
 
 const initStates = {
@@ -58,6 +59,17 @@ export default handleActions({
     return {
       ...state,
       error: message,
+      loading: false
+    }
+  },
+  [fetchMotorsSuccess](state, {payload}) {
+    return {
+      ...state,
+      error: null,
+      all: {
+        ...state.all,
+        ...payload
+      },
       loading: false
     }
   }

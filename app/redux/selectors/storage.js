@@ -1,6 +1,7 @@
 import {createSelector} from 'reselect/es';
 import _ from 'lodash';
-
+import {isEmpty} from '@ember/utils';
+import {set} from '@ember/object';
 
 const getStorageSelector = state => state.storage.all;
 const getLoadingSelector = state => state.storage.loading;
@@ -11,6 +12,8 @@ const getSelectedMotorId = state => state.storage.selectedId;
 const isDeletedMotor = state => state.storage.isDeleted;
 const getNewMotorSelector = state => state.storage.newMotor;
 const responseStatus = state => state.storage.responseStatus;
+const getMotors = state => state.motor.all;
+const getDetails = state => state.storage.details;
 
 // export const getStorageList = createSelector(
 //   [getStorageSelector],
@@ -35,11 +38,23 @@ export const getStoragePageCount = createSelector(
 );
 
 export const getStorageListByPage = createSelector(
-  [getStorageSelector,getPageIndexSelector, getPageSizeSelector],
-  (storage, pageIndex, pageSize)  =>
-    _.values(storage).filter((motor, index) => {
+  [getStorageSelector,getPageIndexSelector, getPageSizeSelector, getMotors, getDetails],
+  (storage, pageIndex, pageSize, motors, details)  => {
+    let tmpStorage = _.clone(storage);
+    _.values(tmpStorage).forEach(tmpStorage => {
+      let motor = _.get(motors, tmpStorage.motor);
+      if(!isEmpty(motor) && !isEmpty(details)) {
+        let detail = _.get(details, motor.detail);
+        if(!isEmpty(detail)) {
+          motor.detail = detail;
+          set(tmpStorage, 'motor', motor)
+        }
+      }
+    });
+    return _.values(tmpStorage).filter((motor, index) => {
       return index >= (pageIndex-1)*pageSize && index < pageIndex*pageSize;
     })
+  }
 );
 
 export const getLoading = createSelector(

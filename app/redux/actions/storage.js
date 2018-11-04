@@ -1,5 +1,6 @@
 import {createAction} from 'redux-actions';
 
+//ajax
 export const fetchAllStorageList = createAction("FETCH_ALL_STORAGE_LIST");
 export const fetchAllStorageListSuccess = createAction("FETCH_ALL_STORAGE_LIST_SUCCESS");
 export const fetchAllStorageListFailed = createAction("FETCH_ALL_STORAGE_LIST_FAILED");
@@ -28,3 +29,13 @@ export const createMotorSuccess = createAction("CREATE_MOTOR_SUCCESS");
 export const createMotorFailed = createAction("CREATE_MOTOR_FAILED");
 
 export const cancelMotor = createAction("CANCEL_MOTOR");
+
+
+//web socket
+export const fetchStorageWebSocket = createAction("FETCH_STORAGE_WEB_SOCKET");
+export const fetchStorageWebSocketSuccess = createAction("FETCH_STORAGE_WEB_SOCKET_SUCCESS");
+export const fetchStorageWebSocketFailed = createAction("FETCH_STORAGE_WEB_SOCKET_FAILED");
+export const subscribeAndFetchStorage = createAction("SUBSCRIBE_AND_FETCH_STORAGE");
+export const subscribeAndFetchStorageFailed = createAction("SUBSCRIBE_AND_FETCH_STORAGE_FAILED");
+export const receiveStorageSuccess = createAction("RECEIVE_STORAGE_SUCCESS");
+export const fetchDetailsSuccess = createAction("FETCH_DETAILS_SUCCESS");

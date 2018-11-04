@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { action, observes, computed} from '@ember-decorators/object';
-import {set, /*get*/} from '@ember/object';
+import {set} from '@ember/object';
 import RSVP from 'rsvp';
 import {debounce} from '@ember/runloop';
 // import {A} from '@ember/array';

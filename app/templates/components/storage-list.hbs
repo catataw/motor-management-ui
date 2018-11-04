@@ -24,16 +24,16 @@
       </tr>
       </thead>
       <tbody>
-      {{#each storageList as |m|}}
+      {{#each storageList as |s|}}
         <tr>
-          <td>{{#link-to "storage.detail" m.id}}{{m.location}}{{/link-to}}</td>
-          <td>{{m.detail.power}}</td>
-          <td>{{m.detail.plot}}</td>
-          <td>{{m.detail.frame}}</td>
-          <td>{{m.detail.current}}</td>
-          <td>{{m.detail.voltage}}</td>
-          <td>{{m.seriesNumber}}</td>
-          <td>{{m.remark}}</td>
+          <td>{{#link-to "storage.detail" m.id}}{{s.location}}{{/link-to}}</td>
+          <td>{{s.motor.detail.power}}</td>
+          <td>{{s.motor.detail.plot}}</td>
+          <td>{{s.motor.detail.frame}}</td>
+          <td>{{s.motor.detail.current}}</td>
+          <td>{{s.motor.detail.voltage}}</td>
+          <td>{{s.motor.seriesNumber}}</td>
+          <td>{{s.motor.remark}}</td>
         </tr>
       {{/each}}
       </tbody>

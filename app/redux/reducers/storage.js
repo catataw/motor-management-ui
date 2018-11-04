@@ -1,22 +1,15 @@
 import {handleActions} from 'redux-actions';
 import {fetchAllStorageList,
-  fetchAllStorageListSuccess,
-  fetchAllStorageListFailed,
-  gotoStoragePage,
-  fetchStorageDetail,
-  fetchStorageDetailSuccess,
-  fetchStorageDetailFailed,
-  deleteMotorById,
-  deleteMotorByIdFailed,
-  deleteMotorByIdSuccess,
-  updateMotor,
-  updateMotorFailed,
-  updateMotorSuccess,
-  createMotor,
-  createMotorFailed,
-  createMotorSuccess,
-  sendCreateMotor,
-  cancelMotor
+  fetchAllStorageListSuccess, fetchAllStorageListFailed,
+  gotoStoragePage, fetchStorageDetail,
+  fetchStorageDetailSuccess, fetchStorageDetailFailed,
+  deleteMotorById, deleteMotorByIdFailed,
+  deleteMotorByIdSuccess, updateMotor,
+  updateMotorFailed, updateMotorSuccess,
+  createMotor, createMotorFailed,
+  createMotorSuccess, sendCreateMotor, cancelMotor,
+  fetchStorageWebSocket, fetchStorageWebSocketSuccess, fetchStorageWebSocketFailed,
+  subscribeAndFetchStorage, subscribeAndFetchStorageFailed, receiveStorageSuccess, fetchDetailsSuccess
 } from "../actions/storage";
 
 
@@ -29,7 +22,8 @@ const initStates = {
   pageSize: 15,
   loading: false,
   isDeleted: false,
-  responseStatus: 0
+  responseStatus: 0,
+  details: {}
 };
 
 export default handleActions({
@@ -42,7 +36,10 @@ export default handleActions({
   [fetchAllStorageListSuccess](state, {payload}) {
     return {
       ...state,
-      all: payload,
+      all: {
+        ...state.all,
+        ...payload
+      },
       loading: false,
       error: null,
       isDeleted: false
@@ -169,6 +166,42 @@ export default handleActions({
       newMotor: {
         detail:{}
       }
+    }
+  },
+  [receiveStorageSuccess] (state, {payload}) {
+    return {
+      ...state,
+      all: {
+        ...state.all,
+        ...payload
+      },
+      error: null,
+      loading: false
+    }
+  },
+  [fetchDetailsSuccess] (state, {payload}) {
+    return {
+      ...state,
+      details: {
+        ...state.details,
+        ...payload
+      },
+      error: null,
+      loading: false
+    }
+  },
+  [fetchStorageWebSocketFailed] (state, {payload}) {
+    return {
+      ...state,
+      error: payload,
+      loading: false
+    }
+  },
+  [subscribeAndFetchStorageFailed] (state, {payload}) {
+    return {
+      ...state,
+      error: payload,
+      loading: false
     }
   }
 }, initStates)

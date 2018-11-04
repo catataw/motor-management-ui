@@ -1,6 +1,13 @@
-import {route} from 'ember-redux';
-import {fetchAllStorageList} from '../../redux/actions/storage';
+import {subscribeAndFetchStorage} from '../../redux/actions/storage';
+import {service} from '@ember-decorators/service';
+import {later} from '@ember/runloop';
+import Route from '@ember/routing/route';
 
-const model = (dispatch) => dispatch(fetchAllStorageList());
-
-export default route({model})();
+export default class StorageIndexList extends Route.extend() {
+  @service redux;
+  setupController() {
+    later(() => {
+      this.redux.dispatch(subscribeAndFetchStorage());
+    }, 400)
+  }
+}

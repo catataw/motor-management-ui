@@ -24,7 +24,6 @@ export const subscribeAndFetchPMListEpic = (action$, state$) => action$.pipe(
             let pmObject = JSON.parse(message.body);
             const normalized = normalize(pmObject, [pmSchema]);
             const { pm } = normalized.entities;
-            console.log('test123 in web socket', pm);
             return receivePMListSuccess(pm)
           })
         ),
