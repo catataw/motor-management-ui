@@ -63,12 +63,25 @@ export const getLoading = createSelector(
 );
 
 export const getStorageDetail = createSelector(
-  [getStorageSelector, getSelectedMotorId, isDeletedMotor],
-  (storage, selectedId, isDelete) => {
+  [getStorageSelector, getSelectedMotorId, isDeletedMotor, getMotors, getDetails],
+  (storage, selectedId, isDelete, motors, details) => {
     if(isDelete) {
       return null;
     }
-    return storage[selectedId]
+    let tmpStorage = _.clone(storage[selectedId]);
+    let motor = null;
+
+    if(!isEmpty(tmpStorage)) {
+      motor = _.get(motors, tmpStorage.motor);
+    }
+    if(!isEmpty(motor)) {
+      let detail = _.get(details, motor.detail);
+      if(!isEmpty(detail)) {
+        motor.detail = detail;
+        set(tmpStorage, 'motor', motor)
+      }
+    }
+    return tmpStorage
   }
 );
 

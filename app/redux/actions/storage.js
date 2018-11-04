@@ -39,3 +39,11 @@ export const subscribeAndFetchStorage = createAction("SUBSCRIBE_AND_FETCH_STORAG
 export const subscribeAndFetchStorageFailed = createAction("SUBSCRIBE_AND_FETCH_STORAGE_FAILED");
 export const receiveStorageSuccess = createAction("RECEIVE_STORAGE_SUCCESS");
 export const fetchDetailsSuccess = createAction("FETCH_DETAILS_SUCCESS");
+
+export const fetchStorageDetailWebSocket = createAction("FETCH_STORAGE_DETAIL_WEB_SOCKET");
+export const fetchStorageDetailWebSocketSuccess = createAction("FETCH_STORAGE_DETAIL_WEB_SOCKET_SUCCESS");
+export const fetchStorageDetailWebSocketFailed = createAction("FETCH_STORAGE_DETAIL_WEB_SOCKET_FAILED");
+export const subscribeAndFetchStorageDetail = createAction("SUBSCRIBE_AND_FETCH_STORAGE_DETAIL");
+export const subscribeAndFetchStorageDetailFailed = createAction("SUBSCRIBE_AND_FETCH_STORAGE_DETAIL_FAILED");
+export const receiveStorageDetailSuccess = createAction("RECEIVE_STORAGE_DETAIL_SUCCESS");
+export const fetchStorageMotorDetailsSuccess = createAction("FETCH_STORAGE_MOTOR_DETAILS_SUCCESS");

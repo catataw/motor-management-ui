@@ -6,9 +6,10 @@ import {deleteMotorById, updateMotor} from '../redux/actions/storage'
 class StorageDetailContainer extends Component {}
 
 const stateToComputed = state => {
+  // console.log('test123  getStorageDetail(state)',  getStorageDetail(state));
   return {
     isLoading: getLoading(state),
-    motor: getStorageDetail(state)
+    storageDetail: getStorageDetail(state)
   }
 };
 

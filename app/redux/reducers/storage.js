@@ -9,7 +9,8 @@ import {fetchAllStorageList,
   createMotor, createMotorFailed,
   createMotorSuccess, sendCreateMotor, cancelMotor,
   fetchStorageWebSocket, fetchStorageWebSocketSuccess, fetchStorageWebSocketFailed,
-  subscribeAndFetchStorage, subscribeAndFetchStorageFailed, receiveStorageSuccess, fetchDetailsSuccess
+  subscribeAndFetchStorage, subscribeAndFetchStorageFailed, receiveStorageSuccess, fetchDetailsSuccess,
+  subscribeAndFetchStorageDetail
 } from "../actions/storage";
 
 
@@ -202,6 +203,12 @@ export default handleActions({
       ...state,
       error: payload,
       loading: false
+    }
+  },
+  [subscribeAndFetchStorageDetail](state, {payload}) {
+    return {
+      ...state,
+      selectedId: payload
     }
   }
 }, initStates)
