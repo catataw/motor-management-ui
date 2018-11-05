@@ -47,7 +47,6 @@ export const getReplacedDetail = createSelector(
   [replacedList, getSelectedMotorId],
   (replaced, selectedId) => {
     return _.get(replaced, selectedId, null)
-    // return replaced[selectedId]
   }
 );
 

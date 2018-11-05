@@ -68,7 +68,7 @@ export const getStorageDetail = createSelector(
     if(isDelete) {
       return null;
     }
-    let tmpStorage = _.clone(storage[selectedId]);
+    let tmpStorage = _.get(storage, selectedId, null);
     let motor = null;
 
     if(!isEmpty(tmpStorage)) {
