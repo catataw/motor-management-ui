@@ -14,7 +14,8 @@ import {
 } from './websocket/pm';
 import {
   subscribeAndFetchStorageEpic,
-  subscribeAndFetchStorageDetailEpic
+  subscribeAndFetchStorageDetailEpic,
+  subscribeUpdateStorageEpic
 } from './websocket/storage';
 import {
   fetchAllStorageEpic,
@@ -72,5 +73,6 @@ export default combineEpics(
   fetchStatusesWebSocketEpic,
   subscribeAndFetchPMListEpic,
   subscribeAndFetchStorageEpic,
-  subscribeAndFetchStorageDetailEpic
+  subscribeAndFetchStorageDetailEpic,
+  subscribeUpdateStorageEpic
 );

@@ -30,7 +30,6 @@ export const createMotorFailed = createAction("CREATE_MOTOR_FAILED");
 
 export const cancelMotor = createAction("CANCEL_MOTOR");
 
-
 //web socket
 export const fetchStorageWebSocket = createAction("FETCH_STORAGE_WEB_SOCKET");
 export const fetchStorageWebSocketSuccess = createAction("FETCH_STORAGE_WEB_SOCKET_SUCCESS");
@@ -47,3 +46,11 @@ export const subscribeAndFetchStorageDetail = createAction("SUBSCRIBE_AND_FETCH_
 export const subscribeAndFetchStorageDetailFailed = createAction("SUBSCRIBE_AND_FETCH_STORAGE_DETAIL_FAILED");
 export const receiveStorageDetailSuccess = createAction("RECEIVE_STORAGE_DETAIL_SUCCESS");
 export const fetchStorageMotorDetailsSuccess = createAction("FETCH_STORAGE_MOTOR_DETAILS_SUCCESS");
+
+export const subscribeUpdateStorage = createAction("SUBSCRIBE_UPDATE_STORAGE");
+export const subscribeUpdateStorageFailed = createAction("SUBSCRIBE_UPDATE_STORAGE_FAILED");
+export const fetchUpdateStorageWebSocket = createAction("FETCH_UPDATE_STORAGE_WEB_SOCKET");
+export const fetchUpdateStorageWebSocketSuccess = createAction("FETCH_UPDATE_STORAGE_WEB_SOCKET_SUCCESS");
+export const fetchUpdateStorageWebSocketFailed = createAction("FETCH_UPDATE_STORAGE_WEB_SOCKET_FAILED");
+export const receiveUpdateStorageSuccess = createAction("RECEIVE_UPDATE_STORAGE_SUCCESS");
+
