@@ -13,12 +13,8 @@ const isDeletedMotor = state => state.storage.isDeleted;
 const getNewMotorSelector = state => state.storage.newMotor;
 const responseStatus = state => state.storage.responseStatus;
 const getMotors = state => state.motor.all;
-const getDetails = state => state.storage.details;
+const getDetails = state => state.details.all;
 
-// export const getStorageList = createSelector(
-//   [getStorageSelector],
-//   list =>  _.values(list).filter(list => list)
-// );
 export const getStoragePageIndex = createSelector(
   [getPageIndexSelector],
   (pageIndex) => pageIndex
@@ -38,20 +34,9 @@ export const getStoragePageCount = createSelector(
 );
 
 export const getStorageListByPage = createSelector(
-  [getStorageSelector,getPageIndexSelector, getPageSizeSelector, getMotors, getDetails],
-  (storage, pageIndex, pageSize, motors, details)  => {
-    let tmpStorage = _.clone(storage);
-    _.values(tmpStorage).forEach(tmpStorage => {
-      let motor = _.get(motors, tmpStorage.motor);
-      if(!isEmpty(motor) && !isEmpty(details)) {
-        let detail = _.get(details, motor.detail);
-        if(!isEmpty(detail)) {
-          motor.detail = detail;
-          set(tmpStorage, 'motor', motor)
-        }
-      }
-    });
-    return _.values(tmpStorage).filter((motor, index) => {
+  [getStorageSelector,getPageIndexSelector, getPageSizeSelector/*, getMotors, getDetails*/],
+  (storage, pageIndex, pageSize/*, motors, details*/)  => {
+    return _.values(storage).filter((motor, index) => {
       return index >= (pageIndex-1)*pageSize && index < pageIndex*pageSize;
     })
   }
@@ -68,20 +53,7 @@ export const getStorageDetail = createSelector(
     if(isDelete) {
       return null;
     }
-    let tmpStorage = _.get(storage, selectedId, null);
-    let motor = null;
-
-    if(!isEmpty(tmpStorage)) {
-      motor = _.get(motors, tmpStorage.motor);
-    }
-    if(!isEmpty(motor)) {
-      let detail = _.get(details, motor.detail);
-      if(!isEmpty(detail)) {
-        motor.detail = detail;
-        set(tmpStorage, 'motor', motor)
-      }
-    }
-    return tmpStorage
+    return _.get(storage, selectedId, null);
   }
 );
 

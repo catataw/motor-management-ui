@@ -1,14 +1,14 @@
 import {ofType} from "redux-observable";
 import {
   fetchStorageWebSocket, fetchStorageWebSocketSuccess, fetchStorageWebSocketFailed,
-  subscribeAndFetchStorage, subscribeAndFetchStorageFailed, fetchDetailsSuccess,
-  fetchAllStorageListSuccess,
+  subscribeAndFetchStorage, subscribeAndFetchStorageFailed, fetchAllStorageListSuccess,
   fetchStorageDetailWebSocket, fetchStorageDetailWebSocketSuccess, fetchStorageDetailWebSocketFailed,
   subscribeAndFetchStorageDetail, subscribeAndFetchStorageDetailFailed, receiveStorageDetailSuccess,
   fetchStorageMotorDetailsSuccess, fetchStorageDetailSuccess, subscribeUpdateStorage,
   subscribeUpdateStorageFailed, fetchUpdateStorageWebSocket, fetchUpdateStorageWebSocketSuccess,
   fetchUpdateStorageWebSocketFailed, receiveUpdateStorageSuccess
 } from "../../actions/storage";
+import {fetchDetailsSuccess} from '../../actions/details'
 import {
   fetchMotorsSuccess
 } from "../../actions/motor";

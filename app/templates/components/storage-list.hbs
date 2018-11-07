@@ -24,14 +24,14 @@
       </tr>
       </thead>
       <tbody>
-      {{#each storageList as |s|}}
+      {{#each storageArray as |s|}}
         <tr>
           <td>{{#link-to "storage.detail" s.id}}{{s.location}}{{/link-to}}</td>
-          <td>{{s.motor.detail.power}}</td>
-          <td>{{s.motor.detail.plot}}</td>
-          <td>{{s.motor.detail.frame}}</td>
-          <td>{{s.motor.detail.current}}</td>
-          <td>{{s.motor.detail.voltage}}</td>
+          <td>{{get (get details s.motor.detail) 'power'}}</td>
+          <td>{{get (get details s.motor.detail) 'plot'}}</td>
+          <td>{{get (get details s.motor.detail) 'frame'}}</td>
+          <td>{{get (get details s.motor.detail) 'current'}}</td>
+          <td>{{get (get details s.motor.detail) 'voltage'}}</td>
           <td>{{s.motor.seriesNumber}}</td>
           <td>{{s.motor.remark}}</td>
         </tr>

@@ -6,6 +6,13 @@ import {
   getStoragePageIndex,
   getStoragePageSize
 } from '../redux/selectors/storage';
+import {
+  getAllMotors
+} from '../redux/selectors/motor';
+import {
+  getAllDetails
+} from '../redux/selectors/details';
+
 import {connect} from 'ember-redux';
 import {gotoStoragePage} from "../redux/actions/storage";
 
@@ -15,9 +22,11 @@ const stateToComputed = (state) => {
   return {
     isLoading: getLoading(state),
     storageList: getStorageListByPage(state),
+    motors: getAllMotors(state),
     pageCount: getStoragePageCount(state),
     pageSize: getStoragePageSize(state),
-    pageIndex: getStoragePageIndex(state)
+    pageIndex: getStoragePageIndex(state),
+    details: getAllDetails(state)
   };
 };
 

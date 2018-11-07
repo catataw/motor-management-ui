@@ -12,4 +12,9 @@ export const getOnlineMotor = createSelector(
 export const getStorageMotor = createSelector(
   [storageMotor],
   motor => motor
-)
+);
+
+export const getAllMotors = createSelector(
+  [responseMotor],
+  motors => motors
+);

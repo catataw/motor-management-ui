@@ -9,7 +9,7 @@
     </div>
   </div>
 {{else}}
-  {{#if storageDetail}}
+  {{#if showData}}
     <div class="row">
       <div class="col s12">
         <div class="card ">
@@ -18,55 +18,50 @@
             <div class="row">
               <div class="col s4">
                 <label>Location</label>
-                {{input type="text" value=storageDetail.location}}
+                {{input type="text" value=storageMotor.location}}
               </div>
               <div class="col s4">
                 <label>Power</label>
-                {{input type="text" value=storageDetail.motor.detail.power}}
+                {{input type="text" value=storageMotor.motor.detail.power}}
               </div>
               <div class="col s4">
                 <label>Plot</label>
-                {{input type="text" value=storageDetail.motor.detail.plot}}
+                {{input type="text" value=storageMotor.motor.detail.plot}}
               </div>
 
             </div>
             <div class="row">
               <div class="col s4">
                 <label>Current</label>
-                {{input type="text" value=storageDetail.motor.detail.current }}
+                {{input type="text" value=storageMotor.motor.detail.current }}
               </div>
               <div class="col s4">
                 <label>Voltage</label>
-                {{input type="text" value=storageDetail.motor.detail.voltage}}
+                {{input type="text" value=storageMotor.motor.detail.voltage}}
               </div>
               <div class="col s4">
                 <label>Frame</label>
-                {{input type="text" value=storageDetail.motor.detail.frame}}
+                {{input type="text" value=storageMotor.motor.detail.frame}}
               </div>
             </div>
             <div class="row">
               <div class="col s4">
                 <label>Series number</label>
-                {{input type="text" value=storageDetail.motor.seriesNumber}}
+                {{input type="text" value=storageMotor.motor.seriesNumber}}
               </div>
               <div class="col s6">
                 <label>Remark</label>
-                {{input type="text" value=storageDetail.motor.remark}}
+                {{input type="text" value=storageMotor.motor.remark}}
               </div>
             </div>
           </div>
           <div class="card-action">
             {{#link-to "storage" class="waves-effect waves-light btn-small"}}<i class="material-icons left">arrow_back</i>back{{/link-to}}
-            <a class="waves-effect waves-light btn-small" onclick={{action "updateMotorDetailAction" storageDetail}}><i class="material-icons left">edit</i>edit</a>
-            <a class="waves-effect waves-light btn-small" onclick={{action "deleteMotorAction" storageDetail.id}}><i class="material-icons left">delete</i>drop</a>
+            <a class="waves-effect waves-light btn-small" onclick={{action "updateMotorDetailAction" storageMotor}}><i class="material-icons left">edit</i>edit</a>
+            <a class="waves-effect waves-light btn-small" onclick={{action "deleteMotorAction" storageMotor.id}}><i class="material-icons left">delete</i>drop</a>
           </div>
         </div>
       </div>
-    </div>
-  {{else}}
-    <div class="row">
-      {{#link-to "storage" class="waves-effect waves-light btn-small"}}<i class="material-icons left">arrow_back</i>back{{/link-to}}
-      <span class="font-size-position">This motor is not exist</span>
     </div>
   {{/if}}
 {{/if}}

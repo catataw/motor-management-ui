@@ -1,5 +1,7 @@
-<StorageContainer as |isLoading storageList pageIndex pageCount options|>
-  <StorageList @isLoading={{isLoading}} @storageList={{storageList}} />
+<StorageContainer as |isLoading storageList pageIndex pageCount motors details details options|>
+  <StorageList @isLoading={{isLoading}} @storageList={{storageList}}
+               @motors={{motors}} @details={{details}} />
+
   <PaginationPager @pageIndex={{pageIndex}} @pageCount={{pageCount}}
                    @gotoPage={{options.gotoPage}} />
 </StorageContainer>

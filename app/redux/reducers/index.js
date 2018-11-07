@@ -7,6 +7,7 @@ import equipment from './equipment';
 import motor from './motor';
 import statuses from './statuses';
 import stomp from './stomp';
+import details from './details'
 
 export default combineReducers({
   users,
@@ -16,6 +17,7 @@ export default combineReducers({
   equipment,
   motor,
   statuses,
-  stomp
+  stomp,
+  details
 });
 

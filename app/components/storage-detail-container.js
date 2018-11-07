@@ -2,13 +2,16 @@ import Component from '@ember/component';
 import {connect} from 'ember-redux';
 import {getStorageDetail, getLoading} from '../redux/selectors/storage'
 import {deleteMotorById, subscribeUpdateStorage} from '../redux/actions/storage'
+import {getAllMotors} from "../redux/selectors/motor";
+import {getAllDetails} from "../redux/selectors/details";
 
 class StorageDetailContainer extends Component {}
 
 const stateToComputed = state => {
   return {
-    isLoading: getLoading(state),
-    storageDetail: getStorageDetail(state)
+    storageDetail: getStorageDetail(state),
+    motors: getAllMotors(state),
+    details: getAllDetails(state)
   }
 };
 

@@ -180,17 +180,17 @@ export default handleActions({
       loading: false
     }
   },
-  [fetchDetailsSuccess] (state, {payload}) {
-    return {
-      ...state,
-      details: {
-        ...state.details,
-        ...payload
-      },
-      error: null,
-      loading: false
-    }
-  },
+  // [fetchDetailsSuccess] (state, {payload}) {
+  //   return {
+  //     ...state,
+  //     details: {
+  //       ...state.details,
+  //       ...payload
+  //     },
+  //     error: null,
+  //     loading: false
+  //   }
+  // },
   [fetchStorageWebSocketFailed] (state, {payload}) {
     return {
       ...state,
